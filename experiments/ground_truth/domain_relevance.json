@@ -1,0 +1,149 @@
+{
+  "AD": {
+    "case_name": "Autonomous Driving Perception System",
+    "relevant_agents": [
+      "SafetyAgent",
+      "PerformanceAgent",
+      "ReliabilityAgent",
+      "FunctionalSafetyAgent",
+      "EfficiencyAgent",
+      "GreenAgent"
+    ],
+    "rationale": {
+      "SafetyAgent": "ISO 26262 ASIL-D compliance, hazard mitigation for L4 AD",
+      "PerformanceAgent": "30ms planning cycle budget, real-time latency",
+      "ReliabilityAgent": "Sensor fusion fault tolerance, system availability",
+      "FunctionalSafetyAgent": "ISO 26262 specific functional safety requirements",
+      "EfficiencyAgent": "Resource optimization under real-time constraints",
+      "GreenAgent": "Explicitly mentioned: minimize energy consumption for battery-electric deployment"
+    },
+    "excluded_with_rationale": {
+      "ResponsibilityAgent": "Ethical compliance not primary concern for perception module",
+      "TrustworthinessAgent": "Security/privacy not primary for sensor fusion",
+      "UsabilityAgent": "No user interaction in perception subsystem",
+      "MaintainabilityAgent": "Not mentioned in project requirements",
+      "CompatibilityAgent": "Not mentioned in project requirements",
+      "FlexibilityAgent": "Not mentioned in project requirements",
+      "ExplainabilityAgent": "Not directly required for perception module",
+      "PrivacyAgent": "Not mentioned in project requirements",
+      "SecurityAgent": "Not primary concern for perception subsystem"
+    }
+  },
+  "ATM": {
+    "case_name": "ATM Banking System",
+    "relevant_agents": [
+      "SecurityAgent",
+      "TrustworthinessAgent",
+      "ReliabilityAgent",
+      "PrivacyAgent",
+      "UsabilityAgent",
+      "ResponsibilityAgent"
+    ],
+    "rationale": {
+      "SecurityAgent": "Financial transactions require strong authentication, integrity, non-repudiation",
+      "TrustworthinessAgent": "Data protection and access control for sensitive financial data",
+      "ReliabilityAgent": "ATM must be highly available with fault tolerance and recoverability",
+      "PrivacyAgent": "Customer financial data subject to privacy regulations",
+      "UsabilityAgent": "Public-facing terminal requires accessibility and user error protection",
+      "ResponsibilityAgent": "Financial regulatory compliance requirements"
+    },
+    "excluded_with_rationale": {
+      "SafetyAgent": "ATM is not safety-critical (no physical harm risk)",
+      "PerformanceAgent": "Standard transaction latency, not real-time critical",
+      "EfficiencyAgent": "Resource optimization not primary concern",
+      "GreenAgent": "Sustainability not mentioned in ATM requirements",
+      "MaintainabilityAgent": "Not primary concern for ATM specification",
+      "CompatibilityAgent": "Not primary concern",
+      "FlexibilityAgent": "Not primary concern",
+      "FunctionalSafetyAgent": "No ISO 26262 applicability",
+      "ExplainabilityAgent": "Not an AI system"
+    }
+  },
+  "Library": {
+    "case_name": "Library Management System",
+    "relevant_agents": [
+      "UsabilityAgent",
+      "ReliabilityAgent",
+      "MaintainabilityAgent",
+      "SecurityAgent",
+      "CompatibilityAgent"
+    ],
+    "rationale": {
+      "UsabilityAgent": "Public-facing system requires ease of use for librarians and patrons",
+      "ReliabilityAgent": "System must be consistently available during library hours",
+      "MaintainabilityAgent": "Long-lived system requiring ongoing updates and module additions",
+      "SecurityAgent": "User account data and borrowing records need protection",
+      "CompatibilityAgent": "Must integrate with existing library catalog standards (MARC, Z39.50)"
+    },
+    "excluded_with_rationale": {
+      "SafetyAgent": "No physical safety concerns in library system",
+      "EfficiencyAgent": "Not performance-critical, standard response times sufficient",
+      "PerformanceAgent": "No real-time or high-throughput requirements",
+      "GreenAgent": "Sustainability not a primary concern",
+      "TrustworthinessAgent": "Basic security covered by SecurityAgent, no advanced privacy needs",
+      "FlexibilityAgent": "Standard deployment, not a primary concern",
+      "ResponsibilityAgent": "No specific regulatory compliance requirements",
+      "FunctionalSafetyAgent": "Not safety-critical domain",
+      "ExplainabilityAgent": "No AI decision-making",
+      "PrivacyAgent": "Basic data protection covered by SecurityAgent"
+    }
+  },
+  "RollCall": {
+    "case_name": "RollCall Attendance System",
+    "relevant_agents": [
+      "UsabilityAgent",
+      "ReliabilityAgent",
+      "SecurityAgent",
+      "PerformanceAgent",
+      "PrivacyAgent"
+    ],
+    "rationale": {
+      "UsabilityAgent": "Teachers and students need simple, fast attendance recording",
+      "ReliabilityAgent": "Attendance records must be accurately maintained without data loss",
+      "SecurityAgent": "Student attendance data requires access control and integrity",
+      "PerformanceAgent": "Must handle concurrent check-ins during class start times",
+      "PrivacyAgent": "Student personal data subject to educational privacy regulations (FERPA-like)"
+    },
+    "excluded_with_rationale": {
+      "SafetyAgent": "No physical safety concerns",
+      "EfficiencyAgent": "Not resource-constrained",
+      "GreenAgent": "Sustainability not relevant",
+      "TrustworthinessAgent": "Covered by SecurityAgent and PrivacyAgent",
+      "MaintainabilityAgent": "Not a primary concern for this scope",
+      "CompatibilityAgent": "Limited integration requirements",
+      "FlexibilityAgent": "Standard deployment",
+      "ResponsibilityAgent": "No specific ethical compliance beyond privacy",
+      "FunctionalSafetyAgent": "Not safety-critical",
+      "ExplainabilityAgent": "No AI decision-making"
+    }
+  },
+  "Bookkeeping": {
+    "case_name": "Bookkeeping System",
+    "relevant_agents": [
+      "SecurityAgent",
+      "ReliabilityAgent",
+      "TrustworthinessAgent",
+      "ResponsibilityAgent",
+      "UsabilityAgent"
+    ],
+    "rationale": {
+      "SecurityAgent": "Financial data requires strong integrity, authentication, and audit trails",
+      "ReliabilityAgent": "Financial records must not be lost; system needs high availability",
+      "TrustworthinessAgent": "Data protection for sensitive financial information",
+      "ResponsibilityAgent": "Must comply with financial reporting regulations and accounting standards",
+      "UsabilityAgent": "Accountants and business users need clear, error-preventing interfaces"
+    },
+    "excluded_with_rationale": {
+      "SafetyAgent": "No physical safety concerns",
+      "EfficiencyAgent": "Not performance-critical",
+      "PerformanceAgent": "Standard transaction volumes",
+      "GreenAgent": "Sustainability not relevant",
+      "MaintainabilityAgent": "Not a primary concern at specification stage",
+      "CompatibilityAgent": "Limited integration scope",
+      "FlexibilityAgent": "Standard deployment",
+      "FunctionalSafetyAgent": "Not safety-critical",
+      "ExplainabilityAgent": "No AI decision-making",
+      "PrivacyAgent": "Financial privacy covered by SecurityAgent and TrustworthinessAgent"
+    }
+  }
+}

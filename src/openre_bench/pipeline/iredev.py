@@ -18,7 +18,6 @@ from openre_bench.pipeline._core import (
     IREDEV_RUNTIME_SEMANTICS_MODE,
     IREDEV_RUNTIME_TRACE_VERSION,
     MareRuntimeExecutionMeta,
-    _coerce_non_empty_text,
     _extract_requirement_fragments,
     _rag_payload,
     _rotate_fragments,

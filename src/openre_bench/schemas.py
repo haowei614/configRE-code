@@ -58,6 +58,100 @@ DEFAULT_AGENT_QUALITY_ATTRIBUTES = {
     "ResponsibilityAgent": "Responsibility",
 }
 
+EXTENDED_AGENT_QUALITY_ATTRIBUTES = {
+    "ReliabilityAgent": "Reliability",
+    "UsabilityAgent": "Usability",
+    "SecurityAgent": "Security",
+    "MaintainabilityAgent": "Maintainability",
+    "CompatibilityAgent": "Compatibility",
+    "FlexibilityAgent": "Flexibility",
+    "PerformanceAgent": "Performance",
+    "FunctionalSafetyAgent": "Functional Safety",
+    "ExplainabilityAgent": "Explainability",
+    "PrivacyAgent": "Privacy",
+}
+
+AGENT_QUALITY_METADATA = {
+    "SafetyAgent": {
+        "quality_dimension": "Safety",
+        "tier": "Tier 1",
+        "tier_description": "ISO 25010 candidate pool",
+    },
+    "EfficiencyAgent": {
+        "quality_dimension": "Efficiency",
+        "tier": "Tier 1",
+        "tier_description": "ISO 25010 candidate pool",
+    },
+    "PerformanceAgent": {
+        "quality_dimension": "Performance",
+        "tier": "Tier 1",
+        "tier_description": "ISO 25010 candidate pool",
+    },
+    "ReliabilityAgent": {
+        "quality_dimension": "Reliability",
+        "tier": "Tier 1",
+        "tier_description": "ISO 25010 candidate pool",
+    },
+    "UsabilityAgent": {
+        "quality_dimension": "Usability",
+        "tier": "Tier 1",
+        "tier_description": "ISO 25010 candidate pool",
+    },
+    "SecurityAgent": {
+        "quality_dimension": "Security",
+        "tier": "Tier 1",
+        "tier_description": "ISO 25010 candidate pool",
+    },
+    "MaintainabilityAgent": {
+        "quality_dimension": "Maintainability",
+        "tier": "Tier 1",
+        "tier_description": "ISO 25010 candidate pool",
+    },
+    "CompatibilityAgent": {
+        "quality_dimension": "Compatibility",
+        "tier": "Tier 1",
+        "tier_description": "ISO 25010 candidate pool",
+    },
+    "FlexibilityAgent": {
+        "quality_dimension": "Flexibility",
+        "tier": "Tier 1",
+        "tier_description": "ISO 25010 candidate pool",
+    },
+    "TrustworthinessAgent": {
+        "quality_dimension": "Trustworthiness",
+        "tier": "Tier 1",
+        "tier_description": "ISO 25010 candidate pool",
+    },
+    "FunctionalSafetyAgent": {
+        "quality_dimension": "Functional Safety",
+        "tier": "Tier 2",
+        "tier_description": "Domain-specific",
+        "activation": "ISO 26262, automotive",
+    },
+    "ExplainabilityAgent": {
+        "quality_dimension": "Explainability",
+        "tier": "Tier 2",
+        "tier_description": "Domain-specific",
+        "activation": "EU AI Act, AI systems",
+    },
+    "PrivacyAgent": {
+        "quality_dimension": "Privacy",
+        "tier": "Tier 2",
+        "tier_description": "Domain-specific",
+        "activation": "GDPR/ISO 27701, data-intensive systems",
+    },
+    "GreenAgent": {
+        "quality_dimension": "Sustainability",
+        "tier": "Tier 3",
+        "tier_description": "Project-level constraint",
+    },
+    "ResponsibilityAgent": {
+        "quality_dimension": "Ethical & Compliance",
+        "tier": "Tier 3",
+        "tier_description": "Project-level constraint",
+    },
+}
+
 MARE_AGENT_ROLES = (
     "Stakeholders",
     "Collector",

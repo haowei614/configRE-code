@@ -235,6 +235,8 @@ class MatrixConfig:
     rag_corpus_dir: Path
     system: str = SYSTEM_MARE
     judge_pipeline_path: Path | None = None
+    agent_config: list[str] | str | None = None
+    tier1_threshold: float = 0.6
 
 
 @dataclass
@@ -318,6 +320,8 @@ def run_comparison_matrix(config: MatrixConfig) -> MatrixResult:
                     rag_enabled=config.rag_enabled,
                     rag_backend=config.rag_backend,
                     rag_corpus_dir=config.rag_corpus_dir,
+                    agent_config=config.agent_config,
+                    tier1_threshold=config.tier1_threshold,
                 )
                 run_record = run_case_pipeline(pipeline_config)
                 _write_run_record_provenance(
@@ -483,7 +487,6 @@ def _compute_run_metrics(artifacts_dir: Path) -> dict[str, Any]:
 
     detected_conflicts = int(phase2.get("summary_stats", {}).get("detected_conflicts", 0))
     resolved_conflicts = int(phase2.get("summary_stats", {}).get("resolved_conflicts", 0))
-    successful_consensus = int(phase2.get("summary_stats", {}).get("successful_consensus", 0))
 
     # Paper-faithful RQ2 metric: resolved_conflicts / detected_conflicts.
     # When no conflicts are detected, keep the rate at 0.0 instead of using

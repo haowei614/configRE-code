@@ -21,12 +21,12 @@ from openre_bench.llm import chat_with_optional_seed as _chat_with_optional_seed
 from openre_bench.llm import load_openai_settings
 from openre_bench.schemas import CaseInput
 from openre_bench.schemas import DEFAULT_AGENT_QUALITY_ATTRIBUTES
+from openre_bench.schemas import EXTENDED_AGENT_QUALITY_ATTRIBUTES
 from openre_bench.schemas import GSNConnection
 from openre_bench.schemas import GSNElement
 from openre_bench.schemas import KAOSElement
 from openre_bench.schemas import MARE_ACTIONS
 from openre_bench.schemas import MARE_AGENT_ROLES
-from openre_bench.schemas import MARE_ROLE_ACTIONS
 from openre_bench.schemas import non_comparable_reasons_for_setting
 from openre_bench.schemas import NegotiationHistory
 from openre_bench.schemas import NegotiationStep
@@ -56,7 +56,10 @@ from openre_bench.schemas import SUPPORTED_SYSTEMS
 from openre_bench.schemas import load_json_file
 from openre_bench.schemas import utc_timestamp
 from openre_bench.schemas import write_json_file
+from openre_bench.pipeline.phase0 import run_phase0
 # settings and llm_client are consolidated into openre_bench.llm (imported above)
+
+PHASE0_AGENT_SELECTION_FILENAME = "phase0_agent_selection.json"
 
 
 @dataclass
@@ -78,6 +81,20 @@ class PipelineConfig:
     rag_backend: str = "local_tfidf"
     rag_corpus_dir: Path | None = None
     llm_client: Phase2LLMClient | None = None
+    agent_config: list[str] | str | None = None
+    tier1_threshold: float = 0.6
+
+
+@dataclass
+class _Phase0RuntimeConfig:
+    """Runtime adapter passed to Phase 0 without expanding public schema yet."""
+
+    model: str
+    temperature: float
+    max_tokens: int
+    seed: int
+    tier1_threshold: float
+    llm_client: Phase2LLMClient | None
 
 
 @dataclass
@@ -159,6 +176,37 @@ QUALITY_LENS_CUES: dict[str, tuple[str, ...]] = {
         "auditability",
         "integrity guarantees",
     ),
+    "Reliability": (
+        "maturity, availability, fault tolerance, recoverability",
+    ),
+    "Usability": (
+        "learnability, operability, user error protection, accessibility",
+    ),
+    "Security": (
+        "confidentiality, integrity, non-repudiation, authentication",
+    ),
+    "Maintainability": (
+        "modularity, reusability, analysability, modifiability, testability",
+    ),
+    "Compatibility": (
+        "co-existence, interoperability",
+    ),
+    "Flexibility": (
+        "adaptability, installability, replaceability",
+    ),
+    "Performance": (
+        "time behaviour, resource utilisation, capacity",
+    ),
+    "Functional Safety": (
+        "hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262",
+    ),
+    "Explainability": (
+        "model transparency, decision interpretability, human reviewability "
+        "per EU AI Act Article 13",
+    ),
+    "Privacy": (
+        "data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+    ),
     "Responsibility": (
         "regulatory accountability",
         "stakeholder transparency",
@@ -229,6 +277,35 @@ def _run_pipeline_for_system(*, config: PipelineConfig, system: str) -> RunRecor
         rag_corpus_dir=config.rag_corpus_dir,
     )
 
+    phase0_payload: dict[str, Any] | None = None
+    effective_agent_config: list[str] | None = _explicit_agent_config(config.agent_config)
+    phase0_token_usage = _empty_token_usage()
+    if _agent_config_auto_requested(config.agent_config):
+        phase0_llm_client = _resolve_phase0_llm_client(config)
+        phase0_payload = run_phase0(
+            project_description=_phase0_project_description(case),
+            config=_Phase0RuntimeConfig(
+                model=config.model,
+                temperature=config.temperature,
+                max_tokens=config.max_tokens,
+                seed=config.seed,
+                tier1_threshold=config.tier1_threshold,
+                llm_client=phase0_llm_client,
+            ),
+        )
+        phase0_token_usage = _coerce_token_usage(phase0_payload.get("token_usage"))
+        selected_agents = [
+            str(agent_name).strip()
+            for agent_name in phase0_payload.get("selected_agents", [])
+            if str(agent_name).strip()
+        ]
+        if not selected_agents:
+            selected_agents = list(DEFAULT_AGENT_QUALITY_ATTRIBUTES)
+            phase0_payload["fallback_selected_agents"] = selected_agents
+            phase0_payload["fallback_reason"] = "Phase 0 selected no agents; using default agents."
+            phase0_payload["total_agents"] = len(selected_agents)
+        effective_agent_config = selected_agents
+
     llm_client, llm_source = _resolve_phase2_llm_client(config=config, system=system)
     mare_llm_client, mare_llm_source = _resolve_runtime_llm_client(
         config=config,
@@ -262,7 +339,14 @@ def _run_pipeline_for_system(*, config: PipelineConfig, system: str) -> RunRecor
             llm_seed=config.seed,
         )
     else:
-        phase1_payload = _build_phase1(case, config.seed, config.setting, rag_context)
+        phase1_payload = _build_phase1(
+            case,
+            config.seed,
+            config.setting,
+            rag_context,
+            effective_agent_config,
+        )
+    phase2_token_start = _client_total_token_usage(llm_client)
     phase2_payload, phase2_meta = _build_phase2(
         run_id=config.run_id,
         phase1=phase1_payload,
@@ -277,6 +361,7 @@ def _run_pipeline_for_system(*, config: PipelineConfig, system: str) -> RunRecor
         llm_max_tokens=config.max_tokens,
         llm_seed=config.seed,
     )
+    phase2_token_usage = _token_usage_delta(phase2_token_start, _client_total_token_usage(llm_client))
     phase3_payload = _build_phase3(
         run_id=config.run_id,
         case=case,
@@ -308,6 +393,10 @@ def _run_pipeline_for_system(*, config: PipelineConfig, system: str) -> RunRecor
         PHASE3_FILENAME: str(config.artifacts_dir / PHASE3_FILENAME),
         PHASE4_FILENAME: str(config.artifacts_dir / PHASE4_FILENAME),
     }
+    if phase0_payload is not None:
+        artifact_paths[PHASE0_AGENT_SELECTION_FILENAME] = str(
+            config.artifacts_dir / PHASE0_AGENT_SELECTION_FILENAME
+        )
     if quare_optional_artifacts:
         artifact_paths.update(
             {
@@ -318,6 +407,8 @@ def _run_pipeline_for_system(*, config: PipelineConfig, system: str) -> RunRecor
         )
 
     write_json_file(Path(artifact_paths[PHASE1_FILENAME]), phase1_payload)
+    if phase0_payload is not None:
+        write_json_file(Path(artifact_paths[PHASE0_AGENT_SELECTION_FILENAME]), phase0_payload)
     write_json_file(Path(artifact_paths[PHASE2_FILENAME]), phase2_payload)
     write_json_file(Path(artifact_paths[PHASE3_FILENAME]), phase3_payload)
     write_json_file(Path(artifact_paths[PHASE4_FILENAME]), phase4_payload)
@@ -334,6 +425,7 @@ def _run_pipeline_for_system(*, config: PipelineConfig, system: str) -> RunRecor
         setting=config.setting,
         round_cap=config.round_cap,
         max_tokens=config.max_tokens,
+        agent_config=effective_agent_config,
     )
     llm_retry_count = int(phase2_meta.llm_retry_count) + int(mare_runtime_meta.llm_retry_count)
     llm_fallback_used = bool(
@@ -347,6 +439,14 @@ def _run_pipeline_for_system(*, config: PipelineConfig, system: str) -> RunRecor
     }
     if isinstance(mare_runtime_semantics, dict):
         runtime_semantics_notes.update(mare_runtime_semantics)
+    token_usage = _build_run_token_usage(
+        phase0=phase0_token_usage,
+        phase1=_empty_token_usage(),
+        phase2=phase2_token_usage,
+        phase4=_empty_token_usage(),
+        phase1_status="deterministic_template_generation",
+        phase4_status="deterministic_rule_verification",
+    )
 
     run_record = RunRecord(
         run_id=config.run_id,
@@ -398,6 +498,7 @@ def _run_pipeline_for_system(*, config: PipelineConfig, system: str) -> RunRecor
         blind_eval_run_id="",
         judge_pipeline_hash="",
         trace_audit_path="",
+        token_usage=token_usage,
         notes={
             "phase_a_b": True,
             "generation_mode": "deterministic-parity-pipeline",
@@ -445,11 +546,112 @@ def _run_pipeline_for_system(*, config: PipelineConfig, system: str) -> RunRecor
             "rag_corpus_hash": rag_context["corpus_hash"],
             "rag_chunk_count": rag_context["chunk_count"],
             "prompt_contract_hash": prompt_hash,
+            "phase0_agent_selection": (
+                artifact_paths.get(PHASE0_AGENT_SELECTION_FILENAME)
+                if phase0_payload is not None
+                else ""
+            ),
+            "effective_agent_config": list(effective_agent_config or []),
+            "token_usage": token_usage,
         },
     )
 
     write_json_file(config.run_record_path, run_record.model_dump(mode="json"))
     return run_record
+
+
+def _agent_config_auto_requested(agent_config: list[str] | str | None) -> bool:
+    """Whether the caller requested Phase 0 automatic agent selection."""
+
+    return isinstance(agent_config, str) and agent_config.strip().lower() == "auto"
+
+
+def _explicit_agent_config(agent_config: list[str] | str | None) -> list[str] | None:
+    """Return an explicit agent list, excluding the Phase 0 auto sentinel."""
+
+    if agent_config is None:
+        return None
+    if isinstance(agent_config, str):
+        if agent_config.strip().lower() == "auto":
+            return None
+        return [agent_config.strip()] if agent_config.strip() else None
+    return list(agent_config)
+
+
+def _phase0_project_description(case: CaseInput) -> str:
+    """Build the project description used by Phase 0 from case input fields."""
+
+    parts = [
+        str(case.case_description or "").strip(),
+        str(case.requirement or "").strip(),
+    ]
+    return "\n\n".join(part for part in parts if part)
+
+
+def _empty_token_usage() -> dict[str, int]:
+    return {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}
+
+
+def _coerce_token_usage(value: Any) -> dict[str, int]:
+    if not isinstance(value, dict):
+        return _empty_token_usage()
+    return {
+        "input_tokens": _to_int(value.get("input_tokens")),
+        "output_tokens": _to_int(value.get("output_tokens")),
+        "total_tokens": _to_int(value.get("total_tokens")),
+    }
+
+
+def _client_total_token_usage(llm_client: Phase2LLMClient | None) -> dict[str, int]:
+    usage = getattr(llm_client, "total_token_usage", None)
+    return _coerce_token_usage(usage)
+
+
+def _token_usage_delta(
+    before: dict[str, int],
+    after: dict[str, int],
+) -> dict[str, int]:
+    return {
+        key: max(0, int(after.get(key, 0)) - int(before.get(key, 0)))
+        for key in ("input_tokens", "output_tokens", "total_tokens")
+    }
+
+
+def _build_run_token_usage(
+    *,
+    phase0: dict[str, int],
+    phase1: dict[str, int],
+    phase2: dict[str, int],
+    phase4: dict[str, int],
+    phase1_status: str,
+    phase4_status: str,
+) -> dict[str, Any]:
+    total = _empty_token_usage()
+    for usage in (phase0, phase1, phase2, phase4):
+        for key in total:
+            total[key] += int(usage.get(key, 0))
+    return {
+        "phase0": {**phase0, "status": "tracked"},
+        "phase1": {**phase1, "status": phase1_status},
+        "phase2": {**phase2, "status": "tracked"},
+        "phase4": {**phase4, "status": phase4_status},
+        "total": {**total, "status": "partial_if_any_phase_untracked"},
+    }
+
+
+def _resolve_phase0_llm_client(config: PipelineConfig) -> Phase2LLMClient | None:
+    """Resolve the LLM client for Phase 0 while reusing existing pipeline wiring."""
+
+    if config.llm_client is not None:
+        return config.llm_client
+
+    try:
+        settings = load_openai_settings()
+    except MissingAPIKeyError:
+        return None
+
+    settings.model = config.model
+    return LLMClient(settings)
 
 
 def _resolve_phase2_llm_client(
@@ -616,7 +818,14 @@ def _hash_corpus_dir(corpus_dir: Path) -> str:
     return corpus_hash
 
 
-def _prompt_contract_hash(*, system: str, setting: str, round_cap: int, max_tokens: int) -> str:
+def _prompt_contract_hash(
+    *,
+    system: str,
+    setting: str,
+    round_cap: int,
+    max_tokens: int,
+    agent_config: list[str] | None = None,
+) -> str:
     """Hash deterministic generation contract to detect configuration drift."""
 
     runtime_mode = _runtime_semantics_mode(system=system, setting=setting)
@@ -627,7 +836,11 @@ def _prompt_contract_hash(*, system: str, setting: str, round_cap: int, max_toke
         "round_cap": round_cap,
         "max_tokens": max_tokens,
         "runtime_semantics_mode": runtime_mode,
-        "agent_quality_mapping": _agent_quality_mapping_for_setting(setting),
+        "agent_config": list(agent_config or []),
+        "agent_quality_mapping": _agent_quality_mapping_for_setting(
+            setting,
+            agent_config=agent_config,
+        ),
     }
     if runtime_mode == MARE_RUNTIME_SEMANTICS_MODE:
         contract["agent_quality_mapping"] = {
@@ -972,6 +1185,7 @@ def _build_phase1(
     seed: int,
     setting: str,
     rag_context: dict[str, Any],
+    agent_config: list[str] | None = None,
 ) -> dict[str, list[dict[str, Any]]]:
     """Build Phase 1 initial requirement models."""
 
@@ -981,7 +1195,10 @@ def _build_phase1(
 
     rotated = _rotate_fragments(fragments, seed)
     phase1: dict[str, list[dict[str, Any]]] = {}
-    agent_quality_mapping = _agent_quality_mapping_for_setting(setting)
+    agent_quality_mapping = _agent_quality_mapping_for_setting(
+        setting,
+        agent_config=agent_config,
+    )
 
     if setting == SETTING_SINGLE_AGENT:
         agent_name = "SingleAgent"
@@ -1696,12 +1913,39 @@ def _parent_child_mappings(elements: list[dict[str, Any]]) -> dict[str, list[str
     return mappings
 
 
-def _agent_quality_mapping_for_setting(setting: str) -> dict[str, str]:
+def _agent_quality_mapping_for_setting(
+    setting: str,
+    *,
+    agent_config: list[str] | None = None,
+) -> dict[str, str]:
     """Return agent-quality mapping for a given experimental setting."""
 
     if setting == SETTING_SINGLE_AGENT:
         return {"SingleAgent": "Integrated"}
-    return DEFAULT_AGENT_QUALITY_ATTRIBUTES
+    if not agent_config:
+        return DEFAULT_AGENT_QUALITY_ATTRIBUTES
+
+    available_agents = {
+        **DEFAULT_AGENT_QUALITY_ATTRIBUTES,
+        **EXTENDED_AGENT_QUALITY_ATTRIBUTES,
+    }
+    selected_agents: dict[str, str] = {}
+    for agent_name in agent_config:
+        normalized_name = str(agent_name).strip()
+        if not normalized_name:
+            continue
+        quality_attribute = available_agents.get(normalized_name)
+        if quality_attribute is None:
+            valid_agents = ", ".join(sorted(available_agents))
+            raise ValueError(
+                f"Unknown agent in agent_config: {normalized_name}. "
+                f"Valid agents: {valid_agents}"
+            )
+        selected_agents.setdefault(normalized_name, quality_attribute)
+
+    if not selected_agents:
+        raise ValueError("agent_config must enable at least one known agent.")
+    return selected_agents
 
 
 def _negotiation_enabled(setting: str) -> bool:
@@ -1868,18 +2112,13 @@ def _detect_conflict(
     if "candidate_resolution" in statuses or "resolved" in statuses:
         return False
 
-    quality_pair = (_quality_axis_for_agent(focus_agent), _quality_axis_for_agent(reviewer_agent))
-    known_conflict_pairs = {
-        ("Safety", "Efficiency"),
-        ("Efficiency", "Safety"),
-        ("Sustainability", "Efficiency"),
-        ("Responsibility", "Efficiency"),
-    }
+    focus_quality = _quality_axis_for_elements(focus_elements, fallback_agent=focus_agent)
+    reviewer_quality = _quality_axis_for_elements(reviewer_elements, fallback_agent=reviewer_agent)
     trigger_terms = {"conflict", "tradeoff", "trade-off", "violate", "relax"}
     requirement_tokens = set(_tokens(requirement.lower()))
 
     lexical_trigger = bool(trigger_terms & requirement_tokens)
-    if quality_pair in known_conflict_pairs and lexical_trigger:
+    if lexical_trigger and _quality_tradeoff_likely(focus_quality, reviewer_quality):
         return True
 
     focus_text = " ".join(item.get("description", "") for item in focus_elements)
@@ -1891,16 +2130,64 @@ def _detect_conflict(
     return len(overlap) >= 3 and has_positive_modal and has_negative_modal
 
 
+def _quality_axis_for_elements(elements: list[dict[str, Any]], *, fallback_agent: str) -> str:
+    """Infer the active quality axis from generated elements before falling back to agent name."""
+
+    for element in elements:
+        quality_attribute = str(element.get("quality_attribute", "")).strip()
+        if quality_attribute:
+            return quality_attribute
+    return _quality_axis_for_agent(fallback_agent)
+
+
+def _quality_tradeoff_likely(left_quality: str, right_quality: str) -> bool:
+    """Return whether two quality axes commonly need explicit negotiation."""
+
+    left = left_quality.strip()
+    right = right_quality.strip()
+    if not left or not right or left == right:
+        return False
+
+    delivery_axes = {
+        "Compatibility",
+        "Efficiency",
+        "Flexibility",
+        "Performance",
+        "Usability",
+    }
+    assurance_axes = {
+        "Explainability",
+        "Functional Safety",
+        "Maintainability",
+        "Privacy",
+        "Reliability",
+        "Responsibility",
+        "Safety",
+        "Security",
+        "Trustworthiness",
+    }
+    sustainability_axes = {"Sustainability"}
+
+    if (left in delivery_axes and right in assurance_axes) or (
+        right in delivery_axes and left in assurance_axes
+    ):
+        return True
+    if (left in delivery_axes and right in sustainability_axes) or (
+        right in delivery_axes and left in sustainability_axes
+    ):
+        return True
+    if {left, right} <= {"Explainability", "Privacy", "Security", "Trustworthiness"}:
+        return True
+    return False
+
+
 def _quality_axis_for_agent(agent_name: str) -> str:
     """Normalize QUARE and MARE runtime role names onto the paper quality axes."""
 
     normalized = str(agent_name).strip()
     aliases = {
-        "SafetyAgent": "Safety",
-        "EfficiencyAgent": "Efficiency",
-        "GreenAgent": "Sustainability",
-        "TrustworthinessAgent": "Trustworthiness",
-        "ResponsibilityAgent": "Responsibility",
+        **DEFAULT_AGENT_QUALITY_ATTRIBUTES,
+        **EXTENDED_AGENT_QUALITY_ATTRIBUTES,
         "Stakeholders": "Responsibility",
         "Collector": "Efficiency",
         "Modeler": "Trustworthiness",

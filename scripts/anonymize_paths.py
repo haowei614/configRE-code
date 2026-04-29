@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import os
-import json
 from pathlib import Path
 
 TARGET_DIR = Path("experiment_outputs")

@@ -2,10 +2,6 @@
 
 from __future__ import annotations
 
-import hashlib
-import json
-from typing import Any
-
 import pytest
 
 from openre_bench.pipeline._utils import (
@@ -292,6 +288,26 @@ def test_setting_queries_agent_quality_mapping_multi():
     assert "SingleAgent" not in mapping
 
 
+def test_setting_queries_agent_quality_mapping_custom():
+    mapping = _agent_quality_mapping_for_setting(
+        "multi_agent_with_negotiation",
+        agent_config=["SafetyAgent", "ReliabilityAgent", "FunctionalSafetyAgent"],
+    )
+    assert mapping == {
+        "SafetyAgent": "Safety",
+        "ReliabilityAgent": "Reliability",
+        "FunctionalSafetyAgent": "Functional Safety",
+    }
+
+
+def test_setting_queries_agent_quality_mapping_unknown_agent():
+    with pytest.raises(ValueError, match="Unknown agent"):
+        _agent_quality_mapping_for_setting(
+            "multi_agent_with_negotiation",
+            agent_config=["UnknownAgent"],
+        )
+
+
 # ---------------------------------------------------------------------------
 # _runtime_semantics_mode
 # ---------------------------------------------------------------------------
@@ -436,11 +452,6 @@ def test_topology_status_orphan_non_goal_root():
 
 def test_topology_status_cycle_detection():
     """Test cycle detection when elements form a circular parent chain."""
-    elements = [
-        {"id": "G1", "gsn_type": "Goal", "parent_goal_id": None},
-        {"id": "G2", "gsn_type": "Goal", "parent_goal_id": "G1"},
-        {"id": "G3", "gsn_type": "Goal", "parent_goal_id": "G2"},
-    ]
     # G2->G3 is a chain but no cycle; make a cycle by having G1's child point back
     elements_cycle = [
         {"id": "G1", "gsn_type": "Goal", "parent_goal_id": "G3"},
@@ -786,11 +797,24 @@ def test_types_constants():
     assert PHASE2_LLM_RETRY_LIMIT == 1
     assert len(MARE_ROLE_QUALITY_ATTRIBUTES) == 5
     assert len(IREDEV_ROLE_QUALITY_ATTRIBUTES) == 6
-    assert len(QUALITY_LENS_CUES) == 6  # Safety, Efficiency, Sustainability, Trustworthiness, Responsibility, Integrated
-    assert set(QUALITY_LENS_CUES.keys()) == {
-        "Safety", "Efficiency", "Sustainability",
-        "Trustworthiness", "Responsibility", "Integrated",
-    }
+    assert {
+        "Safety",
+        "Efficiency",
+        "Sustainability",
+        "Trustworthiness",
+        "Responsibility",
+        "Integrated",
+        "Reliability",
+        "Usability",
+        "Security",
+        "Maintainability",
+        "Compatibility",
+        "Flexibility",
+        "Performance",
+        "Functional Safety",
+        "Explainability",
+        "Privacy",
+    }.issubset(QUALITY_LENS_CUES)
     assert MARE_RUNTIME_SEMANTICS_MODE == "mare_paper_workflow_v1"
     assert IREDEV_RUNTIME_SEMANTICS_MODE == "iredev_knowledge_driven_v1"
     assert MARE_RUNTIME_TRACE_VERSION == "1"

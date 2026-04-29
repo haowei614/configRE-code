@@ -9,7 +9,6 @@ This module owns every concern related to LLM inference:
 
 from __future__ import annotations
 
-import json
 from pathlib import Path
 from typing import Any, Protocol, runtime_checkable
 
@@ -177,6 +176,8 @@ class LLMClient:
 
     def __init__(self, settings: OpenAISettings) -> None:
         self._settings = settings
+        self.last_token_usage: dict[str, int] = _empty_token_usage()
+        self.total_token_usage: dict[str, int] = _empty_token_usage()
 
     def chat(
         self,
@@ -211,7 +212,50 @@ class LLMClient:
         text = _extract_text(response)
         if not text:
             raise LLMClientError("LiteLLM response did not include assistant text.")
+        self.last_token_usage = _extract_token_usage(response)
+        _add_token_usage(self.total_token_usage, self.last_token_usage)
         return text
+
+
+def _empty_token_usage() -> dict[str, int]:
+    return {"input_tokens": 0, "output_tokens": 0, "total_tokens": 0}
+
+
+def _add_token_usage(target: dict[str, int], usage: dict[str, int]) -> None:
+    for key in ("input_tokens", "output_tokens", "total_tokens"):
+        target[key] = int(target.get(key, 0)) + int(usage.get(key, 0))
+
+
+def _extract_token_usage(response: Any) -> dict[str, int]:
+    usage = getattr(response, "usage", None)
+    if usage is None and isinstance(response, dict):
+        usage = response.get("usage")
+    if usage is None:
+        return _empty_token_usage()
+
+    input_tokens = _usage_int(usage, "prompt_tokens") or _usage_int(usage, "input_tokens")
+    output_tokens = _usage_int(usage, "completion_tokens") or _usage_int(usage, "output_tokens")
+    total_tokens = _usage_int(usage, "total_tokens")
+    if total_tokens is None:
+        total_tokens = int(input_tokens or 0) + int(output_tokens or 0)
+
+    return {
+        "input_tokens": int(input_tokens or 0),
+        "output_tokens": int(output_tokens or 0),
+        "total_tokens": int(total_tokens or 0),
+    }
+
+
+def _usage_int(usage: Any, key: str) -> int | None:
+    value = getattr(usage, key, None)
+    if value is None and isinstance(usage, dict):
+        value = usage.get(key)
+    if isinstance(value, bool) or value is None:
+        return None
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return None
 
 
 def _extract_text(response: Any) -> str:

@@ -3,10 +3,7 @@
 from __future__ import annotations
 
 import json
-from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
-from unittest.mock import MagicMock
 
 import pytest
 
@@ -14,7 +11,6 @@ from openre_bench.pipeline._core import (
     ActionRunResult,
     MareRuntimeExecutionMeta,
     Phase2ExecutionMeta,
-    PipelineConfig,
     _CORPUS_HASH_CACHE,
     _RAG_CHUNK_CACHE,
     _chunk_overlap_score,
@@ -28,13 +24,6 @@ from openre_bench.pipeline._core import (
     _runtime_semantics_mode,
     _sha256_payload,
     default_run_id,
-)
-from openre_bench.pipeline._utils import (
-    _extract_requirement_fragments,
-    _rotate_fragments,
-    _summarize_text,
-    _text_overlap_score,
-    _tokens,
 )
 
 

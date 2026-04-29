@@ -13,6 +13,7 @@ from typing import Any
 
 from openre_bench.schemas import (
     DEFAULT_AGENT_QUALITY_ATTRIBUTES,
+    EXTENDED_AGENT_QUALITY_ATTRIBUTES,
     IREDEV_ACTIONS,
     IREDEV_AGENT_ROLES,
     MARE_ACTIONS,
@@ -180,12 +181,39 @@ def _verification_executed(setting: str) -> bool:
     return setting == SETTING_NEGOTIATION_INTEGRATION_VERIFICATION
 
 
-def _agent_quality_mapping_for_setting(setting: str) -> dict[str, str]:
+def _agent_quality_mapping_for_setting(
+    setting: str,
+    *,
+    agent_config: list[str] | None = None,
+) -> dict[str, str]:
     """Return agent-quality mapping for a given experimental setting."""
 
     if setting == SETTING_SINGLE_AGENT:
         return {"SingleAgent": "Integrated"}
-    return DEFAULT_AGENT_QUALITY_ATTRIBUTES
+    if not agent_config:
+        return DEFAULT_AGENT_QUALITY_ATTRIBUTES
+
+    available_agents = {
+        **DEFAULT_AGENT_QUALITY_ATTRIBUTES,
+        **EXTENDED_AGENT_QUALITY_ATTRIBUTES,
+    }
+    selected_agents: dict[str, str] = {}
+    for agent_name in agent_config:
+        normalized_name = str(agent_name).strip()
+        if not normalized_name:
+            continue
+        quality_attribute = available_agents.get(normalized_name)
+        if quality_attribute is None:
+            valid_agents = ", ".join(sorted(available_agents))
+            raise ValueError(
+                f"Unknown agent in agent_config: {normalized_name}. "
+                f"Valid agents: {valid_agents}"
+            )
+        selected_agents.setdefault(normalized_name, quality_attribute)
+
+    if not selected_agents:
+        raise ValueError("agent_config must enable at least one known agent.")
+    return selected_agents
 
 
 def _runtime_semantics_mode(*, system: str, setting: str) -> str:
@@ -202,7 +230,14 @@ def _runtime_semantics_mode(*, system: str, setting: str) -> str:
     return "quare_dialectic_scaffold_v1"
 
 
-def _prompt_contract_hash(*, system: str, setting: str, round_cap: int, max_tokens: int) -> str:
+def _prompt_contract_hash(
+    *,
+    system: str,
+    setting: str,
+    round_cap: int,
+    max_tokens: int,
+    agent_config: list[str] | None = None,
+) -> str:
     """Hash deterministic generation contract to detect configuration drift."""
 
     runtime_mode = _runtime_semantics_mode(system=system, setting=setting)
@@ -213,7 +248,11 @@ def _prompt_contract_hash(*, system: str, setting: str, round_cap: int, max_toke
         "round_cap": round_cap,
         "max_tokens": max_tokens,
         "runtime_semantics_mode": runtime_mode,
-        "agent_quality_mapping": _agent_quality_mapping_for_setting(setting),
+        "agent_config": list(agent_config or []),
+        "agent_quality_mapping": _agent_quality_mapping_for_setting(
+            setting,
+            agent_config=agent_config,
+        ),
     }
     if runtime_mode == MARE_RUNTIME_SEMANTICS_MODE:
         contract["agent_quality_mapping"] = {

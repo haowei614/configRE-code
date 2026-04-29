@@ -5,9 +5,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
-import math
 from pathlib import Path
-from typing import Any
 
 import numpy as np
 import pytest
@@ -15,10 +13,8 @@ import pytest
 from openre_bench.comparison_harness import (
     ABLATION_COLUMNS,
     BY_CASE_COLUMNS,
-    BlindPrepResult,
     MatrixConfig,
     MatrixResult,
-    REQUIRED_RUN_KEYS,
     SUMMARY_COLUMNS,
     TraceAuditResult,
     _avg,

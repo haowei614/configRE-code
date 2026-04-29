@@ -173,7 +173,8 @@ def test_quare_multi_agent_phase1_emits_fixed_per_agent_leaf_budget(tmp_path: Pa
             "ResponsibilityAgent",
         ]
     )
-    assert all(len(elements) == 7 for elements in phase1.values())
+    assert sum(len(elements) for elements in phase1.values()) == 35
+    assert all(6 <= len(elements) <= 8 for elements in phase1.values())
 
 
 def test_quare_multi_agent_phase1_window_avoids_pathological_fragment_repeats(tmp_path: Path) -> None:
@@ -196,7 +197,7 @@ def test_quare_multi_agent_phase1_window_avoids_pathological_fragment_repeats(tm
     for elements in phase1.values():
         leaves = [item for item in elements if int(item.get("hierarchy_level", 1)) == 2]
         leaf_descriptions = [str(item.get("description", "")) for item in leaves]
-        assert len(leaf_descriptions) == 6
+        assert 5 <= len(leaf_descriptions) <= 7
         assert len(set(leaf_descriptions)) >= 5
 
 

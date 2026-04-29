@@ -31,6 +31,8 @@ class PipelineConfig:
     rag_backend: str = "local_tfidf"
     rag_corpus_dir: Path | None = None
     llm_client: LLMContract | None = None
+    agent_config: list[str] | str | None = None
+    tier1_threshold: float = 0.6
 
 
 @dataclass
@@ -113,6 +115,37 @@ QUALITY_LENS_CUES: dict[str, tuple[str, ...]] = {
         "security assurance",
         "auditability",
         "integrity guarantees",
+    ),
+    "Reliability": (
+        "maturity, availability, fault tolerance, recoverability",
+    ),
+    "Usability": (
+        "learnability, operability, user error protection, accessibility",
+    ),
+    "Security": (
+        "confidentiality, integrity, non-repudiation, authentication",
+    ),
+    "Maintainability": (
+        "modularity, reusability, analysability, modifiability, testability",
+    ),
+    "Compatibility": (
+        "co-existence, interoperability",
+    ),
+    "Flexibility": (
+        "adaptability, installability, replaceability",
+    ),
+    "Performance": (
+        "time behaviour, resource utilisation, capacity",
+    ),
+    "Functional Safety": (
+        "hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262",
+    ),
+    "Explainability": (
+        "model transparency, decision interpretability, human reviewability "
+        "per EU AI Act Article 13",
+    ),
+    "Privacy": (
+        "data minimisation, consent management, data subject rights per GDPR and ISO 27701",
     ),
     "Responsibility": (
         "regulatory accountability",

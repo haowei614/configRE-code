@@ -539,6 +539,9 @@ def _build_quare_llm_messages(
             "id": item.get("id"),
             "name": item.get("name"),
             "description": item.get("description"),
+            "quality_attribute": item.get("quality_attribute"),
+            "stakeholder": item.get("stakeholder"),
+            "measurable_criteria": item.get("measurable_criteria"),
             "hierarchy_level": item.get("hierarchy_level"),
             "validation_status": item.get("validation_status"),
         }
@@ -549,6 +552,9 @@ def _build_quare_llm_messages(
             "id": item.get("id"),
             "name": item.get("name"),
             "description": item.get("description"),
+            "quality_attribute": item.get("quality_attribute"),
+            "stakeholder": item.get("stakeholder"),
+            "measurable_criteria": item.get("measurable_criteria"),
             "hierarchy_level": item.get("hierarchy_level"),
             "validation_status": item.get("validation_status"),
         }
@@ -917,6 +923,17 @@ def _build_phase5_software_materials(
     deterministic_valid = bool(phase4.get("deterministic_validation", {}).get("is_valid", False))
 
     conflict_summary = phase25.get("summary", {}) if isinstance(phase25, dict) else {}
+    quality_attributes = sorted(
+        {
+            str(element.get("quality_attribute", "")).strip()
+            for element in gsn_elements
+            if isinstance(element, dict) and str(element.get("quality_attribute", "")).strip()
+        }
+    )
+    quality_outline = "Quality-Attribute Requirements"
+    if quality_attributes:
+        quality_outline = f"Quality-Attribute Requirements ({'/'.join(quality_attributes)})"
+
     return {
         "phase": "5_software_materials_generation",
         "case_id": case.case_name,
@@ -925,7 +942,7 @@ def _build_phase5_software_materials(
         "materials": {
             "srs_outline": [
                 "System Scope and Stakeholders",
-                "Quality-Attribute Requirements (Safety/Efficiency/Green/Trustworthiness/Responsibility)",
+                quality_outline,
                 "Negotiation and Conflict Resolution Decisions",
                 "Verification and Compliance Evidence",
             ],

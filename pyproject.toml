@@ -1,7 +1,7 @@
 [project]
-name = "openre_bench"
+name = "configre"
 version = "0.1.0"
-description = "A fair and faithful implementation baseline for MARE."
+description = "Configurable requirements engineering with dynamic agent selection."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -14,7 +14,11 @@ dependencies = [
 ]
 
 [project.scripts]
+configre = "openre_bench.cli:main"
 openre_bench = "openre_bench.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/openre_bench"]
 
 [dependency-groups]
 dev = [

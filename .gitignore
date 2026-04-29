@@ -1,9 +1,11 @@
 paper
 artifacts/
 .api_key
+.env
 
 __pycache__/
 *.pyc
+.DS_Store
 
 # IDE/editor configuration
 .vscode/
@@ -15,3 +17,16 @@ __pycache__/
 # Local runtime environments and caches
 .venv_smoke/
 .matplotlib_cache/
+.cache/
+
+# Generated experiment artifacts
+# Keep final result summaries, but do not upload per-run phase artifacts.
+experiment_outputs/**/runs/
+experiment_outputs/**/comparison_runs.jsonl
+experiment_outputs/quare_backup_before_rebalanced/
+experiment_outputs/quare_rebalanced/
+
+experiments/results/**
+!experiments/results/
+!experiments/results/comparison_summary.csv
+!experiments/results/comparison_summary_paper_final.csv

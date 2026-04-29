@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -141,6 +142,12 @@ def build_parser() -> argparse.ArgumentParser:
         help="Token budget stored in run metadata.",
     )
     parser.add_argument(
+        "--tier1-threshold",
+        type=float,
+        default=0.6,
+        help="Phase 0 Tier 1 relevance threshold used by --agent-config auto.",
+    )
+    parser.add_argument(
         "--rag-enabled",
         action=argparse.BooleanOptionalAction,
         default=True,
@@ -195,6 +202,15 @@ def build_parser() -> argparse.ArgumentParser:
         help="Comma-separated settings; defaults to protocol four settings.",
     )
     parser.add_argument(
+        "--agent-config",
+        type=str,
+        default="",
+        help=(
+            "JSON array string or YAML/JSON file path listing enabled quality agents. "
+            "Defaults to the built-in five-agent pool."
+        ),
+    )
+    parser.add_argument(
         "--system",
         type=str,
         choices=list(SUPPORTED_SYSTEMS),
@@ -216,10 +232,63 @@ def build_parser() -> argparse.ArgumentParser:
     return parser
 
 
+def parse_agent_config(value: str | None) -> list[str] | str | None:
+    """Parse optional quality-agent selection, including the Phase 0 ``auto`` sentinel."""
+
+    raw_value = str(value or "").strip()
+    if not raw_value:
+        return None
+    if raw_value.lower() == "auto":
+        return "auto"
+
+    config_path = Path(raw_value).expanduser()
+    source_text = config_path.read_text(encoding="utf-8") if config_path.exists() else raw_value
+
+    try:
+        payload = json.loads(source_text)
+    except json.JSONDecodeError:
+        payload = _parse_agent_config_yaml_list(source_text)
+
+    if isinstance(payload, dict):
+        payload = payload.get("agents")
+    if not isinstance(payload, list):
+        raise ValueError("--agent-config must be a JSON/YAML list of agent names.")
+
+    agents: list[str] = []
+    for item in payload:
+        agent_name = str(item).strip()
+        if agent_name:
+            agents.append(agent_name)
+    if not agents:
+        raise ValueError("--agent-config must enable at least one agent.")
+    return agents
+
+
+def _parse_agent_config_yaml_list(source_text: str) -> list[str]:
+    """Parse the minimal YAML list shape used for agent selection files."""
+
+    agents: list[str] = []
+    for raw_line in source_text.splitlines():
+        line = raw_line.split("#", 1)[0].strip()
+        if not line or line == "agents:":
+            continue
+        if not line.startswith("- "):
+            raise ValueError("--agent-config YAML files must contain a simple '- AgentName' list.")
+        agent_name = line[2:].strip().strip("'\"")
+        if agent_name:
+            agents.append(agent_name)
+    return agents
+
+
 def main() -> int:
     parser = build_parser()
     args = parser.parse_args()
     auto_requested = bool(args.auto) or str(args.command).strip().lower() in {"auto", "/auto"}
+    try:
+        agent_config = parse_agent_config(args.agent_config)
+    except ValueError as exc:
+        print(str(exc), file=sys.stderr)
+        return 2
 
     if args.version:
         from openre_bench import __version__
@@ -282,6 +351,8 @@ def main() -> int:
                     rag_backend=args.rag_backend,
                     rag_corpus_dir=Path(args.rag_corpus_dir),
                     judge_pipeline_path=Path(args.judge_script),
+                    agent_config=agent_config,
+                    tier1_threshold=args.tier1_threshold,
                 )
             )
         except Exception as exc:
@@ -397,6 +468,8 @@ def main() -> int:
             rag_enabled=bool(args.rag_enabled),
             rag_backend=args.rag_backend,
             rag_corpus_dir=Path(args.rag_corpus_dir),
+            agent_config=agent_config,
+            tier1_threshold=args.tier1_threshold,
         )
         run_record = run_case_pipeline(pipeline_config)
 
@@ -455,6 +528,8 @@ def main() -> int:
             rag_backend=args.rag_backend,
             rag_corpus_dir=Path(args.rag_corpus_dir),
             judge_pipeline_path=Path(args.judge_script),
+            agent_config=agent_config,
+            tier1_threshold=args.tier1_threshold,
         )
         try:
             matrix_result = run_comparison_matrix(matrix_config)

@@ -5,7 +5,6 @@ Run with:  uv run python -m pytest tests/smoke_test_model_access.py -v -s
 
 from __future__ import annotations
 
-import json
 from pathlib import Path
 
 from openre_bench.llm import (

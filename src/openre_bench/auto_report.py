@@ -95,6 +95,8 @@ class AutoReportConfig:
     rag_backend: str
     rag_corpus_dir: Path
     judge_pipeline_path: Path
+    agent_config: list[str] | str | None = None
+    tier1_threshold: float = 0.6
 
 
 @dataclass
@@ -154,6 +156,7 @@ def run_auto_report(config: AutoReportConfig) -> AutoReportResult:
         "temperature": config.temperature,
         "round_cap": config.round_cap,
         "max_tokens": config.max_tokens,
+        "tier1_threshold": config.tier1_threshold,
         "rag_enabled": config.rag_enabled,
         "rag_backend": config.rag_backend,
         "rag_corpus_dir": str(config.rag_corpus_dir.resolve()),
@@ -304,6 +307,8 @@ def _run_or_resume_system(
         rag_backend=config.rag_backend,
         rag_corpus_dir=config.rag_corpus_dir,
         judge_pipeline_path=config.judge_pipeline_path,
+        agent_config=config.agent_config,
+        tier1_threshold=config.tier1_threshold,
     )
 
     try:
