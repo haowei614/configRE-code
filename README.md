@@ -1,5 +1,7 @@
 # ConfigRE
 
+[![Analysis pipeline](https://github.com/haowei614/configRE-code/actions/workflows/ci.yml/badge.svg)](https://github.com/haowei614/configRE-code/actions/workflows/ci.yml)
+
 ConfigRE is a configurable requirements engineering framework that extends the OpenRE-Bench/QUARE experimental setting with dynamic agent selection. It selects domain-relevant agents before requirements modeling, negotiation, verification, and software-material generation, then records reproducible artifacts for cross-domain evaluation.
 
 The implementation keeps compatibility with the original OpenRE-Bench artifact contract while adding ConfigRE-specific Phase 0 agent selection and configurable agent strategies.
