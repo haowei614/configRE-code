@@ -16,7 +16,7 @@ The implementation keeps compatibility with the original OpenRE-Bench artifact c
 
 - `src/openre_bench/` contains the executable ConfigRE implementation. The module name is retained for compatibility with the original benchmark code.
 - `experiments/` contains ConfigRE experiment scripts, ground-truth relevance labels, and final summarized results.
-- `legacy_results/` contains historical QUARE, MARE, and iReDev summary outputs retained for baseline reference.
+- `legacy_results/` contains historical QUARE, MARE, iReDev summaries and prior OpenRE-Bench reports retained for baseline reference.
 - `data/` contains case-study and ground-truth data used by the benchmark.
 - `tests/` contains regression coverage for pipeline utilities and runtime behavior.
 - `docs/` contains supporting technical notes.
