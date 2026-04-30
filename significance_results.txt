@@ -1,0 +1,54 @@
+ConfigRE Statistical Significance Test
+==========================================
+Data source: raw per-seed phase artifacts
+CNR is conflict_noise_rate. Wilcoxon tests are paired by case study (n=5).
+All SD values use sample standard deviation (ddof=1) when n > 1.
+
+Descriptive statistics
+----------------------
+Config      | Metric | Mean   | Across-case SD | Mean seed SD | Max seed SD
+----------- | ------ | ------ | -------------- | ------------ | -----------
+Fixed-5     | DFS    | 0.2618 | 0.2485         | 0            | 0          
+Fixed-5     | CNR    | 0.5556 | 0.4779         | 0.154        | 0.5774     
+Full-15     | DFS    | 0.5286 | 0.0391         | 0            | 0          
+Full-15     | CNR    | 0.53   | 0.3787         | 0.1852       | 0.5774     
+Domain-opt  | DFS    | 0.7697 | 0.0581         | 0            | 0          
+Domain-opt  | CNR    | 0.2222 | 0.2357         | 0.2558       | 0.5774     
+Phase0-Auto | DFS    | 0.7425 | 0.088          | 0.0376       | 0.0637     
+Phase0-Auto | CNR    | 0.2822 | 0.3307         | 0.2579       | 0.5774     
+
+Paired Wilcoxon signed-rank tests
+---------------------------------
+Comparison                | Metric | Auto mean | Baseline mean | Mean diff | W   | p      | Cliff delta
+------------------------- | ------ | --------- | ------------- | --------- | --- | ------ | -----------
+Phase0-Auto vs Fixed-5    | DFS    | 0.7425    | 0.2618        | 0.4807    | 0   | 0.0625 | 1          
+Phase0-Auto vs Fixed-5    | CNR    | 0.2822    | 0.5556        | -0.2733   | 3   | 0.625  | -0.28      
+Phase0-Auto vs Full-15    | DFS    | 0.7425    | 0.5286        | 0.214     | 0   | 0.0625 | 1          
+Phase0-Auto vs Full-15    | CNR    | 0.2822    | 0.53          | -0.2478   | 3   | 0.3125 | -0.36      
+Phase0-Auto vs Domain-opt | DFS    | 0.7425    | 0.7697        | -0.0272   | 3   | 0.3125 | -0.12      
+Phase0-Auto vs Domain-opt | CNR    | 0.2822    | 0.2222        | 0.06      | 5.5 | 0.6875 | 0.08       
+
+Across-seed DFS stability
+-------------------------
+Case        | Config      | Seed DFS values        | Seed DFS SD
+----------- | ----------- | ---------------------- | -----------
+AD          | Fixed-5     | 0.5455, 0.5455, 0.5455 | 0          
+AD          | Full-15     | 0.5714, 0.5714, 0.5714 | 0          
+AD          | Domain-opt  | 0.8333, 0.8333, 0.8333 | 0          
+AD          | Phase0-Auto | 0.8333, 0.9091, 0.8333 | 0.0437     
+ATM         | Fixed-5     | 0.3636, 0.3636, 0.3636 | 0          
+ATM         | Full-15     | 0.5714, 0.5714, 0.5714 | 0          
+ATM         | Domain-opt  | 0.8333, 0.8333, 0.8333 | 0          
+ATM         | Phase0-Auto | 0.7692, 0.7692, 0.7692 | 0          
+Library     | Fixed-5     | 0, 0, 0                | 0          
+Library     | Full-15     | 0.5, 0.5, 0.5          | 0          
+Library     | Domain-opt  | 0.7273, 0.7273, 0.7273 | 0          
+Library     | Phase0-Auto | 0.6, 0.6667, 0.6667    | 0.0385     
+RollCall    | Fixed-5     | 0, 0, 0                | 0          
+RollCall    | Full-15     | 0.5, 0.5, 0.5          | 0          
+RollCall    | Domain-opt  | 0.7273, 0.7273, 0.7273 | 0          
+RollCall    | Phase0-Auto | 0.6667, 0.6, 0.7273    | 0.0637     
+Bookkeeping | Fixed-5     | 0.4, 0.4, 0.4          | 0          
+Bookkeeping | Full-15     | 0.5, 0.5, 0.5          | 0          
+Bookkeeping | Domain-opt  | 0.7273, 0.7273, 0.7273 | 0          
+Bookkeeping | Phase0-Auto | 0.8, 0.8, 0.7273       | 0.042      
