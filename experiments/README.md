@@ -7,6 +7,7 @@ This directory contains the scripts, labels, and final summaries used for the Co
 - `run_config_comparison.sh` runs the cross-domain ConfigRE matrix.
 - `compare_results.py` aggregates per-run artifacts into summary metrics.
 - `ground_truth/domain_relevance.json` stores domain relevance labels for agent-selection evaluation.
+- `independent_annotation_protocol.md` stores the independent annotation protocol, completed second annotation, and agreement summary for the domain-relevance labels.
 - `results/comparison_summary.csv` is the regenerated working summary.
 - `results/comparison_summary_paper_final.csv` is the frozen paper-final summary.
 
@@ -27,6 +28,7 @@ Tracked:
 
 - Experiment scripts.
 - Ground-truth relevance labels.
+- Independent annotation evidence.
 - Final summary CSV files.
 
 Ignored:
