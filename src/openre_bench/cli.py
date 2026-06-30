@@ -241,8 +241,14 @@ def parse_agent_config(value: str | None) -> list[str] | str | None:
     if raw_value.lower() == "auto":
         return "auto"
 
-    config_path = Path(raw_value).expanduser()
-    source_text = config_path.read_text(encoding="utf-8") if config_path.exists() else raw_value
+    source_text = raw_value
+    if len(raw_value) < 256 and not raw_value.startswith("["):
+        config_path = Path(raw_value).expanduser()
+        try:
+            if config_path.exists():
+                source_text = config_path.read_text(encoding="utf-8")
+        except OSError:
+            pass
 
     try:
         payload = json.loads(source_text)

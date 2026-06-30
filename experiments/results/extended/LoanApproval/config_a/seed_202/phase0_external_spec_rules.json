@@ -1,0 +1,85 @@
+{
+  "phase": "0_external_spec_processing",
+  "case_id": "LoanApproval",
+  "setting": "negotiation_integration_verification",
+  "generated_at": "2026-06-29T09:31:42Z",
+  "extracted_rules": [
+    {
+      "rule_id": "R001",
+      "rule_type": "constraint",
+      "statement": "Project: AI-Assisted Consumer Loan Approval Platform for Regional Bank",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R002",
+      "rule_type": "constraint",
+      "statement": "The system is a machine learning-powered loan origination platform for a regional bank processing 50,000+ loan applications per month",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R003",
+      "rule_type": "constraint",
+      "statement": "It uses ML models to assess credit risk, detect fraud, and recommend approval decisions",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R004",
+      "rule_type": "constraint",
+      "statement": "Human loan officers review AI recommendations for final decisions",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R005",
+      "rule_type": "obligation",
+      "statement": "The system must comply with the Equal Credit Opportunity Act (ECOA), Fair Lending regulations, and the EU AI Act for high-risk AI systems",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R006",
+      "rule_type": "constraint",
+      "statement": "[Core Functional Requirements]",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R007",
+      "rule_type": "obligation",
+      "statement": "Application Processing: The system shall accept loan applications through web portal, mobile app, and branch interfaces",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R008",
+      "rule_type": "obligation",
+      "statement": "Applications must be enriched with credit bureau data, employment verification, and property appraisal data",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R009",
+      "rule_type": "obligation",
+      "statement": "Risk Assessment: The ML pipeline shall produce a credit risk score, fraud probability score, and recommended decision (approve/decline/manual review) for each application within 30 seconds",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R010",
+      "rule_type": "obligation",
+      "statement": "Decision Support: Loan officers shall receive the AI recommendation with key risk factors highlighted",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R011",
+      "rule_type": "obligation",
+      "statement": "The system must present the top contributing features for each recommendation",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R012",
+      "rule_type": "obligation",
+      "statement": "Portfolio Management: The system shall continuously monitor approved loans for early default signals and update risk models monthly using production feedback loops",
+      "source": "requirement_text"
+    }
+  ],
+  "extraction_metadata": {
+    "rule_count": 12,
+    "rag_enabled": true,
+    "rag_corpus_hash": "91b26f1997c0a902e0428783f8209735f20c243dfe60df6eb00f3b8c00fce5b7"
+  }
+}

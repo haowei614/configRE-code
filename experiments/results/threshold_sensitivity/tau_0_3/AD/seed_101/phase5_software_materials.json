@@ -1,0 +1,491 @@
+{
+  "phase": "5_software_materials_generation",
+  "case_id": "AD",
+  "setting": "negotiation_integration_verification",
+  "generated_at": "2026-06-29T09:51:07Z",
+  "materials": {
+    "srs_outline": [
+      "System Scope and Stakeholders",
+      "Quality-Attribute Requirements (Compatibility/Efficiency/Flexibility/Functional Safety/Maintainability/Performance/Reliability/Safety/Security/Trustworthiness/Usability)",
+      "Negotiation and Conflict Resolution Decisions",
+      "Verification and Compliance Evidence"
+    ],
+    "implementation_checklist": [
+      "Preserve canonical phase artifact compatibility",
+      "Enforce strict provenance and taint controls",
+      "Trace each integrated requirement to a verification signal"
+    ],
+    "traceability_matrix": [
+      {
+        "element_id": "COM-L1-008",
+        "quality_attribute": "Compatibility",
+        "statement": "Compatibility objective for AD: Project: Baidu Apollo Autonomous Driving System (Planning & Control Module)",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-008-01",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): Project: Baidu Apollo Autonomous Driving System (Planning & Control Module)",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-008-02",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): The system is a Level 4 autonomous driving platform operating in mixed traffic environments",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-008-03",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): It must strictly adhere to the \"Apollo Pilot Safety Report\" and the \"EM Motion Planner\" specifications",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-008-04",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): [Safety Requirements - Based on Apollo Pilot Safety Report]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-008-05",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): Multi-Layer Safety Architecture:",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-008-06",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): - The system must implement \"Passive Safety\" (collision protection), \"Active Safety\" (ACC, AEB, LKA), and...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L1-002",
+        "quality_attribute": "Efficiency",
+        "statement": "Efficiency objective for AD: [Efficiency & Planning Requirements - Based on EM Motion Planner]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L2-002-01",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (latency optimization): [Efficiency & Planning Requirements - Based on EM Motion Planner]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L2-002-02",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (throughput stability): Multiobjective Optimization:",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L2-002-03",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (resource utilization): - The planner must simultaneously optimize for three conflicting objectives: Safety (collision avoidance), Smoothness...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L2-002-04",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (latency optimization): Path-Speed Decoupling (EM Framework):",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L2-002-05",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (throughput stability): - The system must use the Expectation-Maximization (EM) framework",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L2-002-06",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (resource utilization): - Step 1 (E-step): Generate an optimal path in the Frenet Frame (SL-Graph)",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L1-009",
+        "quality_attribute": "Flexibility",
+        "statement": "Flexibility objective for AD: It must strictly adhere to the \"Apollo Pilot Safety Report\" and the \"EM Motion Planner\" specifications",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-009-01",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): It must strictly adhere to the \"Apollo Pilot Safety Report\" and the \"EM Motion Planner\" speci...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "FLE-L2-009-02",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): [Safety Requirements - Based on Apollo Pilot Safety Report]",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "FLE-L2-009-03",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): Multi-Layer Safety Architecture:",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "FLE-L2-009-04",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): - The system must implement \"Passive Safety\" (collision protection), \"Active Safety\" (ACC, AE...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "FLE-L2-009-05",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): Minimal Risk Maneuver (MRM):",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "FLE-L2-009-06",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): - Upon detecting a critical system failure (e",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "FUN-L1-011",
+        "quality_attribute": "Functional Safety",
+        "statement": "Functional Safety objective for AD: , sensor loss, localization failure) or exiting the ODD, the vehicle must NOT simply stop in lane immediately if unsafe",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-011-01",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): , sensor loss, localization failure) or exiting the O...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-011-02",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): It must execute an MRM to safely pull over or stop in...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-011-03",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): ODD (Operational Design Domain):",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-011-04",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): - The system operates in specific urban and highway s...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-011-05",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): It must continuously monitor ODD compliance and reque...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-011-06",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): [Efficiency & Planning Requirements - Based on EM Mot...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L1-007",
+        "quality_attribute": "Maintainability",
+        "statement": "Maintainability objective for AD: - The EfficiencyAgent prioritizes \"Smoothness\" and \"Speed\" using the QP function to minimize Jerk",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L2-007-01",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): - The EfficiencyAgent prioritizes \"Smoothness\" and \"Speed\" using th...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L2-007-02",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): - **Potential Conflict**: An emergency MRM (Safety) triggered by a...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "MAI-L2-007-03",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): , relaxing smoothness constraints during MRM)",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "MAI-L2-007-04",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): Project: Baidu Apollo Autonomous Driving System (Planning & Control...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "MAI-L2-007-05",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): The system is a Level 4 autonomous driving platform operating in mi...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "MAI-L2-007-06",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): It must strictly adhere to the \"Apollo Pilot Safety Report\" and the...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "PER-L1-003",
+        "quality_attribute": "Performance",
+        "statement": "Performance objective for AD: Path-Speed Decoupling (EM Framework):",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PER-L2-003-01",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): Path-Speed Decoupling (EM Framework):",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "PER-L2-003-02",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): - The system must use the Expectation-Maximization (EM) framework",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "PER-L2-003-03",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): - Step 1 (E-step): Generate an optimal path in the Frenet Frame (SL-Graph)",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "PER-L2-003-04",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): - Step 2 (M-step): Generate an optimal speed profile in the Station-Time Frame (ST-Graph)",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "PER-L2-003-05",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): Hard Constraints (Mathematical):",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "PER-L2-003-06",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): - Trajectory smoothness is critical",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L1-004",
+        "quality_attribute": "Reliability",
+        "statement": "Reliability objective for AD: - Step 2 (M-step): Generate an optimal speed profile in the Station-Time Frame (ST-Graph)",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L2-004-01",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): - Step 2 (M-step): Generate an optimal speed profile in the Station-Time Frame (ST...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-004-02",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Hard Constraints (Mathematical):",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-004-03",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): - Trajectory smoothness is critical",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-004-04",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The system must minimize \"Jerk\" (rate of change of acceleration) to ensure passeng...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-004-05",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): - Curvature constraints ($kappa$) must be satisfied to prevent rollover or tire slip",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-004-06",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): - Non-convex obstacle constraints must be handled using iterative quadratic progra...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L1-001",
+        "quality_attribute": "Safety",
+        "statement": "Safety objective for AD: - The system operates in specific urban and highway scenarios",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-01",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (hazard prevention): - The system operates in specific urban and highway scenarios",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L2-001-02",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (fault tolerance): It must continuously monitor ODD compliance and request human takeover (HMI warning) if boundaries are reached",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L2-001-03",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (risk mitigation): [Efficiency & Planning Requirements - Based on EM Motion Planner]",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L2-001-04",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (hazard prevention): Multiobjective Optimization:",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L2-001-05",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (fault tolerance): - The planner must simultaneously optimize for three conflicting objectives: Safety (collision avoidance), Smoothness (passenge...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L2-001-06",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (risk mitigation): Path-Speed Decoupling (EM Framework):",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SEC-L1-006",
+        "quality_attribute": "Security",
+        "statement": "Security objective for AD: - Non-convex obstacle constraints must be handled using iterative quadratic programming (QP)",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-006-01",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): - Non-convex obstacle constraints must be handled using iterative quadratic progr...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SEC-L2-006-02",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): [Conflict Scenario for Negotiation]",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SEC-L2-006-03",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): - The SafetyAgent prioritizes \"Passive Safety\" and strictly enforcing safe distan...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SEC-L2-006-04",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): - The EfficiencyAgent prioritizes \"Smoothness\" and \"Speed\" using the QP function...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SEC-L2-006-05",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): - **Potential Conflict**: An emergency MRM (Safety) triggered by a fault might vi...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SEC-L2-006-06",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): , relaxing smoothness constraints during MRM)",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L1-010",
+        "quality_attribute": "Trustworthiness",
+        "statement": "Trustworthiness objective for AD: - The system must implement \"Passive Safety\" (collision protection), \"Active Safety\" (ACC, AEB, LKA), and \"Functional Safety\" (fail-safe mechan...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-010-01",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (security assurance): - The system must implement \"Passive Safety\" (collision protection), \"Active Safety\" (ACC, AEB, LKA), and \"Function...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-010-02",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (auditability): Minimal Risk Maneuver (MRM):",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-010-03",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (integrity guarantees): - Upon detecting a critical system failure (e",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-010-04",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (security assurance): , sensor loss, localization failure) or exiting the ODD, the vehicle must NOT simply stop in lane immediately if un...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-010-05",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (auditability): It must execute an MRM to safely pull over or stop in a low-risk zone within a specific time window",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-010-06",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (integrity guarantees): ODD (Operational Design Domain):",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L1-005",
+        "quality_attribute": "Usability",
+        "statement": "Usability objective for AD: - Trajectory smoothness is critical",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L2-005-01",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): - Trajectory smoothness is critical",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L2-005-02",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system must minimize \"Jerk\" (rate of change of acceleration) to ensure p...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L2-005-03",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): - Curvature constraints ($kappa$) must be satisfied to prevent rollover or t...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L2-005-04",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): - Non-convex obstacle constraints must be handled using iterative quadratic...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L2-005-05",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): [Conflict Scenario for Negotiation]",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L2-005-06",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): - The SafetyAgent prioritizes \"Passive Safety\" and strictly enforcing safe d...",
+        "verification_anchor": "resolved"
+      }
+    ]
+  },
+  "quality_signals": {
+    "topology_is_valid": true,
+    "deterministic_is_valid": true,
+    "compliance_coverage": 0.866667,
+    "s_logic": 1.0,
+    "detected_conflict_pairs": 8,
+    "resolved_conflict_pairs": 5
+  }
+}

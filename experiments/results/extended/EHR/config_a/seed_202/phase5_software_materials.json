@@ -1,0 +1,239 @@
+{
+  "phase": "5_software_materials_generation",
+  "case_id": "EHR",
+  "setting": "negotiation_integration_verification",
+  "generated_at": "2026-06-29T08:49:24Z",
+  "materials": {
+    "srs_outline": [
+      "System Scope and Stakeholders",
+      "Quality-Attribute Requirements (Efficiency/Responsibility/Safety/Sustainability/Trustworthiness)",
+      "Negotiation and Conflict Resolution Decisions",
+      "Verification and Compliance Evidence"
+    ],
+    "implementation_checklist": [
+      "Preserve canonical phase artifact compatibility",
+      "Enforce strict provenance and taint controls",
+      "Trace each integrated requirement to a verification signal"
+    ],
+    "traceability_matrix": [
+      {
+        "element_id": "EFF-L1-002",
+        "quality_attribute": "Efficiency",
+        "statement": "Efficiency objective for EHR: Performance: Clinical note retrieval must complete within 2 seconds",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L2-002-01",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (latency optimization): Performance: Clinical note retrieval must complete within 2 seconds",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EFF-L2-002-02",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (throughput stability): The system must support 5000 concurrent users across all facilities during peak hours",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EFF-L2-002-03",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (resource utilization): Usability: The interface must be accessible to clinical staff with varying technical proficiency",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EFF-L2-002-04",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (latency optimization): Mobile access must be available for rounding physicians",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EFF-L2-002-05",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (throughput stability): Project: Electronic Health Record (EHR) System for Regional Hospital Network",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "RES-L1-005",
+        "quality_attribute": "Responsibility",
+        "statement": "Responsibility objective for EHR: Results Management: Lab results and imaging reports shall be automatically routed to ordering physicians with abnormal result flagging and esca...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "RES-L2-005-01",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (regulatory accountability): Results Management: Lab results and imaging reports shall be automatically routed to ordering physicians with...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "RES-L2-005-02",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (stakeholder transparency): [Non-Functional Constraints]",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "RES-L2-005-03",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (ethical compliance): Privacy & Compliance: All patient data must be encrypted at rest (AES-256) and in transit (TLS 1",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "RES-L2-005-04",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (regulatory accountability): Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "RES-L2-005-05",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (stakeholder transparency): Availability: The system must maintain 99",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "RES-L2-005-06",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (ethical compliance): 95% uptime with automatic failover",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "RES-L2-005-07",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (regulatory accountability): Planned maintenance windows shall not exceed 4 hours per month",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L1-001",
+        "quality_attribute": "Safety",
+        "statement": "Safety objective for EHR: 95% uptime with automatic failover",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-01",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (hazard prevention): 95% uptime with automatic failover",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L2-001-02",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (fault tolerance): Planned maintenance windows shall not exceed 4 hours per month",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L2-001-03",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (risk mitigation): Interoperability: The system must support HL7 FHIR R4 APIs for data exchange with external laboratories, pharmacies, and insura...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L2-001-04",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (hazard prevention): Legacy HL7 v2 interfaces must be maintained for existing integrations",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L2-001-05",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (fault tolerance): Performance: Clinical note retrieval must complete within 2 seconds",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L2-001-06",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (risk mitigation): The system must support 5000 concurrent users across all facilities during peak hours",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SUS-L1-003",
+        "quality_attribute": "Sustainability",
+        "statement": "Sustainability objective for EHR: Project: Electronic Health Record (EHR) System for Regional Hospital Network",
+        "verification_anchor": "candidate_resolution"
+      },
+      {
+        "element_id": "SUS-L2-003-01",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (energy footprint reduction): Project: Electronic Health Record (EHR) System for Regional Hospital Network",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SUS-L2-003-02",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (resource lifecycle control): The system is a web-based Electronic Health Record platform serving a network of 12 hospitals and 50+ clinics",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SUS-L2-003-03",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (environmental impact awareness): It manages patient demographics, medical histories, lab results, prescriptions, clinical notes, and imag...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SUS-L2-003-04",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (energy footprint reduction): The system must comply with HIPAA regulations and support HL7 FHIR interoperability standards",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SUS-L2-003-05",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (resource lifecycle control): [Core Functional Requirements]",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L1-004",
+        "quality_attribute": "Trustworthiness",
+        "statement": "Trustworthiness objective for EHR: [Core Functional Requirements]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-01",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (security assurance): [Core Functional Requirements]",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-004-02",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (auditability): Patient Management: The system shall maintain comprehensive patient records including demographics, insurance information...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-004-03",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (integrity guarantees): Clinical Documentation: Physicians shall be able to create, edit, and sign clinical notes with structured templat...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-004-04",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (security assurance): Order Management: The system shall support electronic prescribing (e-prescribe), lab orders, and radiology orders w...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-004-05",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (auditability): Results Management: Lab results and imaging reports shall be automatically routed to ordering physicians with abnormal re...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-004-06",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (integrity guarantees): [Non-Functional Constraints]",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-004-07",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (security assurance): Privacy & Compliance: All patient data must be encrypted at rest (AES-256) and in transit (TLS 1",
+        "verification_anchor": "resolved"
+      }
+    ]
+  },
+  "quality_signals": {
+    "topology_is_valid": true,
+    "deterministic_is_valid": true,
+    "compliance_coverage": 0.952381,
+    "s_logic": 1.0,
+    "detected_conflict_pairs": 5,
+    "resolved_conflict_pairs": 3
+  }
+}

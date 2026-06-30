@@ -1,0 +1,659 @@
+{
+  "phase": "5_software_materials_generation",
+  "case_id": "LoanApproval",
+  "setting": "negotiation_integration_verification",
+  "generated_at": "2026-06-29T09:36:06Z",
+  "materials": {
+    "srs_outline": [
+      "System Scope and Stakeholders",
+      "Quality-Attribute Requirements (Compatibility/Efficiency/Explainability/Flexibility/Functional Safety/Maintainability/Performance/Privacy/Reliability/Responsibility/Safety/Security/Sustainability/Trustworthiness/Usability)",
+      "Negotiation and Conflict Resolution Decisions",
+      "Verification and Compliance Evidence"
+    ],
+    "implementation_checklist": [
+      "Preserve canonical phase artifact compatibility",
+      "Enforce strict provenance and taint controls",
+      "Trace each integrated requirement to a verification signal"
+    ],
+    "traceability_matrix": [
+      {
+        "element_id": "COM-L1-010",
+        "quality_attribute": "Compatibility",
+        "statement": "Compatibility objective for LoanApproval: Fairness & Bias: The system must monitor and report demographic parity and equalized odds metrics across protected classes (race, gende...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-010-01",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): Fairness & Bias: The system must monitor and report demographic parity and equalized odds metrics across...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-010-02",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): Disparate impact ratio must remain above 0",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-010-03",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): 8 for all protected groups",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-010-04",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): Privacy: Applicant PII must be processed under GDPR principles",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-010-05",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): Data retention policies must automatically purge declined application details after 24 months",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-010-06",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): Consent management must track data subject rights",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L1-002",
+        "quality_attribute": "Efficiency",
+        "statement": "Efficiency objective for LoanApproval: Project: AI-Assisted Consumer Loan Approval Platform for Regional Bank",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L2-002-01",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (latency optimization): Project: AI-Assisted Consumer Loan Approval Platform for Regional Bank",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L2-002-02",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (throughput stability): The system is a machine learning-powered loan origination platform for a regional bank processing 50,000+ loan applica...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L2-002-03",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (resource utilization): It uses ML models to assess credit risk, detect fraud, and recommend approval decisions",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L2-002-04",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (latency optimization): Human loan officers review AI recommendations for final decisions",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L2-002-05",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (throughput stability): The system must comply with the Equal Credit Opportunity Act (ECOA), Fair Lending regulations, and the EU AI Act for h...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L2-002-06",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (resource utilization): [Core Functional Requirements]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EXP-L1-014",
+        "quality_attribute": "Explainability",
+        "statement": "Explainability objective for LoanApproval: Reliability: The risk scoring service must maintain 99",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EXP-L2-014-01",
+        "quality_attribute": "Explainability",
+        "statement": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): Reliability: The risk scoring service must...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EXP-L2-014-02",
+        "quality_attribute": "Explainability",
+        "statement": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): 9% availability during business hours",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EXP-L2-014-03",
+        "quality_attribute": "Explainability",
+        "statement": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): Model serving must support graceful degrada...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EXP-L2-014-04",
+        "quality_attribute": "Explainability",
+        "statement": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): Performance: Batch processing of 10,000 app...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EXP-L2-014-05",
+        "quality_attribute": "Explainability",
+        "statement": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): Real-time scoring must complete within 5 se...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EXP-L2-014-06",
+        "quality_attribute": "Explainability",
+        "statement": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): Project: AI-Assisted Consumer Loan Approval...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L1-011",
+        "quality_attribute": "Flexibility",
+        "statement": "Flexibility objective for LoanApproval: 8 for all protected groups",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-011-01",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): 8 for all protected groups",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-011-02",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): Privacy: Applicant PII must be processed under GDPR principles",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-011-03",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): Data retention policies must automatically purge declined application details after 24 months",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-011-04",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): Consent management must track data subject rights",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-011-05",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): Security: The system must implement end-to-end encryption for all applicant data",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-011-06",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): Access controls must enforce need-to-know principles with comprehensive audit trails",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L1-013",
+        "quality_attribute": "Functional Safety",
+        "statement": "Functional Safety objective for LoanApproval: Security: The system must implement end-to-end encryption for all applicant data",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-013-01",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): Security: The system must implement end-to-end encryp...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-013-02",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): Access controls must enforce need-to-know principles...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-013-03",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): Reliability: The risk scoring service must maintain 99",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-013-04",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): 9% availability during business hours",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-013-05",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): Model serving must support graceful degradation to ru...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-013-06",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): Performance: Batch processing of 10,000 applications...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L1-009",
+        "quality_attribute": "Maintainability",
+        "statement": "Maintainability objective for LoanApproval: The system must support counterfactual explanations ('what would need to change for approval')",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L2-009-01",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): The system must support counterfactual explanations ('what would ne...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L2-009-02",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): Model documentation must meet EU AI Act Article 13 transparency req...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L2-009-03",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): Fairness & Bias: The system must monitor and report demographic par...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L2-009-04",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): Disparate impact ratio must remain above 0",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L2-009-05",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): 8 for all protected groups",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L2-009-06",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): Privacy: Applicant PII must be processed under GDPR principles",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PER-L1-012",
+        "quality_attribute": "Performance",
+        "statement": "Performance objective for LoanApproval: Data retention policies must automatically purge declined application details after 24 months",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PER-L2-012-01",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): Data retention policies must automatically purge declined application details after 24 months",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "PER-L2-012-02",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): Consent management must track data subject rights",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "PER-L2-012-03",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): Security: The system must implement end-to-end encryption for all applicant data",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "PER-L2-012-04",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): Access controls must enforce need-to-know principles with comprehensive audit trails",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "PER-L2-012-05",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): Reliability: The risk scoring service must maintain 99",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "PER-L2-012-06",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): 9% availability during business hours",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "PRI-L1-015",
+        "quality_attribute": "Privacy",
+        "statement": "Privacy objective for LoanApproval: Model serving must support graceful degradation to rule-based fallback if ML services are unavailable",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-015-01",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Model serving must support graceful degradation to rule-base...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-015-02",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Performance: Batch processing of 10,000 applications must co...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-015-03",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Real-time scoring must complete within 5 seconds for walk-in...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-015-04",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Project: AI-Assisted Consumer Loan Approval Platform for Reg...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-015-05",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): The system is a machine learning-powered loan origination pl...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-015-06",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): It uses ML models to assess credit risk, detect fraud, and r...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L1-006",
+        "quality_attribute": "Reliability",
+        "statement": "Reliability objective for LoanApproval: Risk Assessment: The ML pipeline shall produce a credit risk score, fraud probability score, and recommended decision (approve/decline/ma...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L2-006-01",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Risk Assessment: The ML pipeline shall produce a credit risk score, fraud probabil...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L2-006-02",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Decision Support: Loan officers shall receive the AI recommendation with key risk...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L2-006-03",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The system must present the top contributing features for each recommendation",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L2-006-04",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Portfolio Management: The system shall continuously monitor approved loans for ear...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L2-006-05",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): [Non-Functional Constraints]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L2-006-06",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Explainability: All AI-generated decisions must provide human-readable explanation...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "RES-L1-005",
+        "quality_attribute": "Responsibility",
+        "statement": "Responsibility objective for LoanApproval: Application Processing: The system shall accept loan applications through web portal, mobile app, and branch interfaces",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "RES-L2-005-01",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (regulatory accountability): Application Processing: The system shall accept loan applications through web portal, mobile app, and branch...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "RES-L2-005-02",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (stakeholder transparency): Applications must be enriched with credit bureau data, employment verification, and property appraisal data",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "RES-L2-005-03",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (ethical compliance): Risk Assessment: The ML pipeline shall produce a credit risk score, fraud probability score, and recommended decisio...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "RES-L2-005-04",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (regulatory accountability): Decision Support: Loan officers shall receive the AI recommendation with key risk factors highlighted",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "RES-L2-005-05",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (stakeholder transparency): The system must present the top contributing features for each recommendation",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "RES-L2-005-06",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (ethical compliance): Portfolio Management: The system shall continuously monitor approved loans for early default signals and update risk...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L1-001",
+        "quality_attribute": "Safety",
+        "statement": "Safety objective for LoanApproval: Real-time scoring must complete within 5 seconds for walk-in applicants",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-01",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (hazard prevention): Real-time scoring must complete within 5 seconds for walk-in applicants",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-02",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (fault tolerance): Project: AI-Assisted Consumer Loan Approval Platform for Regional Bank",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-03",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (risk mitigation): The system is a machine learning-powered loan origination platform for a regional bank processing 50,000+ loan applications per...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-04",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (hazard prevention): It uses ML models to assess credit risk, detect fraud, and recommend approval decisions",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-05",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (fault tolerance): Human loan officers review AI recommendations for final decisions",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-06",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (risk mitigation): The system must comply with the Equal Credit Opportunity Act (ECOA), Fair Lending regulations, and the EU AI Act for high-risk...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L1-008",
+        "quality_attribute": "Security",
+        "statement": "Security objective for LoanApproval: [Non-Functional Constraints]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-008-01",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): [Non-Functional Constraints]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-008-02",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Explainability: All AI-generated decisions must provide human-readable explanatio...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-008-03",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The system must support counterfactual explanations ('what would need to change f...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-008-04",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Model documentation must meet EU AI Act Article 13 transparency requirements",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-008-05",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Fairness & Bias: The system must monitor and report demographic parity and equali...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-008-06",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Disparate impact ratio must remain above 0",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SUS-L1-003",
+        "quality_attribute": "Sustainability",
+        "statement": "Sustainability objective for LoanApproval: It uses ML models to assess credit risk, detect fraud, and recommend approval decisions",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SUS-L2-003-01",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (energy footprint reduction): It uses ML models to assess credit risk, detect fraud, and recommend approval decisions",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SUS-L2-003-02",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (resource lifecycle control): Human loan officers review AI recommendations for final decisions",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SUS-L2-003-03",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (environmental impact awareness): The system must comply with the Equal Credit Opportunity Act (ECOA), Fair Lending regulations, and the E...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SUS-L2-003-04",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (energy footprint reduction): [Core Functional Requirements]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SUS-L2-003-05",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (resource lifecycle control): Application Processing: The system shall accept loan applications through web portal, mobile app, and branch...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SUS-L2-003-06",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (environmental impact awareness): Applications must be enriched with credit bureau data, employment verification, and property appraisal data",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L1-004",
+        "quality_attribute": "Trustworthiness",
+        "statement": "Trustworthiness objective for LoanApproval: The system must comply with the Equal Credit Opportunity Act (ECOA), Fair Lending regulations, and the EU AI Act for high-risk AI sys...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-01",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (security assurance): The system must comply with the Equal Credit Opportunity Act (ECOA), Fair Lending regulations, and the EU AI Act fo...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-02",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (auditability): [Core Functional Requirements]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-03",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (integrity guarantees): Application Processing: The system shall accept loan applications through web portal, mobile app, and branch inte...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-04",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (security assurance): Applications must be enriched with credit bureau data, employment verification, and property appraisal data",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-05",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (auditability): Risk Assessment: The ML pipeline shall produce a credit risk score, fraud probability score, and recommended decision (ap...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-06",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (integrity guarantees): Decision Support: Loan officers shall receive the AI recommendation with key risk factors highlighted",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L1-007",
+        "quality_attribute": "Usability",
+        "statement": "Usability objective for LoanApproval: The system must present the top contributing features for each recommendation",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L2-007-01",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system must present the top contributing features for each recommendation",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L2-007-02",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Portfolio Management: The system shall continuously monitor approved loans f...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L2-007-03",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): [Non-Functional Constraints]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L2-007-04",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Explainability: All AI-generated decisions must provide human-readable expla...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L2-007-05",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system must support counterfactual explanations ('what would need to cha...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L2-007-06",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Model documentation must meet EU AI Act Article 13 transparency requirements",
+        "verification_anchor": "pending"
+      }
+    ]
+  },
+  "quality_signals": {
+    "topology_is_valid": true,
+    "deterministic_is_valid": true,
+    "compliance_coverage": 0.965517,
+    "s_logic": 1.0,
+    "detected_conflict_pairs": 1,
+    "resolved_conflict_pairs": 1
+  }
+}

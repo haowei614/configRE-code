@@ -1,0 +1,1330 @@
+{
+  "gsn_elements": [
+    {
+      "id": "PRI-L1-005",
+      "name": "Privacy Goal",
+      "description": "Privacy objective for ATM: If the saving-account balance is insufficient to cover the requested withdrawal amount, the application should inform the user and terminate the transaction",
+      "gsn_type": "Goal",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-005-01",
+      "name": "Privacy Requirement 1",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): If the saving-account balance is insufficient to cover the requested withdrawal amount, the application should inform the user and terminate the transaction",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-005-02",
+      "name": "Privacy Requirement 2",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): The bank client must be able to deposit an amount to and withdraw an amount from his or her accounts using the bank application",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-005-03",
+      "name": "Privacy Requirement 3",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Each transaction must be recorded, and the client must have the ability to review all transactions performed against a given account",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-005-04",
+      "name": "Privacy Requirement 4",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Recorded transactions must include the date, time, transaction type, amount and account balance after the transaction",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-005-05",
+      "name": "Privacy Requirement 5",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): A bank client can have two types of accounts",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-005-06",
+      "name": "Privacy Requirement 6",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): A checking-account and a saving-account",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-005-07",
+      "name": "Privacy Requirement 7",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): For each checking account, one related saving-account can exists",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L1-001",
+      "name": "Reliability Goal",
+      "description": "Reliability objective for ATM: Each transaction must be recorded, and the client must have the ability to review all transactions performed against a given account",
+      "gsn_type": "Goal",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-01",
+      "name": "Reliability Requirement 1",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Each transaction must be recorded, and the client must have the ability to review all transactions performed against a given account",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-02",
+      "name": "Reliability Requirement 2",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Recorded transactions must include the date, time, transaction type, amount and account balance after the transaction",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-03",
+      "name": "Reliability Requirement 3",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): A bank client can have two types of accounts",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-04",
+      "name": "Reliability Requirement 4",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): A checking-account and a saving-account",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-05",
+      "name": "Reliability Requirement 5",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): For each checking account, one related saving-account can exists",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-06",
+      "name": "Reliability Requirement 6",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The application must verify that a client can gain access to his or her account by identification via a personal identification number (PIN) code",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-07",
+      "name": "Reliability Requirement 7",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Neither a checking-account nor a saving-account can have a negative balance",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L1-003",
+      "name": "Security Goal",
+      "description": "Security objective for ATM: For each checking account, one related saving-account can exists",
+      "gsn_type": "Goal",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-003-01",
+      "name": "Security Requirement 1",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): For each checking account, one related saving-account can exists",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-003-02",
+      "name": "Security Requirement 2",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The application must verify that a client can gain access to his or her account by identification via a personal identification number (PIN) code",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-003-03",
+      "name": "Security Requirement 3",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Neither a checking-account nor a saving-account can have a negative balance",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-003-04",
+      "name": "Security Requirement 4",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The application should automatically withdraw funds from a related saving-account if the requested withdrawal amount on the checking-account is more than its current balance",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-003-05",
+      "name": "Security Requirement 5",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): If the saving-account balance is insufficient to cover the requested withdrawal amount, the application should inform the user and terminate the transaction",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L1-004",
+      "name": "Trustworthiness Goal",
+      "description": "Trustworthiness objective for ATM: Neither a checking-account nor a saving-account can have a negative balance",
+      "gsn_type": "Goal",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-004-01",
+      "name": "Trustworthiness Requirement 1",
+      "description": "The system shall ensure trustworthiness (security assurance): Neither a checking-account nor a saving-account can have a negative balance",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for security assurance",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-004-02",
+      "name": "Trustworthiness Requirement 2",
+      "description": "The system shall ensure trustworthiness (auditability): The application should automatically withdraw funds from a related saving-account if the requested withdrawal amount on the checking-account is more than its current balance",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for auditability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-004-03",
+      "name": "Trustworthiness Requirement 3",
+      "description": "The system shall ensure trustworthiness (integrity guarantees): If the saving-account balance is insufficient to cover the requested withdrawal amount, the application should inform the user and terminate the transaction",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for integrity guarantees",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-004-04",
+      "name": "Trustworthiness Requirement 4",
+      "description": "The system shall ensure trustworthiness (security assurance): The bank client must be able to deposit an amount to and withdraw an amount from his or her accounts using the bank application",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for security assurance",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-004-05",
+      "name": "Trustworthiness Requirement 5",
+      "description": "The system shall ensure trustworthiness (auditability): Each transaction must be recorded, and the client must have the ability to review all transactions performed against a given account",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for auditability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L1-002",
+      "name": "Usability Goal",
+      "description": "Usability objective for ATM: A bank client can have two types of accounts",
+      "gsn_type": "Goal",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-01",
+      "name": "Usability Requirement 1",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): A bank client can have two types of accounts",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-02",
+      "name": "Usability Requirement 2",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): A checking-account and a saving-account",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-03",
+      "name": "Usability Requirement 3",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): For each checking account, one related saving-account can exists",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-04",
+      "name": "Usability Requirement 4",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The application must verify that a client can gain access to his or her account by identification via a personal identification number (PIN) code",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-05",
+      "name": "Usability Requirement 5",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Neither a checking-account nor a saving-account can have a negative balance",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-06",
+      "name": "Usability Requirement 6",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The application should automatically withdraw funds from a related saving-account if the requested withdrawal amount on the checking-account is more than its current balance",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    }
+  ],
+  "gsn_connections": [
+    {
+      "id": "REL-001",
+      "source_id": "PRI-L1-005",
+      "target_id": "PRI-L2-005-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-002",
+      "source_id": "PRI-L1-005",
+      "target_id": "PRI-L2-005-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-003",
+      "source_id": "PRI-L1-005",
+      "target_id": "PRI-L2-005-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-004",
+      "source_id": "PRI-L1-005",
+      "target_id": "PRI-L2-005-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-005",
+      "source_id": "PRI-L1-005",
+      "target_id": "PRI-L2-005-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-006",
+      "source_id": "PRI-L1-005",
+      "target_id": "PRI-L2-005-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-007",
+      "source_id": "PRI-L1-005",
+      "target_id": "PRI-L2-005-07",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-008",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-009",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-010",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-011",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-012",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-013",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-014",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-07",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-015",
+      "source_id": "SEC-L1-003",
+      "target_id": "SEC-L2-003-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-016",
+      "source_id": "SEC-L1-003",
+      "target_id": "SEC-L2-003-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-017",
+      "source_id": "SEC-L1-003",
+      "target_id": "SEC-L2-003-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-018",
+      "source_id": "SEC-L1-003",
+      "target_id": "SEC-L2-003-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-019",
+      "source_id": "SEC-L1-003",
+      "target_id": "SEC-L2-003-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-020",
+      "source_id": "TRU-L1-004",
+      "target_id": "TRU-L2-004-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-021",
+      "source_id": "TRU-L1-004",
+      "target_id": "TRU-L2-004-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-022",
+      "source_id": "TRU-L1-004",
+      "target_id": "TRU-L2-004-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-023",
+      "source_id": "TRU-L1-004",
+      "target_id": "TRU-L2-004-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-024",
+      "source_id": "TRU-L1-004",
+      "target_id": "TRU-L2-004-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-025",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-026",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-027",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-028",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-029",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-030",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    }
+  ],
+  "model_metadata": {
+    "model_id": "model_atm-input-20260629T112637Z-s101",
+    "name": "OpenRE-Bench Integrated KAOS for ATM",
+    "description": "Deterministic protocol-aligned integrated GSN model.",
+    "created_timestamp": "2026-06-29T11:31:35Z",
+    "requirement_source": "The bank client must be able to deposit an amount to and withdraw an amount from his or her accounts using the bank application. Each transaction must be recorded, and the client must have the ability to review all transactions performed against a given account. Recorded transactions must include the date, time, transaction type, amount and account balance after the transaction.\n\nA bank client can have two types of accounts. A checking-account and a saving-account. For each checking account, one related saving-account can exists. The application must verify that a client can gain access to his or her account by identification via a personal identification number (PIN) code.\n\nNeither a checking-account nor a saving-account can have a negative balance. The application should automatically withdraw funds from a related saving-account if the requested withdrawal amount on the checking-account is more than its current balance. If the saving-account balance is insufficient to cover the requested withdrawal amount, the application should inform the user and terminate the transaction.",
+    "model_type": "GSN",
+    "quality_attributes": [
+      "Privacy",
+      "Reliability",
+      "Security",
+      "Trustworthiness",
+      "Usability"
+    ],
+    "hierarchy_levels": [
+      1,
+      2
+    ],
+    "setting": "negotiation_integration_verification"
+  },
+  "hierarchy_structure": {
+    "level_1": [
+      {
+        "id": "PRI-L1-005",
+        "name": "Privacy Goal",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": null
+      },
+      {
+        "id": "REL-L1-001",
+        "name": "Reliability Goal",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": null
+      },
+      {
+        "id": "SEC-L1-003",
+        "name": "Security Goal",
+        "quality_attribute": "Security",
+        "parent_goal_id": null
+      },
+      {
+        "id": "TRU-L1-004",
+        "name": "Trustworthiness Goal",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": null
+      },
+      {
+        "id": "USA-L1-002",
+        "name": "Usability Goal",
+        "quality_attribute": "Usability",
+        "parent_goal_id": null
+      }
+    ],
+    "level_2": [
+      {
+        "id": "PRI-L2-005-01",
+        "name": "Privacy Requirement 1",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-005"
+      },
+      {
+        "id": "PRI-L2-005-02",
+        "name": "Privacy Requirement 2",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-005"
+      },
+      {
+        "id": "PRI-L2-005-03",
+        "name": "Privacy Requirement 3",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-005"
+      },
+      {
+        "id": "PRI-L2-005-04",
+        "name": "Privacy Requirement 4",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-005"
+      },
+      {
+        "id": "PRI-L2-005-05",
+        "name": "Privacy Requirement 5",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-005"
+      },
+      {
+        "id": "PRI-L2-005-06",
+        "name": "Privacy Requirement 6",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-005"
+      },
+      {
+        "id": "PRI-L2-005-07",
+        "name": "Privacy Requirement 7",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-005"
+      },
+      {
+        "id": "REL-L2-001-01",
+        "name": "Reliability Requirement 1",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-02",
+        "name": "Reliability Requirement 2",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-03",
+        "name": "Reliability Requirement 3",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-04",
+        "name": "Reliability Requirement 4",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-05",
+        "name": "Reliability Requirement 5",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-06",
+        "name": "Reliability Requirement 6",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-07",
+        "name": "Reliability Requirement 7",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "SEC-L2-003-01",
+        "name": "Security Requirement 1",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-003"
+      },
+      {
+        "id": "SEC-L2-003-02",
+        "name": "Security Requirement 2",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-003"
+      },
+      {
+        "id": "SEC-L2-003-03",
+        "name": "Security Requirement 3",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-003"
+      },
+      {
+        "id": "SEC-L2-003-04",
+        "name": "Security Requirement 4",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-003"
+      },
+      {
+        "id": "SEC-L2-003-05",
+        "name": "Security Requirement 5",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-003"
+      },
+      {
+        "id": "TRU-L2-004-01",
+        "name": "Trustworthiness Requirement 1",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-004"
+      },
+      {
+        "id": "TRU-L2-004-02",
+        "name": "Trustworthiness Requirement 2",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-004"
+      },
+      {
+        "id": "TRU-L2-004-03",
+        "name": "Trustworthiness Requirement 3",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-004"
+      },
+      {
+        "id": "TRU-L2-004-04",
+        "name": "Trustworthiness Requirement 4",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-004"
+      },
+      {
+        "id": "TRU-L2-004-05",
+        "name": "Trustworthiness Requirement 5",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-004"
+      },
+      {
+        "id": "USA-L2-002-01",
+        "name": "Usability Requirement 1",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      },
+      {
+        "id": "USA-L2-002-02",
+        "name": "Usability Requirement 2",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      },
+      {
+        "id": "USA-L2-002-03",
+        "name": "Usability Requirement 3",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      },
+      {
+        "id": "USA-L2-002-04",
+        "name": "Usability Requirement 4",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      },
+      {
+        "id": "USA-L2-002-05",
+        "name": "Usability Requirement 5",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      },
+      {
+        "id": "USA-L2-002-06",
+        "name": "Usability Requirement 6",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      }
+    ],
+    "level_3": [],
+    "parent_child_mappings": {
+      "PRI-L1-005": [
+        "PRI-L2-005-01",
+        "PRI-L2-005-02",
+        "PRI-L2-005-03",
+        "PRI-L2-005-04",
+        "PRI-L2-005-05",
+        "PRI-L2-005-06",
+        "PRI-L2-005-07"
+      ],
+      "REL-L1-001": [
+        "REL-L2-001-01",
+        "REL-L2-001-02",
+        "REL-L2-001-03",
+        "REL-L2-001-04",
+        "REL-L2-001-05",
+        "REL-L2-001-06",
+        "REL-L2-001-07"
+      ],
+      "SEC-L1-003": [
+        "SEC-L2-003-01",
+        "SEC-L2-003-02",
+        "SEC-L2-003-03",
+        "SEC-L2-003-04",
+        "SEC-L2-003-05"
+      ],
+      "TRU-L1-004": [
+        "TRU-L2-004-01",
+        "TRU-L2-004-02",
+        "TRU-L2-004-03",
+        "TRU-L2-004-04",
+        "TRU-L2-004-05"
+      ],
+      "USA-L1-002": [
+        "USA-L2-002-01",
+        "USA-L2-002-02",
+        "USA-L2-002-03",
+        "USA-L2-002-04",
+        "USA-L2-002-05",
+        "USA-L2-002-06"
+      ]
+    }
+  },
+  "topology_status": {
+    "status": "Valid",
+    "is_valid": true,
+    "is_dag": true,
+    "orphan_count": 0,
+    "cycle_count": 0,
+    "invalid_leaf_count": 0,
+    "orphan_elements": [],
+    "cycles": [],
+    "invalid_leaves": []
+  },
+  "model_id": "model_atm-input-20260629T112637Z-s101",
+  "created_timestamp": "2026-06-29T11:31:35Z",
+  "total_elements": 35,
+  "total_relations": 30
+}

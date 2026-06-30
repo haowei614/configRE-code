@@ -1,0 +1,518 @@
+{
+  "verification_results": {
+    "fact_checking": {
+      "hallucination_reports": [],
+      "flagged_elements": [],
+      "total_checked": 35
+    },
+    "deterministic_validation": {
+      "is_valid": true,
+      "violations": [],
+      "passed_rules": [
+        "topology_validity",
+        "traceability",
+        "logical_consistency"
+      ]
+    },
+    "topology_status": {
+      "status": "Valid",
+      "is_valid": true,
+      "is_dag": true,
+      "orphan_count": 0,
+      "cycle_count": 0,
+      "invalid_leaf_count": 0,
+      "orphan_elements": [],
+      "cycles": [],
+      "invalid_leaves": []
+    },
+    "consistency_verification": {
+      "status": "passed",
+      "issues": [],
+      "logical_score": 5,
+      "logical_score_normalized": 1.0,
+      "terminology_score": 2,
+      "terminology_consistency_ratio": 0.666667
+    },
+    "universal_verification": {
+      "verification_summary": {
+        "total_constraints": 21,
+        "total_conflicts": 0,
+        "critical_conflicts": 0,
+        "quality_score": 100.0,
+        "verification_passed": true
+      },
+      "constraint_analysis": {
+        "extracted_constraints": [
+          {
+            "clause": "Project: Electronic Health Record (EHR) System for Regional Hospital Network",
+            "best_overlap": 0.869565,
+            "matched": true
+          },
+          {
+            "clause": "The system is a web-based Electronic Health Record platform serving a network of 12 hospitals and 50+ clinics",
+            "best_overlap": 0.837209,
+            "matched": true
+          },
+          {
+            "clause": "It manages patient demographics, medical histories, lab results, prescriptions, clinical notes, and imaging records",
+            "best_overlap": 0.756757,
+            "matched": true
+          },
+          {
+            "clause": "The system must comply with HIPAA regulations and support HL7 FHIR interoperability standards",
+            "best_overlap": 0.787879,
+            "matched": true
+          },
+          {
+            "clause": "[Core Functional Requirements]",
+            "best_overlap": 0.545455,
+            "matched": true
+          },
+          {
+            "clause": "Patient Management: The system shall maintain comprehensive patient records including demographics, insurance informa...",
+            "best_overlap": 0.875,
+            "matched": true
+          },
+          {
+            "clause": "Clinical Documentation: Physicians shall be able to create, edit, and sign clinical notes with structured templates f...",
+            "best_overlap": 0.830189,
+            "matched": true
+          },
+          {
+            "clause": "Order Management: The system shall support electronic prescribing (e-prescribe), lab orders, and radiology orders wit...",
+            "best_overlap": 0.867925,
+            "matched": true
+          },
+          {
+            "clause": "Results Management: Lab results and imaging reports shall be automatically routed to ordering physicians with abnorma...",
+            "best_overlap": 0.883721,
+            "matched": true
+          },
+          {
+            "clause": "[Non-Functional Constraints]",
+            "best_overlap": 0.428571,
+            "matched": false
+          },
+          {
+            "clause": "Privacy & Compliance: All patient data must be encrypted at rest (AES-256) and in transit (TLS 1",
+            "best_overlap": 0.790698,
+            "matched": true
+          },
+          {
+            "clause": "Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements",
+            "best_overlap": 0.769231,
+            "matched": true
+          },
+          {
+            "clause": "Availability: The system must maintain 99",
+            "best_overlap": 0.705882,
+            "matched": true
+          },
+          {
+            "clause": "95% uptime with automatic failover",
+            "best_overlap": 0.526316,
+            "matched": true
+          },
+          {
+            "clause": "Planned maintenance windows shall not exceed 4 hours per month",
+            "best_overlap": 0.714286,
+            "matched": true
+          },
+          {
+            "clause": "Interoperability: The system must support HL7 FHIR R4 APIs for data exchange with external laboratories, pharmacies,...",
+            "best_overlap": 0.844444,
+            "matched": true
+          },
+          {
+            "clause": "Legacy HL7 v2 interfaces must be maintained for existing integrations",
+            "best_overlap": 0.689655,
+            "matched": true
+          },
+          {
+            "clause": "Performance: Clinical note retrieval must complete within 2 seconds",
+            "best_overlap": 0.782609,
+            "matched": true
+          },
+          {
+            "clause": "The system must support 5000 concurrent users across all facilities during peak hours",
+            "best_overlap": 0.787879,
+            "matched": true
+          },
+          {
+            "clause": "Usability: The interface must be accessible to clinical staff with varying technical proficiency",
+            "best_overlap": 0.764706,
+            "matched": true
+          },
+          {
+            "clause": "Mobile access must be available for rounding physicians",
+            "best_overlap": 0.64,
+            "matched": true
+          }
+        ]
+      },
+      "conflict_analysis": {
+        "detected_conflicts": []
+      },
+      "resolutions": {
+        "applied": []
+      },
+      "recommendations": [
+        "No contradiction detected"
+      ],
+      "session_log": {
+        "status": "passed"
+      }
+    },
+    "compliance_coverage": {
+      "satisfied_applicable_clauses": 20,
+      "total_applicable_clauses": 21,
+      "coverage_ratio": 0.952381,
+      "clauses": [
+        {
+          "clause": "Project: Electronic Health Record (EHR) System for Regional Hospital Network",
+          "best_overlap": 0.869565,
+          "matched": true
+        },
+        {
+          "clause": "The system is a web-based Electronic Health Record platform serving a network of 12 hospitals and 50+ clinics",
+          "best_overlap": 0.837209,
+          "matched": true
+        },
+        {
+          "clause": "It manages patient demographics, medical histories, lab results, prescriptions, clinical notes, and imaging records",
+          "best_overlap": 0.756757,
+          "matched": true
+        },
+        {
+          "clause": "The system must comply with HIPAA regulations and support HL7 FHIR interoperability standards",
+          "best_overlap": 0.787879,
+          "matched": true
+        },
+        {
+          "clause": "[Core Functional Requirements]",
+          "best_overlap": 0.545455,
+          "matched": true
+        },
+        {
+          "clause": "Patient Management: The system shall maintain comprehensive patient records including demographics, insurance informa...",
+          "best_overlap": 0.875,
+          "matched": true
+        },
+        {
+          "clause": "Clinical Documentation: Physicians shall be able to create, edit, and sign clinical notes with structured templates f...",
+          "best_overlap": 0.830189,
+          "matched": true
+        },
+        {
+          "clause": "Order Management: The system shall support electronic prescribing (e-prescribe), lab orders, and radiology orders wit...",
+          "best_overlap": 0.867925,
+          "matched": true
+        },
+        {
+          "clause": "Results Management: Lab results and imaging reports shall be automatically routed to ordering physicians with abnorma...",
+          "best_overlap": 0.883721,
+          "matched": true
+        },
+        {
+          "clause": "[Non-Functional Constraints]",
+          "best_overlap": 0.428571,
+          "matched": false
+        },
+        {
+          "clause": "Privacy & Compliance: All patient data must be encrypted at rest (AES-256) and in transit (TLS 1",
+          "best_overlap": 0.790698,
+          "matched": true
+        },
+        {
+          "clause": "Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements",
+          "best_overlap": 0.769231,
+          "matched": true
+        },
+        {
+          "clause": "Availability: The system must maintain 99",
+          "best_overlap": 0.705882,
+          "matched": true
+        },
+        {
+          "clause": "95% uptime with automatic failover",
+          "best_overlap": 0.526316,
+          "matched": true
+        },
+        {
+          "clause": "Planned maintenance windows shall not exceed 4 hours per month",
+          "best_overlap": 0.714286,
+          "matched": true
+        },
+        {
+          "clause": "Interoperability: The system must support HL7 FHIR R4 APIs for data exchange with external laboratories, pharmacies,...",
+          "best_overlap": 0.844444,
+          "matched": true
+        },
+        {
+          "clause": "Legacy HL7 v2 interfaces must be maintained for existing integrations",
+          "best_overlap": 0.689655,
+          "matched": true
+        },
+        {
+          "clause": "Performance: Clinical note retrieval must complete within 2 seconds",
+          "best_overlap": 0.782609,
+          "matched": true
+        },
+        {
+          "clause": "The system must support 5000 concurrent users across all facilities during peak hours",
+          "best_overlap": 0.787879,
+          "matched": true
+        },
+        {
+          "clause": "Usability: The interface must be accessible to clinical staff with varying technical proficiency",
+          "best_overlap": 0.764706,
+          "matched": true
+        },
+        {
+          "clause": "Mobile access must be available for rounding physicians",
+          "best_overlap": 0.64,
+          "matched": true
+        }
+      ]
+    },
+    "terminology_consistency": {
+      "score": 2,
+      "consistency_ratio": 0.666667,
+      "conflicts": [
+        {
+          "concept": "system",
+          "terms_used": [
+            "platform",
+            "system"
+          ],
+          "requirements": [
+            "EFF-L1-002",
+            "EFF-L2-002-01",
+            "EFF-L2-002-02",
+            "EFF-L2-002-03",
+            "EFF-L2-002-04",
+            "EFF-L2-002-05",
+            "EFF-L2-002-06",
+            "RES-L1-005",
+            "RES-L2-005-01",
+            "RES-L2-005-02",
+            "RES-L2-005-03",
+            "RES-L2-005-04",
+            "RES-L2-005-05",
+            "RES-L2-005-06",
+            "RES-L2-005-07",
+            "SAF-L2-001-01",
+            "SAF-L2-001-02",
+            "SAF-L2-001-03",
+            "SAF-L2-001-04",
+            "SAF-L2-001-05",
+            "SAF-L2-001-06",
+            "SAF-L2-001-07",
+            "SUS-L2-003-01",
+            "SUS-L2-003-02",
+            "SUS-L2-003-03",
+            "SUS-L2-003-04",
+            "SUS-L2-003-05",
+            "TRU-L2-004-01",
+            "TRU-L2-004-02",
+            "TRU-L2-004-03",
+            "TRU-L2-004-04",
+            "TRU-L2-004-05"
+          ]
+        },
+        {
+          "concept": "data",
+          "terms_used": [
+            "data",
+            "information",
+            "record"
+          ],
+          "requirements": [
+            "EFF-L1-002",
+            "EFF-L2-002-01",
+            "EFF-L2-002-02",
+            "EFF-L2-002-03",
+            "EFF-L2-002-06",
+            "RES-L2-005-04",
+            "SAF-L2-001-05",
+            "SAF-L2-001-06",
+            "SAF-L2-001-07",
+            "SUS-L2-003-02",
+            "TRU-L2-004-03"
+          ]
+        }
+      ],
+      "total_concepts": 6,
+      "consistent_concepts": 4
+    },
+    "s_logic": 1.0,
+    "s_term": 0.666667
+  },
+  "fact_checking": {
+    "hallucination_reports": [],
+    "flagged_elements": [],
+    "total_checked": 35
+  },
+  "deterministic_validation": {
+    "is_valid": true,
+    "violations": [],
+    "passed_rules": [
+      "topology_validity",
+      "traceability",
+      "logical_consistency"
+    ]
+  },
+  "topology_status": {
+    "status": "Valid",
+    "is_valid": true,
+    "is_dag": true,
+    "orphan_count": 0,
+    "cycle_count": 0,
+    "invalid_leaf_count": 0,
+    "orphan_elements": [],
+    "cycles": [],
+    "invalid_leaves": []
+  },
+  "consistency_verification": {
+    "status": "passed",
+    "issues": [],
+    "logical_score": 5,
+    "logical_score_normalized": 1.0,
+    "terminology_score": 2,
+    "terminology_consistency_ratio": 0.666667
+  },
+  "universal_verification": {
+    "verification_summary": {
+      "total_constraints": 21,
+      "total_conflicts": 0,
+      "critical_conflicts": 0,
+      "quality_score": 100.0,
+      "verification_passed": true
+    },
+    "constraint_analysis": {
+      "extracted_constraints": [
+        {
+          "clause": "Project: Electronic Health Record (EHR) System for Regional Hospital Network",
+          "best_overlap": 0.869565,
+          "matched": true
+        },
+        {
+          "clause": "The system is a web-based Electronic Health Record platform serving a network of 12 hospitals and 50+ clinics",
+          "best_overlap": 0.837209,
+          "matched": true
+        },
+        {
+          "clause": "It manages patient demographics, medical histories, lab results, prescriptions, clinical notes, and imaging records",
+          "best_overlap": 0.756757,
+          "matched": true
+        },
+        {
+          "clause": "The system must comply with HIPAA regulations and support HL7 FHIR interoperability standards",
+          "best_overlap": 0.787879,
+          "matched": true
+        },
+        {
+          "clause": "[Core Functional Requirements]",
+          "best_overlap": 0.545455,
+          "matched": true
+        },
+        {
+          "clause": "Patient Management: The system shall maintain comprehensive patient records including demographics, insurance informa...",
+          "best_overlap": 0.875,
+          "matched": true
+        },
+        {
+          "clause": "Clinical Documentation: Physicians shall be able to create, edit, and sign clinical notes with structured templates f...",
+          "best_overlap": 0.830189,
+          "matched": true
+        },
+        {
+          "clause": "Order Management: The system shall support electronic prescribing (e-prescribe), lab orders, and radiology orders wit...",
+          "best_overlap": 0.867925,
+          "matched": true
+        },
+        {
+          "clause": "Results Management: Lab results and imaging reports shall be automatically routed to ordering physicians with abnorma...",
+          "best_overlap": 0.883721,
+          "matched": true
+        },
+        {
+          "clause": "[Non-Functional Constraints]",
+          "best_overlap": 0.428571,
+          "matched": false
+        },
+        {
+          "clause": "Privacy & Compliance: All patient data must be encrypted at rest (AES-256) and in transit (TLS 1",
+          "best_overlap": 0.790698,
+          "matched": true
+        },
+        {
+          "clause": "Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements",
+          "best_overlap": 0.769231,
+          "matched": true
+        },
+        {
+          "clause": "Availability: The system must maintain 99",
+          "best_overlap": 0.705882,
+          "matched": true
+        },
+        {
+          "clause": "95% uptime with automatic failover",
+          "best_overlap": 0.526316,
+          "matched": true
+        },
+        {
+          "clause": "Planned maintenance windows shall not exceed 4 hours per month",
+          "best_overlap": 0.714286,
+          "matched": true
+        },
+        {
+          "clause": "Interoperability: The system must support HL7 FHIR R4 APIs for data exchange with external laboratories, pharmacies,...",
+          "best_overlap": 0.844444,
+          "matched": true
+        },
+        {
+          "clause": "Legacy HL7 v2 interfaces must be maintained for existing integrations",
+          "best_overlap": 0.689655,
+          "matched": true
+        },
+        {
+          "clause": "Performance: Clinical note retrieval must complete within 2 seconds",
+          "best_overlap": 0.782609,
+          "matched": true
+        },
+        {
+          "clause": "The system must support 5000 concurrent users across all facilities during peak hours",
+          "best_overlap": 0.787879,
+          "matched": true
+        },
+        {
+          "clause": "Usability: The interface must be accessible to clinical staff with varying technical proficiency",
+          "best_overlap": 0.764706,
+          "matched": true
+        },
+        {
+          "clause": "Mobile access must be available for rounding physicians",
+          "best_overlap": 0.64,
+          "matched": true
+        }
+      ]
+    },
+    "conflict_analysis": {
+      "detected_conflicts": []
+    },
+    "resolutions": {
+      "applied": []
+    },
+    "recommendations": [
+      "No contradiction detected"
+    ],
+    "session_log": {
+      "status": "passed"
+    }
+  },
+  "correction_summary": {
+    "total_corrections": 0,
+    "corrections": []
+  }
+}

@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\caption{Cross-Model Validation: Phase0-Auto DFS Across LLM Backbones (averaged over 3 seeds)}
+\label{tab:cross_model}
+\begin{tabular}{l l c c c c c c}
+\toprule
+\textbf{Model} & \textbf{Config} & \textbf{AD} & \textbf{ATM} & \textbf{Bookkeeping} & \textbf{Library} & \textbf{RollCall} & \textbf{Avg} \\
+\midrule
+claude-3-5-sonnet & Fixed-5 & 0.55 & -- & -- & -- & -- & \textbf{0.55} \\
+claude-3-5-sonnet & Phase0-Auto & -- & -- & -- & -- & -- & \textbf{--} \\
+\midrule
+gpt-4o & Fixed-5 & 0.55 & 0.36 & 0.40 & 0.00 & 0.00 & \textbf{0.26} \\
+gpt-4o & Phase0-Auto & 0.77 & 0.83 & 0.73 & 0.71 & 0.73 & \textbf{0.75} \\
+\bottomrule
+\end{tabular}
+\end{table*}

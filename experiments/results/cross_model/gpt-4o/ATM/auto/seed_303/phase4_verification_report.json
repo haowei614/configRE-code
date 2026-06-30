@@ -1,0 +1,517 @@
+{
+  "verification_results": {
+    "fact_checking": {
+      "hallucination_reports": [],
+      "flagged_elements": [],
+      "total_checked": 42
+    },
+    "deterministic_validation": {
+      "is_valid": true,
+      "violations": [],
+      "passed_rules": [
+        "topology_validity",
+        "traceability",
+        "logical_consistency"
+      ]
+    },
+    "topology_status": {
+      "status": "Valid",
+      "is_valid": true,
+      "is_dag": true,
+      "orphan_count": 0,
+      "cycle_count": 0,
+      "invalid_leaf_count": 0,
+      "orphan_elements": [],
+      "cycles": [],
+      "invalid_leaves": []
+    },
+    "consistency_verification": {
+      "status": "passed",
+      "issues": [],
+      "logical_score": 5,
+      "logical_score_normalized": 1.0,
+      "terminology_score": 1,
+      "terminology_consistency_ratio": 0.0
+    },
+    "universal_verification": {
+      "verification_summary": {
+        "total_constraints": 10,
+        "total_conflicts": 0,
+        "critical_conflicts": 0,
+        "quality_score": 100.0,
+        "verification_passed": true
+      },
+      "constraint_analysis": {
+        "extracted_constraints": [
+          {
+            "clause": "The bank client must be able to deposit an amount to and withdraw an amount from his or her accounts using the bank a...",
+            "best_overlap": 0.844444,
+            "matched": true
+          },
+          {
+            "clause": "Each transaction must be recorded, and the client must have the ability to review all transactions performed against...",
+            "best_overlap": 0.883721,
+            "matched": true
+          },
+          {
+            "clause": "Recorded transactions must include the date, time, transaction type, amount and account balance after the transaction",
+            "best_overlap": 0.777778,
+            "matched": true
+          },
+          {
+            "clause": "A bank client can have two types of accounts",
+            "best_overlap": 0.782609,
+            "matched": true
+          },
+          {
+            "clause": "A checking-account and a saving-account",
+            "best_overlap": 0.666667,
+            "matched": true
+          },
+          {
+            "clause": "For each checking account, one related saving-account can exists",
+            "best_overlap": 0.6,
+            "matched": true
+          },
+          {
+            "clause": "The application must verify that a client can gain access to his or her account by identification via a personal iden...",
+            "best_overlap": 0.897959,
+            "matched": true
+          },
+          {
+            "clause": "Neither a checking-account nor a saving-account can have a negative balance",
+            "best_overlap": 0.625,
+            "matched": true
+          },
+          {
+            "clause": "The application should automatically withdraw funds from a related saving-account if the requested withdrawal amount...",
+            "best_overlap": 0.901961,
+            "matched": true
+          },
+          {
+            "clause": "If the saving-account balance is insufficient to cover the requested withdrawal amount, the application should inform...",
+            "best_overlap": 0.883721,
+            "matched": true
+          }
+        ]
+      },
+      "conflict_analysis": {
+        "detected_conflicts": []
+      },
+      "resolutions": {
+        "applied": []
+      },
+      "recommendations": [
+        "No contradiction detected"
+      ],
+      "session_log": {
+        "status": "passed"
+      }
+    },
+    "compliance_coverage": {
+      "satisfied_applicable_clauses": 10,
+      "total_applicable_clauses": 10,
+      "coverage_ratio": 1.0,
+      "clauses": [
+        {
+          "clause": "The bank client must be able to deposit an amount to and withdraw an amount from his or her accounts using the bank a...",
+          "best_overlap": 0.844444,
+          "matched": true
+        },
+        {
+          "clause": "Each transaction must be recorded, and the client must have the ability to review all transactions performed against...",
+          "best_overlap": 0.883721,
+          "matched": true
+        },
+        {
+          "clause": "Recorded transactions must include the date, time, transaction type, amount and account balance after the transaction",
+          "best_overlap": 0.777778,
+          "matched": true
+        },
+        {
+          "clause": "A bank client can have two types of accounts",
+          "best_overlap": 0.782609,
+          "matched": true
+        },
+        {
+          "clause": "A checking-account and a saving-account",
+          "best_overlap": 0.666667,
+          "matched": true
+        },
+        {
+          "clause": "For each checking account, one related saving-account can exists",
+          "best_overlap": 0.6,
+          "matched": true
+        },
+        {
+          "clause": "The application must verify that a client can gain access to his or her account by identification via a personal iden...",
+          "best_overlap": 0.897959,
+          "matched": true
+        },
+        {
+          "clause": "Neither a checking-account nor a saving-account can have a negative balance",
+          "best_overlap": 0.625,
+          "matched": true
+        },
+        {
+          "clause": "The application should automatically withdraw funds from a related saving-account if the requested withdrawal amount...",
+          "best_overlap": 0.901961,
+          "matched": true
+        },
+        {
+          "clause": "If the saving-account balance is insufficient to cover the requested withdrawal amount, the application should inform...",
+          "best_overlap": 0.883721,
+          "matched": true
+        }
+      ]
+    },
+    "terminology_consistency": {
+      "score": 1,
+      "consistency_ratio": 0.0,
+      "conflicts": [
+        {
+          "concept": "user",
+          "terms_used": [
+            "client",
+            "user"
+          ],
+          "requirements": [
+            "PER-L1-001",
+            "PER-L2-001-01",
+            "PER-L2-001-04",
+            "PRI-L1-006",
+            "PRI-L2-006-01",
+            "PRI-L2-006-03",
+            "PRI-L2-006-06",
+            "REL-L2-002-03",
+            "REL-L2-002-06",
+            "SEC-L2-004-02",
+            "SEC-L2-004-03",
+            "SEC-L2-004-04",
+            "SEC-L2-004-06",
+            "TRU-L1-005",
+            "TRU-L2-005-01",
+            "TRU-L2-005-02",
+            "TRU-L2-005-03",
+            "TRU-L2-005-05",
+            "USA-L1-003",
+            "USA-L2-003-01",
+            "USA-L2-003-02",
+            "USA-L2-003-03",
+            "USA-L2-003-04",
+            "USA-L2-003-05",
+            "USA-L2-003-06"
+          ]
+        },
+        {
+          "concept": "account",
+          "terms_used": [
+            "account",
+            "checking-account",
+            "saving-account"
+          ],
+          "requirements": [
+            "PER-L1-001",
+            "PER-L2-001-01",
+            "PER-L2-001-02",
+            "PER-L2-001-03",
+            "PER-L2-001-04",
+            "PER-L2-001-05",
+            "PER-L2-001-06",
+            "PRI-L1-006",
+            "PRI-L2-006-01",
+            "PRI-L2-006-02",
+            "PRI-L2-006-03",
+            "PRI-L2-006-04",
+            "PRI-L2-006-05",
+            "PRI-L2-006-06",
+            "REL-L1-002",
+            "REL-L2-002-01",
+            "REL-L2-002-02",
+            "REL-L2-002-03",
+            "REL-L2-002-04",
+            "REL-L2-002-05",
+            "REL-L2-002-06",
+            "SEC-L1-004",
+            "SEC-L2-004-01",
+            "SEC-L2-004-02",
+            "SEC-L2-004-03",
+            "SEC-L2-004-04",
+            "SEC-L2-004-05",
+            "SEC-L2-004-06",
+            "TRU-L1-005",
+            "TRU-L2-005-01",
+            "TRU-L2-005-02",
+            "TRU-L2-005-03",
+            "TRU-L2-005-04",
+            "TRU-L2-005-05",
+            "TRU-L2-005-06",
+            "USA-L1-003",
+            "USA-L2-003-01",
+            "USA-L2-003-02",
+            "USA-L2-003-03",
+            "USA-L2-003-04",
+            "USA-L2-003-05",
+            "USA-L2-003-06"
+          ]
+        },
+        {
+          "concept": "system",
+          "terms_used": [
+            "application",
+            "system"
+          ],
+          "requirements": [
+            "PER-L2-001-01",
+            "PER-L2-001-02",
+            "PER-L2-001-03",
+            "PER-L2-001-04",
+            "PER-L2-001-05",
+            "PER-L2-001-06",
+            "PRI-L2-006-01",
+            "PRI-L2-006-02",
+            "PRI-L2-006-03",
+            "PRI-L2-006-04",
+            "PRI-L2-006-05",
+            "PRI-L2-006-06",
+            "REL-L2-002-01",
+            "REL-L2-002-02",
+            "REL-L2-002-03",
+            "REL-L2-002-04",
+            "REL-L2-002-05",
+            "REL-L2-002-06",
+            "SEC-L1-004",
+            "SEC-L2-004-01",
+            "SEC-L2-004-02",
+            "SEC-L2-004-03",
+            "SEC-L2-004-04",
+            "SEC-L2-004-05",
+            "SEC-L2-004-06",
+            "TRU-L1-005",
+            "TRU-L2-005-01",
+            "TRU-L2-005-02",
+            "TRU-L2-005-03",
+            "TRU-L2-005-04",
+            "TRU-L2-005-05",
+            "TRU-L2-005-06",
+            "USA-L1-003",
+            "USA-L2-003-01",
+            "USA-L2-003-02",
+            "USA-L2-003-03",
+            "USA-L2-003-04",
+            "USA-L2-003-05",
+            "USA-L2-003-06"
+          ]
+        },
+        {
+          "concept": "verify",
+          "terms_used": [
+            "check",
+            "verify"
+          ],
+          "requirements": [
+            "PER-L2-001-02",
+            "PER-L2-001-03",
+            "PER-L2-001-04",
+            "PER-L2-001-05",
+            "PER-L2-001-06",
+            "PRI-L2-006-04",
+            "PRI-L2-006-05",
+            "PRI-L2-006-06",
+            "REL-L1-002",
+            "REL-L2-002-01",
+            "REL-L2-002-02",
+            "REL-L2-002-03",
+            "REL-L2-002-04",
+            "REL-L2-002-05",
+            "SEC-L1-004",
+            "SEC-L2-004-01",
+            "TRU-L2-005-06",
+            "USA-L1-003",
+            "USA-L2-003-01",
+            "USA-L2-003-02",
+            "USA-L2-003-03"
+          ]
+        },
+        {
+          "concept": "access",
+          "terms_used": [
+            "access",
+            "gain access"
+          ],
+          "requirements": [
+            "PER-L2-001-04",
+            "PRI-L2-006-06",
+            "REL-L2-002-03",
+            "USA-L1-003",
+            "USA-L2-003-01",
+            "USA-L2-003-02",
+            "USA-L2-003-03",
+            "USA-L2-003-04",
+            "USA-L2-003-05",
+            "USA-L2-003-06"
+          ]
+        },
+        {
+          "concept": "transaction",
+          "terms_used": [
+            "action",
+            "transaction"
+          ],
+          "requirements": [
+            "PRI-L1-006",
+            "PRI-L2-006-01",
+            "PRI-L2-006-02",
+            "REL-L2-002-06",
+            "SEC-L2-004-02",
+            "SEC-L2-004-04",
+            "SEC-L2-004-05",
+            "TRU-L1-005",
+            "TRU-L2-005-01",
+            "TRU-L2-005-03",
+            "TRU-L2-005-04",
+            "USA-L2-003-04",
+            "USA-L2-003-06"
+          ]
+        },
+        {
+          "concept": "data",
+          "terms_used": [
+            "data",
+            "record"
+          ],
+          "requirements": [
+            "PRI-L1-006",
+            "PRI-L2-006-01",
+            "PRI-L2-006-02",
+            "PRI-L2-006-03",
+            "PRI-L2-006-04",
+            "PRI-L2-006-05",
+            "PRI-L2-006-06",
+            "SEC-L2-004-04",
+            "SEC-L2-004-05",
+            "TRU-L2-005-03",
+            "TRU-L2-005-04",
+            "USA-L2-003-06"
+          ]
+        }
+      ],
+      "total_concepts": 7,
+      "consistent_concepts": 0
+    },
+    "s_logic": 1.0,
+    "s_term": 0.0
+  },
+  "fact_checking": {
+    "hallucination_reports": [],
+    "flagged_elements": [],
+    "total_checked": 42
+  },
+  "deterministic_validation": {
+    "is_valid": true,
+    "violations": [],
+    "passed_rules": [
+      "topology_validity",
+      "traceability",
+      "logical_consistency"
+    ]
+  },
+  "topology_status": {
+    "status": "Valid",
+    "is_valid": true,
+    "is_dag": true,
+    "orphan_count": 0,
+    "cycle_count": 0,
+    "invalid_leaf_count": 0,
+    "orphan_elements": [],
+    "cycles": [],
+    "invalid_leaves": []
+  },
+  "consistency_verification": {
+    "status": "passed",
+    "issues": [],
+    "logical_score": 5,
+    "logical_score_normalized": 1.0,
+    "terminology_score": 1,
+    "terminology_consistency_ratio": 0.0
+  },
+  "universal_verification": {
+    "verification_summary": {
+      "total_constraints": 10,
+      "total_conflicts": 0,
+      "critical_conflicts": 0,
+      "quality_score": 100.0,
+      "verification_passed": true
+    },
+    "constraint_analysis": {
+      "extracted_constraints": [
+        {
+          "clause": "The bank client must be able to deposit an amount to and withdraw an amount from his or her accounts using the bank a...",
+          "best_overlap": 0.844444,
+          "matched": true
+        },
+        {
+          "clause": "Each transaction must be recorded, and the client must have the ability to review all transactions performed against...",
+          "best_overlap": 0.883721,
+          "matched": true
+        },
+        {
+          "clause": "Recorded transactions must include the date, time, transaction type, amount and account balance after the transaction",
+          "best_overlap": 0.777778,
+          "matched": true
+        },
+        {
+          "clause": "A bank client can have two types of accounts",
+          "best_overlap": 0.782609,
+          "matched": true
+        },
+        {
+          "clause": "A checking-account and a saving-account",
+          "best_overlap": 0.666667,
+          "matched": true
+        },
+        {
+          "clause": "For each checking account, one related saving-account can exists",
+          "best_overlap": 0.6,
+          "matched": true
+        },
+        {
+          "clause": "The application must verify that a client can gain access to his or her account by identification via a personal iden...",
+          "best_overlap": 0.897959,
+          "matched": true
+        },
+        {
+          "clause": "Neither a checking-account nor a saving-account can have a negative balance",
+          "best_overlap": 0.625,
+          "matched": true
+        },
+        {
+          "clause": "The application should automatically withdraw funds from a related saving-account if the requested withdrawal amount...",
+          "best_overlap": 0.901961,
+          "matched": true
+        },
+        {
+          "clause": "If the saving-account balance is insufficient to cover the requested withdrawal amount, the application should inform...",
+          "best_overlap": 0.883721,
+          "matched": true
+        }
+      ]
+    },
+    "conflict_analysis": {
+      "detected_conflicts": []
+    },
+    "resolutions": {
+      "applied": []
+    },
+    "recommendations": [
+      "No contradiction detected"
+    ],
+    "session_log": {
+      "status": "passed"
+    }
+  },
+  "correction_summary": {
+    "total_corrections": 0,
+    "corrections": []
+  }
+}

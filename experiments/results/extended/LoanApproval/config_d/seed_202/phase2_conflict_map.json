@@ -1,0 +1,92 @@
+{
+  "phase": "2.5_conflict_resolution",
+  "case_id": "LoanApproval",
+  "setting": "negotiation_integration_verification",
+  "generated_at": "2026-06-29T09:38:42Z",
+  "round_cap": 3,
+  "conflict_map": {
+    "EfficiencyAgent_PerformanceAgent": {
+      "detected_conflict": false,
+      "resolved_conflict": false,
+      "total_rounds": 1,
+      "max_round_observed": 1,
+      "requires_refinement_count": 0,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "PerformanceAgent_ReliabilityAgent": {
+      "detected_conflict": false,
+      "resolved_conflict": false,
+      "total_rounds": 1,
+      "max_round_observed": 1,
+      "requires_refinement_count": 0,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "ReliabilityAgent_SecurityAgent": {
+      "detected_conflict": false,
+      "resolved_conflict": false,
+      "total_rounds": 1,
+      "max_round_observed": 1,
+      "requires_refinement_count": 0,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "SecurityAgent_TrustworthinessAgent": {
+      "detected_conflict": true,
+      "resolved_conflict": true,
+      "total_rounds": 2,
+      "max_round_observed": 2,
+      "requires_refinement_count": 1,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "TrustworthinessAgent_PrivacyAgent": {
+      "detected_conflict": false,
+      "resolved_conflict": false,
+      "total_rounds": 1,
+      "max_round_observed": 1,
+      "requires_refinement_count": 0,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "PrivacyAgent_ExplainabilityAgent": {
+      "detected_conflict": false,
+      "resolved_conflict": false,
+      "total_rounds": 1,
+      "max_round_observed": 1,
+      "requires_refinement_count": 0,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "ExplainabilityAgent_ResponsibilityAgent": {
+      "detected_conflict": false,
+      "resolved_conflict": false,
+      "total_rounds": 1,
+      "max_round_observed": 1,
+      "requires_refinement_count": 0,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "ResponsibilityAgent_EfficiencyAgent": {
+      "detected_conflict": false,
+      "resolved_conflict": false,
+      "total_rounds": 1,
+      "max_round_observed": 1,
+      "requires_refinement_count": 0,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    }
+  },
+  "summary": {
+    "total_pairs": 8,
+    "detected_conflict_pairs": 1,
+    "resolved_conflict_pairs": 1,
+    "unresolved_conflict_pairs": 0,
+    "max_round_observed": 2,
+    "round_cap_reached": false,
+    "phase2_detected_conflicts": 1,
+    "phase2_resolved_conflicts": 1,
+    "phase2_alignment_ok": true
+  }
+}

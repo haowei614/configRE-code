@@ -1,0 +1,85 @@
+{
+  "phase": "0_external_spec_processing",
+  "case_id": "EHR",
+  "setting": "negotiation_integration_verification",
+  "generated_at": "2026-06-29T08:57:06Z",
+  "extracted_rules": [
+    {
+      "rule_id": "R001",
+      "rule_type": "constraint",
+      "statement": "Project: Electronic Health Record (EHR) System for Regional Hospital Network",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R002",
+      "rule_type": "constraint",
+      "statement": "The system is a web-based Electronic Health Record platform serving a network of 12 hospitals and 50+ clinics",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R003",
+      "rule_type": "prohibition",
+      "statement": "It manages patient demographics, medical histories, lab results, prescriptions, clinical notes, and imaging records",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R004",
+      "rule_type": "obligation",
+      "statement": "The system must comply with HIPAA regulations and support HL7 FHIR interoperability standards",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R005",
+      "rule_type": "constraint",
+      "statement": "[Core Functional Requirements]",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R006",
+      "rule_type": "obligation",
+      "statement": "Patient Management: The system shall maintain comprehensive patient records including demographics, insurance information, allergies, and medical history across all facilities in the network",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R007",
+      "rule_type": "obligation",
+      "statement": "Clinical Documentation: Physicians shall be able to create, edit, and sign clinical notes with structured templates for different specialties (cardiology, oncology, pediatrics, etc",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R008",
+      "rule_type": "obligation",
+      "statement": "Order Management: The system shall support electronic prescribing (e-prescribe), lab orders, and radiology orders with clinical decision support alerts for drug interactions and allergy conflicts",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R009",
+      "rule_type": "obligation",
+      "statement": "Results Management: Lab results and imaging reports shall be automatically routed to ordering physicians with abnormal result flagging and escalation protocols",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R010",
+      "rule_type": "constraint",
+      "statement": "[Non-Functional Constraints]",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R011",
+      "rule_type": "obligation",
+      "statement": "Privacy & Compliance: All patient data must be encrypted at rest (AES-256) and in transit (TLS 1",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R012",
+      "rule_type": "obligation",
+      "statement": "Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements",
+      "source": "requirement_text"
+    }
+  ],
+  "extraction_metadata": {
+    "rule_count": 12,
+    "rag_enabled": true,
+    "rag_corpus_hash": "91b26f1997c0a902e0428783f8209735f20c243dfe60df6eb00f3b8c00fce5b7"
+  }
+}

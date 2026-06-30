@@ -1,0 +1,197 @@
+{
+  "phase": "5_software_materials_generation",
+  "case_id": "AD",
+  "setting": "negotiation_integration_verification",
+  "generated_at": "2026-06-29T12:59:14Z",
+  "materials": {
+    "srs_outline": [
+      "System Scope and Stakeholders",
+      "Quality-Attribute Requirements (Efficiency/Functional Safety/Reliability/Safety)",
+      "Negotiation and Conflict Resolution Decisions",
+      "Verification and Compliance Evidence"
+    ],
+    "implementation_checklist": [
+      "Preserve canonical phase artifact compatibility",
+      "Enforce strict provenance and taint controls",
+      "Trace each integrated requirement to a verification signal"
+    ],
+    "traceability_matrix": [
+      {
+        "element_id": "EFF-L1-004",
+        "quality_attribute": "Efficiency",
+        "statement": "Efficiency objective for AD: [Conflict Scenario for Negotiation]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L2-004-01",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (latency optimization): [Conflict Scenario for Negotiation]",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EFF-L2-004-02",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (throughput stability): - The SafetyAgent prioritizes \"Passive Safety\" and strictly enforcing safe distances and MRM execution",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EFF-L2-004-03",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (resource utilization): - The EfficiencyAgent prioritizes \"Smoothness\" and \"Speed\" using the QP function to minimize Jerk",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EFF-L2-004-04",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (latency optimization): - **Potential Conflict**: An emergency MRM (Safety) triggered by a fault might violate the Jerk/Smoothness constraints...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EFF-L2-004-05",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (throughput stability): , relaxing smoothness constraints during MRM)",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EFF-L2-004-06",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (resource utilization): Project: Baidu Apollo Autonomous Driving System (Planning & Control Module)",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "FUN-L1-003",
+        "quality_attribute": "Functional Safety",
+        "statement": "Functional Safety objective for AD: - Step 1 (E-step): Generate an optimal path in the Frenet Frame (SL-Graph)",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-003-01",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): - Step 1 (E-step): Generate an optimal path in the Fr...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "FUN-L2-003-02",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): - Step 2 (M-step): Generate an optimal speed profile...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "FUN-L2-003-03",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): Hard Constraints (Mathematical):",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "FUN-L2-003-04",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): - Trajectory smoothness is critical",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "FUN-L2-003-05",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): The system must minimize \"Jerk\" (rate of change of ac...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "FUN-L2-003-06",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): - Curvature constraints ($kappa$) must be satisfied t...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L1-002",
+        "quality_attribute": "Reliability",
+        "statement": "Reliability objective for AD: ODD (Operational Design Domain):",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L2-002-01",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): ODD (Operational Design Domain):",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L2-002-02",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): - The system operates in specific urban and highway scenarios",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L2-002-03",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): It must continuously monitor ODD compliance and request human takeover (HMI warnin...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L2-002-04",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): [Efficiency & Planning Requirements - Based on EM Motion Planner]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L2-002-05",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Multiobjective Optimization:",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L2-002-06",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): - The planner must simultaneously optimize for three conflicting objectives: Safet...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L1-001",
+        "quality_attribute": "Safety",
+        "statement": "Safety objective for AD: [Safety Requirements - Based on Apollo Pilot Safety Report]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-01",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (hazard prevention): [Safety Requirements - Based on Apollo Pilot Safety Report]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-02",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (fault tolerance): Multi-Layer Safety Architecture:",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-03",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (risk mitigation): - The system must implement \"Passive Safety\" (collision protection), \"Active Safety\" (ACC, AEB, LKA), and \"Functional Safety\" (...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-04",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (hazard prevention): Minimal Risk Maneuver (MRM):",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-05",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (fault tolerance): - Upon detecting a critical system failure (e",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-06",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (risk mitigation): , sensor loss, localization failure) or exiting the ODD, the vehicle must NOT simply stop in lane immediately if unsafe",
+        "verification_anchor": "pending"
+      }
+    ]
+  },
+  "quality_signals": {
+    "topology_is_valid": true,
+    "deterministic_is_valid": true,
+    "compliance_coverage": 0.7,
+    "s_logic": 1.0,
+    "detected_conflict_pairs": 2,
+    "resolved_conflict_pairs": 2
+  }
+}

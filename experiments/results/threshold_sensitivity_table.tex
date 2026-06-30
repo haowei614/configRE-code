@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering
+\caption{Threshold Sensitivity Analysis: Effect of $\tau_1$ on Agent Selection and Negotiation Quality (averaged over 5 case studies $\times$ 3 seeds)}
+\label{tab:threshold_sensitivity}
+\begin{tabular}{l ccccc c}
+\toprule
+$\tau_1$ & $|AG^*|$ & ASP$\uparrow$ & ASR$\uparrow$ & DFS$\uparrow$ & CNR$\downarrow$ & Tokens (K) \\
+\midrule
+0.3 & 10.33 & 0.46 & 0.88 & 0.60 & 0.60 & 43 \\
+0.4 & 6.07 & 0.71 & 0.79 & 0.74 & 0.49 & 29 \\
+0.5 & 6.00 & 0.71 & 0.77 & 0.74 & 0.46 & 29 \\
+\textbf{0.6} & 5.00 & 0.84 & 0.77 & 0.80 & 0.13 & 23 \\
+0.7 & 5.27 & 0.84 & 0.80 & 0.81 & 0.20 & 25 \\
+0.8 & 5.00 & 0.84 & 0.77 & 0.80 & 0.17 & 23 \\
+0.9 & 3.53 & 0.86 & 0.55 & 0.66 & 0.13 & 19 \\
+\bottomrule
+\end{tabular}
+\begin{minipage}{\textwidth}
+\vspace{4pt}
+\footnotesize
+Bold row indicates the default threshold used in the main experiments. Results averaged over 3 seeds per case study.
+\end{minipage}
+\end{table*}

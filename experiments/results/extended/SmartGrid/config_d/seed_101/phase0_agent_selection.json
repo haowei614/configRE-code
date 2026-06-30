@@ -1,0 +1,109 @@
+{
+  "selected_agents": [
+    "SafetyAgent",
+    "EfficiencyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "TrustworthinessAgent",
+    "GreenAgent",
+    "FlexibilityAgent"
+  ],
+  "tier1_scores": {
+    "SafetyAgent": 0.8,
+    "EfficiencyAgent": 0.8,
+    "PerformanceAgent": 1.0,
+    "ReliabilityAgent": 0.8,
+    "UsabilityAgent": 0.5,
+    "SecurityAgent": 0.8,
+    "MaintainabilityAgent": 0.5,
+    "CompatibilityAgent": 0.5,
+    "FlexibilityAgent": 0.3,
+    "TrustworthinessAgent": 0.8
+  },
+  "tier1_selected": [
+    "SafetyAgent",
+    "EfficiencyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "TrustworthinessAgent"
+  ],
+  "tier2_domains": [
+    "IoT/embedded"
+  ],
+  "tier2_selected": [],
+  "tier3_constraints": [
+    {
+      "constraint_text": "Grid stability decisions must be computed within 500ms.",
+      "agent_name": "PerformanceAgent",
+      "priority": "high",
+      "reasoning": "This constraint relates to time behaviour and response time, which is a primary concern of the PerformanceAgent."
+    },
+    {
+      "constraint_text": "Meter data ingestion must sustain 50,000 messages/second during peak collection windows.",
+      "agent_name": "PerformanceAgent",
+      "priority": "high",
+      "reasoning": "This constraint addresses throughput stability, which falls under the PerformanceAgent's concerns."
+    },
+    {
+      "constraint_text": "The control system must maintain operation during partial network failures.",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "This constraint is about maintaining availability and fault tolerance, which are key aspects of the ReliabilityAgent."
+    },
+    {
+      "constraint_text": "Failover to backup control centers must complete within 30 seconds.",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "This constraint relates to recoverability and availability, which are concerns of the ReliabilityAgent."
+    },
+    {
+      "constraint_text": "Data loss of meter readings must not exceed 0.01%.",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "This constraint pertains to data integrity and availability, which are critical for the ReliabilityAgent."
+    },
+    {
+      "constraint_text": "Automated load shedding must include safety interlocks to prevent equipment damage.",
+      "agent_name": "SafetyAgent",
+      "priority": "high",
+      "reasoning": "This constraint is related to preventing physical harm and ensuring safety, which is the focus of the SafetyAgent."
+    },
+    {
+      "constraint_text": "The system must optimize for carbon footprint reduction.",
+      "agent_name": "GreenAgent",
+      "priority": "high",
+      "reasoning": "This constraint directly addresses sustainability and environmental impact, which are the primary concerns of the GreenAgent."
+    },
+    {
+      "constraint_text": "The SCADA/ICS communication channels must be protected against cyber attacks per NERC CIP standards.",
+      "agent_name": "SecurityAgent",
+      "priority": "high",
+      "reasoning": "This constraint involves protecting the system's integrity and confidentiality, which are key concerns of the SecurityAgent."
+    },
+    {
+      "constraint_text": "All remote access must use multi-factor authentication.",
+      "agent_name": "SecurityAgent",
+      "priority": "high",
+      "reasoning": "This constraint relates to authentication and security measures, which are the focus of the SecurityAgent."
+    },
+    {
+      "constraint_text": "The platform must scale to support up to 500,000 endpoints without architecture changes.",
+      "agent_name": "FlexibilityAgent",
+      "priority": "medium",
+      "reasoning": "This constraint involves adaptability and scalability, which are concerns of the FlexibilityAgent."
+    }
+  ],
+  "tier3_selected": [
+    "GreenAgent",
+    "FlexibilityAgent"
+  ],
+  "tier1_threshold": 0.6,
+  "total_agents": 8,
+  "token_usage": {
+    "input_tokens": 9628,
+    "output_tokens": 1177,
+    "total_tokens": 10805
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "run_id": "loanapproval-input-20260629T093143Z-s202",
+  "case_id": "LoanApproval",
+  "system": "quare",
+  "setting": "negotiation_integration_verification",
+  "seed": 202,
+  "model": "gpt-4o-mini",
+  "temperature": 0.7,
+  "round_cap": 3,
+  "system_identity": {
+    "system_name": "quare",
+    "implementation": "deterministic-parity-pipeline",
+    "implementation_version": "0.1.0",
+    "python_version": "3.13.13",
+    "platform": "macOS-15.7.7-arm64-arm-64bit-Mach-O",
+    "machine": "arm64"
+  },
+  "provenance": {
+    "model": "gpt-4o-mini",
+    "temperature": 0.7,
+    "seed": 202,
+    "prompt_hash": "de836f9d15b6caf42bdd7ae33c7144c54d5b6f1570e7f0c26abd2b564df2654a",
+    "corpus_hash": "91b26f1997c0a902e0428783f8209735f20c243dfe60df6eb00f3b8c00fce5b7",
+    "corpus_path": "/Users/haowei/Downloads/ConfigRE/configRE-code/data/knowledge_base"
+  },
+  "execution_flags": {
+    "rag_fallback_used": false,
+    "llm_fallback_used": false,
+    "fallback_tainted": false,
+    "retry_used": false,
+    "retry_count": 0
+  },
+  "comparability": {
+    "is_comparable": true,
+    "non_comparable_reasons": []
+  },
+  "max_tokens": 4000,
+  "rag_enabled": true,
+  "rag_backend": "local_tfidf",
+  "rag_fallback_used": false,
+  "start_timestamp": "2026-06-29T09:31:43Z",
+  "end_timestamp": "2026-06-29T09:32:51Z",
+  "runtime_seconds": 67.772599,
+  "artifacts_dir": "experiments/results/extended/LoanApproval/config_b/seed_202",
+  "artifact_paths": {
+    "phase1_initial_models.json": "experiments/results/extended/LoanApproval/config_b/seed_202/phase1_initial_models.json",
+    "phase2_negotiation_trace.json": "experiments/results/extended/LoanApproval/config_b/seed_202/phase2_negotiation_trace.json",
+    "phase3_integrated_kaos_model.json": "experiments/results/extended/LoanApproval/config_b/seed_202/phase3_integrated_kaos_model.json",
+    "phase4_verification_report.json": "experiments/results/extended/LoanApproval/config_b/seed_202/phase4_verification_report.json",
+    "phase0_external_spec_rules.json": "experiments/results/extended/LoanApproval/config_b/seed_202/phase0_external_spec_rules.json",
+    "phase2_conflict_map.json": "experiments/results/extended/LoanApproval/config_b/seed_202/phase2_conflict_map.json",
+    "phase5_software_materials.json": "experiments/results/extended/LoanApproval/config_b/seed_202/phase5_software_materials.json"
+  },
+  "artifact_blinded": false,
+  "blinding_scheme_version": "",
+  "blind_eval_run_id": "",
+  "judge_pipeline_hash": "",
+  "trace_audit_path": "",
+  "notes": {
+    "phase_a_b": true,
+    "generation_mode": "deterministic-parity-pipeline",
+    "runtime_semantics": {
+      "mode": "quare_dialectic_scaffold_v1"
+    },
+    "case_description": "AI-Assisted Loan Approval System (Financial + AI/ML domain, based on PROMISE NFR dataset patterns)",
+    "system": "quare",
+    "setting": "negotiation_integration_verification",
+    "negotiation_enabled": true,
+    "verification_executed": true,
+    "quare_only_behaviors": {
+      "phase0_external_spec_processing": true,
+      "dynamic_round_control": true,
+      "phase25_conflict_map_generation": true,
+      "phase5_software_materials_generation": true,
+      "phase2_dialectic_negotiation": true
+    },
+    "quare_optional_artifacts": {
+      "phase0_external_spec_rules.json": "experiments/results/extended/LoanApproval/config_b/seed_202/phase0_external_spec_rules.json",
+      "phase2_conflict_map.json": "experiments/results/extended/LoanApproval/config_b/seed_202/phase2_conflict_map.json",
+      "phase5_software_materials.json": "experiments/results/extended/LoanApproval/config_b/seed_202/phase5_software_materials.json"
+    },
+    "phase2_llm": {
+      "source": "openai",
+      "enabled": true,
+      "seed": 202,
+      "seed_applied_turns": 8,
+      "turns": 8,
+      "fallback_turns": 0,
+      "retry_count": 0,
+      "parse_recoveries": 0
+    },
+    "mare_runtime_llm": {
+      "source": "disabled",
+      "enabled": false,
+      "seed": 202,
+      "seed_applied_turns": 0,
+      "turns": 0,
+      "fallback_turns": 0,
+      "retry_count": 0,
+      "parse_recoveries": 0,
+      "execution_mode": "deterministic_emulation"
+    },
+    "rag_corpus_dir": "/Users/haowei/Downloads/ConfigRE/configRE-code/data/knowledge_base",
+    "rag_corpus_hash": "91b26f1997c0a902e0428783f8209735f20c243dfe60df6eb00f3b8c00fce5b7",
+    "rag_chunk_count": 308,
+    "prompt_contract_hash": "de836f9d15b6caf42bdd7ae33c7144c54d5b6f1570e7f0c26abd2b564df2654a",
+    "phase0_agent_selection": "",
+    "effective_agent_config": [
+      "ExplainabilityAgent",
+      "SecurityAgent",
+      "PrivacyAgent",
+      "ReliabilityAgent",
+      "ResponsibilityAgent",
+      "PerformanceAgent"
+    ],
+    "token_usage": {
+      "phase0": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0,
+        "status": "tracked"
+      },
+      "phase1": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0,
+        "status": "deterministic_template_generation"
+      },
+      "phase2": {
+        "input_tokens": 14732,
+        "output_tokens": 5337,
+        "total_tokens": 20069,
+        "status": "tracked"
+      },
+      "phase4": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "total_tokens": 0,
+        "status": "deterministic_rule_verification"
+      },
+      "total": {
+        "input_tokens": 14732,
+        "output_tokens": 5337,
+        "total_tokens": 20069,
+        "status": "partial_if_any_phase_untracked"
+      }
+    }
+  },
+  "token_usage": {
+    "phase0": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "status": "tracked"
+    },
+    "phase1": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "status": "deterministic_template_generation"
+    },
+    "phase2": {
+      "input_tokens": 14732,
+      "output_tokens": 5337,
+      "total_tokens": 20069,
+      "status": "tracked"
+    },
+    "phase4": {
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "status": "deterministic_rule_verification"
+    },
+    "total": {
+      "input_tokens": 14732,
+      "output_tokens": 5337,
+      "total_tokens": 20069,
+      "status": "partial_if_any_phase_untracked"
+    }
+  }
+}

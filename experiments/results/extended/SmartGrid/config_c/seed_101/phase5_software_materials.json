@@ -1,0 +1,659 @@
+{
+  "phase": "5_software_materials_generation",
+  "case_id": "SmartGrid",
+  "setting": "negotiation_integration_verification",
+  "generated_at": "2026-06-29T09:04:23Z",
+  "materials": {
+    "srs_outline": [
+      "System Scope and Stakeholders",
+      "Quality-Attribute Requirements (Compatibility/Efficiency/Explainability/Flexibility/Functional Safety/Maintainability/Performance/Privacy/Reliability/Responsibility/Safety/Security/Sustainability/Trustworthiness/Usability)",
+      "Negotiation and Conflict Resolution Decisions",
+      "Verification and Compliance Evidence"
+    ],
+    "implementation_checklist": [
+      "Preserve canonical phase artifact compatibility",
+      "Enforce strict provenance and taint controls",
+      "Trace each integrated requirement to a verification signal"
+    ],
+    "traceability_matrix": [
+      {
+        "element_id": "COM-L1-010",
+        "quality_attribute": "Compatibility",
+        "statement": "Compatibility objective for SmartGrid: Scalability: The platform must scale to support up to 500,000 endpoints without architecture changes",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-010-01",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): Scalability: The platform must scale to support up to 500,000 endpoints without architecture changes",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-010-02",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): Project: Smart Grid Energy Management Platform for Municipal Utility",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-010-03",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): The system is a distributed energy management platform for a municipal utility serving 200,000 households",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-010-04",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): It integrates smart meters, renewable energy sources (solar panels, wind turbines), battery storage syste...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-010-05",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): The system operates as a cyber-physical system with real-time monitoring and automated load balancing",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "COM-L2-010-06",
+        "quality_attribute": "Compatibility",
+        "statement": "The system shall ensure compatibility (co-existence, interoperability): [Core Functional Requirements]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L1-002",
+        "quality_attribute": "Efficiency",
+        "statement": "Efficiency objective for SmartGrid: [Non-Functional Constraints]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EFF-L2-002-01",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (latency optimization): [Non-Functional Constraints]",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EFF-L2-002-02",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (throughput stability): Real-Time Performance: Grid stability decisions must be computed within 500ms",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EFF-L2-002-03",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (resource utilization): Meter data ingestion must sustain 50,000 messages/second during peak collection windows",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EFF-L2-002-04",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (latency optimization): Reliability: The control system must maintain operation during partial network failures",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EFF-L2-002-05",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (throughput stability): Failover to backup control centers must complete within 30 seconds",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EFF-L2-002-06",
+        "quality_attribute": "Efficiency",
+        "statement": "The system shall ensure efficiency (resource utilization): Data loss of meter readings must not exceed 0",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EXP-L1-014",
+        "quality_attribute": "Explainability",
+        "statement": "Explainability objective for SmartGrid: Real-Time Monitoring: The system shall collect meter readings from 200,000+ smart meters at 15-minute intervals and process the data stre...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "EXP-L2-014-01",
+        "quality_attribute": "Explainability",
+        "statement": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): Real-Time Monitoring: The system shall coll...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EXP-L2-014-02",
+        "quality_attribute": "Explainability",
+        "statement": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): Demand Response: The system shall automatic...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EXP-L2-014-03",
+        "quality_attribute": "Explainability",
+        "statement": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): Peak shaving algorithms must reduce peak de...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EXP-L2-014-04",
+        "quality_attribute": "Explainability",
+        "statement": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): Renewable Integration: The system shall for...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EXP-L2-014-05",
+        "quality_attribute": "Explainability",
+        "statement": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): Billing & Analytics: The system shall suppo...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "EXP-L2-014-06",
+        "quality_attribute": "Explainability",
+        "statement": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): [Non-Functional Constraints]",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "FLE-L1-011",
+        "quality_attribute": "Flexibility",
+        "statement": "Flexibility objective for SmartGrid: The system is a distributed energy management platform for a municipal utility serving 200,000 households",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-011-01",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): The system is a distributed energy management platform for a municipal utility serving 200,00...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-011-02",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): It integrates smart meters, renewable energy sources (solar panels, wind turbines), battery s...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-011-03",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): The system operates as a cyber-physical system with real-time monitoring and automated load b...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-011-04",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): [Core Functional Requirements]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-011-05",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): Real-Time Monitoring: The system shall collect meter readings from 200,000+ smart meters at 1...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-011-06",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): Demand Response: The system shall automatically adjust load distribution based on real-time d...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L1-013",
+        "quality_attribute": "Functional Safety",
+        "statement": "Functional Safety objective for SmartGrid: [Core Functional Requirements]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-013-01",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): [Core Functional Requirements]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-013-02",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): Real-Time Monitoring: The system shall collect meter...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-013-03",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): Demand Response: The system shall automatically adjus...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-013-04",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): Peak shaving algorithms must reduce peak demand by at...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-013-05",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): Renewable Integration: The system shall forecast sola...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FUN-L2-013-06",
+        "quality_attribute": "Functional Safety",
+        "statement": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): Billing & Analytics: The system shall support time-of...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L1-009",
+        "quality_attribute": "Maintainability",
+        "statement": "Maintainability objective for SmartGrid: All remote access must use multi-factor authentication",
+        "verification_anchor": "candidate_resolution"
+      },
+      {
+        "element_id": "MAI-L2-009-01",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): All remote access must use multi-factor authentication",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L2-009-02",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): Scalability: The platform must scale to support up to 500,000 endpo...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L2-009-03",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): Project: Smart Grid Energy Management Platform for Municipal Utility",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L2-009-04",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): The system is a distributed energy management platform for a munici...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L2-009-05",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): It integrates smart meters, renewable energy sources (solar panels,...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "MAI-L2-009-06",
+        "quality_attribute": "Maintainability",
+        "statement": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): The system operates as a cyber-physical system with real-time monit...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PER-L1-012",
+        "quality_attribute": "Performance",
+        "statement": "Performance objective for SmartGrid: It integrates smart meters, renewable energy sources (solar panels, wind turbines), battery storage systems, and demand-response controllers",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PER-L2-012-01",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): It integrates smart meters, renewable energy sources (solar panels, wind turbines), battery...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PER-L2-012-02",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): The system operates as a cyber-physical system with real-time monitoring and automated load...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PER-L2-012-03",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): [Core Functional Requirements]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PER-L2-012-04",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): Real-Time Monitoring: The system shall collect meter readings from 200,000+ smart meters at...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PER-L2-012-05",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): Demand Response: The system shall automatically adjust load distribution based on real-time...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PER-L2-012-06",
+        "quality_attribute": "Performance",
+        "statement": "The system shall ensure performance (time behaviour, resource utilisation, capacity): Peak shaving algorithms must reduce peak demand by at least 15%",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L1-015",
+        "quality_attribute": "Privacy",
+        "statement": "Privacy objective for SmartGrid: Peak shaving algorithms must reduce peak demand by at least 15%",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-015-01",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Peak shaving algorithms must reduce peak demand by at least 15%",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-015-02",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Renewable Integration: The system shall forecast solar and w...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-015-03",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Billing & Analytics: The system shall support time-of-use pr...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-015-04",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): [Non-Functional Constraints]",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-015-05",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Real-Time Performance: Grid stability decisions must be comp...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-015-06",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Meter data ingestion must sustain 50,000 messages/second dur...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L1-006",
+        "quality_attribute": "Reliability",
+        "statement": "Reliability objective for SmartGrid: Safety: Automated load shedding must include safety interlocks to prevent equipment damage and ensure critical facilities (hospitals, emerge...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L2-006-01",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Safety: Automated load shedding must include safety interlocks to prevent equipmen...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-006-02",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Sustainability: The system must optimize for carbon footprint reduction",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-006-03",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Reporting must include ISO 14001 environmental metrics",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-006-04",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The platform itself must minimize computational energy consumption",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-006-05",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Security: The SCADA/ICS communication channels must be protected against cyber att...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-006-06",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): All remote access must use multi-factor authentication",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "RES-L1-005",
+        "quality_attribute": "Responsibility",
+        "statement": "Responsibility objective for SmartGrid: Data loss of meter readings must not exceed 0",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "RES-L2-005-01",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (regulatory accountability): Data loss of meter readings must not exceed 0",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "RES-L2-005-02",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (stakeholder transparency): Safety: Automated load shedding must include safety interlocks to prevent equipment damage and ensure critical...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "RES-L2-005-03",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (ethical compliance): Sustainability: The system must optimize for carbon footprint reduction",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "RES-L2-005-04",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (regulatory accountability): Reporting must include ISO 14001 environmental metrics",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "RES-L2-005-05",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (stakeholder transparency): The platform itself must minimize computational energy consumption",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "RES-L2-005-06",
+        "quality_attribute": "Responsibility",
+        "statement": "The system shall ensure responsibility (ethical compliance): Security: The SCADA/ICS communication channels must be protected against cyber attacks per NERC CIP standards",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L1-001",
+        "quality_attribute": "Safety",
+        "statement": "Safety objective for SmartGrid: Billing & Analytics: The system shall support time-of-use pricing, net metering for prosumers, and provide consumption analytics dashboards for b...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-01",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (hazard prevention): Billing & Analytics: The system shall support time-of-use pricing, net metering for prosumers, and provide consumption analyt...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L2-001-02",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (fault tolerance): [Non-Functional Constraints]",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L2-001-03",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (risk mitigation): Real-Time Performance: Grid stability decisions must be computed within 500ms",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-04",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (hazard prevention): Meter data ingestion must sustain 50,000 messages/second during peak collection windows",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SAF-L2-001-05",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (fault tolerance): Reliability: The control system must maintain operation during partial network failures",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SAF-L2-001-06",
+        "quality_attribute": "Safety",
+        "statement": "The system shall ensure safety (risk mitigation): Failover to backup control centers must complete within 30 seconds",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SEC-L1-008",
+        "quality_attribute": "Security",
+        "statement": "Security objective for SmartGrid: The platform itself must minimize computational energy consumption",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-008-01",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The platform itself must minimize computational energy consumption",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SEC-L2-008-02",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Security: The SCADA/ICS communication channels must be protected against cyber at...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SEC-L2-008-03",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): All remote access must use multi-factor authentication",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-008-04",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Scalability: The platform must scale to support up to 500,000 endpoints without a...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SEC-L2-008-05",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Project: Smart Grid Energy Management Platform for Municipal Utility",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SEC-L2-008-06",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The system is a distributed energy management platform for a municipal utility se...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SUS-L1-003",
+        "quality_attribute": "Sustainability",
+        "statement": "Sustainability objective for SmartGrid: Meter data ingestion must sustain 50,000 messages/second during peak collection windows",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SUS-L2-003-01",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (energy footprint reduction): Meter data ingestion must sustain 50,000 messages/second during peak collection windows",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SUS-L2-003-02",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (resource lifecycle control): Reliability: The control system must maintain operation during partial network failures",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SUS-L2-003-03",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (environmental impact awareness): Failover to backup control centers must complete within 30 seconds",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SUS-L2-003-04",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (energy footprint reduction): Data loss of meter readings must not exceed 0",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SUS-L2-003-05",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (resource lifecycle control): Safety: Automated load shedding must include safety interlocks to prevent equipment damage and ensure critic...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SUS-L2-003-06",
+        "quality_attribute": "Sustainability",
+        "statement": "The system shall ensure sustainability (environmental impact awareness): Sustainability: The system must optimize for carbon footprint reduction",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L1-004",
+        "quality_attribute": "Trustworthiness",
+        "statement": "Trustworthiness objective for SmartGrid: Reliability: The control system must maintain operation during partial network failures",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-01",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (security assurance): Reliability: The control system must maintain operation during partial network failures",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-004-02",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (auditability): Failover to backup control centers must complete within 30 seconds",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-004-03",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (integrity guarantees): Data loss of meter readings must not exceed 0",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-004-04",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (security assurance): Safety: Automated load shedding must include safety interlocks to prevent equipment damage and ensure critical faci...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-004-05",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (auditability): Sustainability: The system must optimize for carbon footprint reduction",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "TRU-L2-004-06",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (integrity guarantees): Reporting must include ISO 14001 environmental metrics",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L1-007",
+        "quality_attribute": "Usability",
+        "statement": "Usability objective for SmartGrid: Reporting must include ISO 14001 environmental metrics",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L2-007-01",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Reporting must include ISO 14001 environmental metrics",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L2-007-02",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The platform itself must minimize computational energy consumption",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L2-007-03",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Security: The SCADA/ICS communication channels must be protected against cyb...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L2-007-04",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): All remote access must use multi-factor authentication",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L2-007-05",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Scalability: The platform must scale to support up to 500,000 endpoints with...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L2-007-06",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Project: Smart Grid Energy Management Platform for Municipal Utility",
+        "verification_anchor": "resolved"
+      }
+    ]
+  },
+  "quality_signals": {
+    "topology_is_valid": true,
+    "deterministic_is_valid": true,
+    "compliance_coverage": 1.0,
+    "s_logic": 1.0,
+    "detected_conflict_pairs": 9,
+    "resolved_conflict_pairs": 2
+  }
+}

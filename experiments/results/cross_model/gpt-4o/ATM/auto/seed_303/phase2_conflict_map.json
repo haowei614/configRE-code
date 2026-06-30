@@ -1,0 +1,74 @@
+{
+  "phase": "2.5_conflict_resolution",
+  "case_id": "ATM",
+  "setting": "negotiation_integration_verification",
+  "generated_at": "2026-06-29T14:00:42Z",
+  "round_cap": 3,
+  "conflict_map": {
+    "PerformanceAgent_ReliabilityAgent": {
+      "detected_conflict": true,
+      "resolved_conflict": false,
+      "total_rounds": 3,
+      "max_round_observed": 3,
+      "requires_refinement_count": 2,
+      "latest_resolution_state": "unresolved",
+      "final_consensus": false
+    },
+    "ReliabilityAgent_UsabilityAgent": {
+      "detected_conflict": true,
+      "resolved_conflict": false,
+      "total_rounds": 3,
+      "max_round_observed": 3,
+      "requires_refinement_count": 2,
+      "latest_resolution_state": "unresolved",
+      "final_consensus": false
+    },
+    "UsabilityAgent_SecurityAgent": {
+      "detected_conflict": true,
+      "resolved_conflict": false,
+      "total_rounds": 3,
+      "max_round_observed": 3,
+      "requires_refinement_count": 2,
+      "latest_resolution_state": "unresolved",
+      "final_consensus": false
+    },
+    "SecurityAgent_TrustworthinessAgent": {
+      "detected_conflict": true,
+      "resolved_conflict": false,
+      "total_rounds": 3,
+      "max_round_observed": 3,
+      "requires_refinement_count": 2,
+      "latest_resolution_state": "unresolved",
+      "final_consensus": false
+    },
+    "TrustworthinessAgent_PrivacyAgent": {
+      "detected_conflict": true,
+      "resolved_conflict": false,
+      "total_rounds": 3,
+      "max_round_observed": 3,
+      "requires_refinement_count": 2,
+      "latest_resolution_state": "unresolved",
+      "final_consensus": false
+    },
+    "PrivacyAgent_PerformanceAgent": {
+      "detected_conflict": true,
+      "resolved_conflict": false,
+      "total_rounds": 3,
+      "max_round_observed": 3,
+      "requires_refinement_count": 2,
+      "latest_resolution_state": "unresolved",
+      "final_consensus": false
+    }
+  },
+  "summary": {
+    "total_pairs": 6,
+    "detected_conflict_pairs": 6,
+    "resolved_conflict_pairs": 0,
+    "unresolved_conflict_pairs": 6,
+    "max_round_observed": 3,
+    "round_cap_reached": true,
+    "phase2_detected_conflicts": 6,
+    "phase2_resolved_conflicts": 0,
+    "phase2_alignment_ok": true
+  }
+}

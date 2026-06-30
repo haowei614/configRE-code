@@ -1,0 +1,87 @@
+{
+  "selected_agents": [
+    "EfficiencyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "TrustworthinessAgent",
+    "PrivacyAgent",
+    "ExplainabilityAgent",
+    "ResponsibilityAgent"
+  ],
+  "tier1_scores": {
+    "SafetyAgent": 0.0,
+    "EfficiencyAgent": 0.8,
+    "PerformanceAgent": 0.8,
+    "ReliabilityAgent": 0.8,
+    "UsabilityAgent": 0.5,
+    "SecurityAgent": 1.0,
+    "MaintainabilityAgent": 0.5,
+    "CompatibilityAgent": 0.3,
+    "FlexibilityAgent": 0.3,
+    "TrustworthinessAgent": 0.8
+  },
+  "tier1_selected": [
+    "EfficiencyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "TrustworthinessAgent"
+  ],
+  "tier2_domains": [
+    "financial",
+    "AI/ML"
+  ],
+  "tier2_selected": [
+    "PrivacyAgent",
+    "ExplainabilityAgent"
+  ],
+  "tier3_constraints": [
+    {
+      "constraint_text": "All AI-generated decisions must provide human-readable explanations citing specific applicant attributes.",
+      "agent_name": "ExplainabilityAgent",
+      "priority": "high",
+      "reasoning": "This agent is relevant because the constraint directly addresses model transparency and decision interpretability as required by the EU AI Act Article 13."
+    },
+    {
+      "constraint_text": "The system must monitor and report demographic parity and equalized odds metrics across protected classes (race, gender, age).",
+      "agent_name": "ResponsibilityAgent",
+      "priority": "high",
+      "reasoning": "This agent is activated due to the ethical and compliance concerns related to fairness and bias in AI systems."
+    },
+    {
+      "constraint_text": "Applicant PII must be processed under GDPR principles.",
+      "agent_name": "PrivacyAgent",
+      "priority": "high",
+      "reasoning": "This agent is relevant as it addresses data minimization, consent management, and data subject rights as per GDPR."
+    },
+    {
+      "constraint_text": "The system must implement end-to-end encryption for all applicant data.",
+      "agent_name": "SecurityAgent",
+      "priority": "high",
+      "reasoning": "This agent is relevant because it concerns the confidentiality and integrity of applicant data."
+    },
+    {
+      "constraint_text": "The risk scoring service must maintain 99.9% availability during business hours.",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "This agent is activated due to the requirement for high availability and fault tolerance in the risk scoring service."
+    },
+    {
+      "constraint_text": "Batch processing of 10,000 applications must complete within 2 hours for portfolio re-scoring.",
+      "agent_name": "PerformanceAgent",
+      "priority": "high",
+      "reasoning": "This agent is relevant as it addresses time behavior and resource utilization in processing applications."
+    }
+  ],
+  "tier3_selected": [
+    "ResponsibilityAgent"
+  ],
+  "tier1_threshold": 0.6,
+  "total_agents": 8,
+  "token_usage": {
+    "input_tokens": 10372,
+    "output_tokens": 940,
+    "total_tokens": 11312
+  }
+}

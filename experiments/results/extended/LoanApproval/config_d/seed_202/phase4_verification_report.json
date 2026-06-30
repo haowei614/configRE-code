@@ -1,0 +1,638 @@
+{
+  "verification_results": {
+    "fact_checking": {
+      "hallucination_reports": [],
+      "flagged_elements": [],
+      "total_checked": 56
+    },
+    "deterministic_validation": {
+      "is_valid": true,
+      "violations": [],
+      "passed_rules": [
+        "topology_validity",
+        "traceability",
+        "logical_consistency"
+      ]
+    },
+    "topology_status": {
+      "status": "Valid",
+      "is_valid": true,
+      "is_dag": true,
+      "orphan_count": 0,
+      "cycle_count": 0,
+      "invalid_leaf_count": 0,
+      "orphan_elements": [],
+      "cycles": [],
+      "invalid_leaves": []
+    },
+    "consistency_verification": {
+      "status": "passed",
+      "issues": [],
+      "logical_score": 5,
+      "logical_score_normalized": 1.0,
+      "terminology_score": 3,
+      "terminology_consistency_ratio": 0.75
+    },
+    "universal_verification": {
+      "verification_summary": {
+        "total_constraints": 29,
+        "total_conflicts": 0,
+        "critical_conflicts": 0,
+        "quality_score": 100.0,
+        "verification_passed": true
+      },
+      "constraint_analysis": {
+        "extracted_constraints": [
+          {
+            "clause": "Project: AI-Assisted Consumer Loan Approval Platform for Regional Bank",
+            "best_overlap": 0.689655,
+            "matched": true
+          },
+          {
+            "clause": "The system is a machine learning-powered loan origination platform for a regional bank processing 50,000+ loan applic...",
+            "best_overlap": 0.844444,
+            "matched": true
+          },
+          {
+            "clause": "It uses ML models to assess credit risk, detect fraud, and recommend approval decisions",
+            "best_overlap": 0.848485,
+            "matched": true
+          },
+          {
+            "clause": "Human loan officers review AI recommendations for final decisions",
+            "best_overlap": 0.666667,
+            "matched": true
+          },
+          {
+            "clause": "The system must comply with the Equal Credit Opportunity Act (ECOA), Fair Lending regulations, and the EU AI Act for...",
+            "best_overlap": 0.851064,
+            "matched": true
+          },
+          {
+            "clause": "[Core Functional Requirements]",
+            "best_overlap": 0.333333,
+            "matched": false
+          },
+          {
+            "clause": "Application Processing: The system shall accept loan applications through web portal, mobile app, and branch interfaces",
+            "best_overlap": 0.864865,
+            "matched": true
+          },
+          {
+            "clause": "Applications must be enriched with credit bureau data, employment verification, and property appraisal data",
+            "best_overlap": 0.684211,
+            "matched": true
+          },
+          {
+            "clause": "Risk Assessment: The ML pipeline shall produce a credit risk score, fraud probability score, and recommended decision...",
+            "best_overlap": 0.833333,
+            "matched": true
+          },
+          {
+            "clause": "Decision Support: Loan officers shall receive the AI recommendation with key risk factors highlighted",
+            "best_overlap": 0.848485,
+            "matched": true
+          },
+          {
+            "clause": "The system must present the top contributing features for each recommendation",
+            "best_overlap": 0.666667,
+            "matched": true
+          },
+          {
+            "clause": "Portfolio Management: The system shall continuously monitor approved loans for early default signals and update risk...",
+            "best_overlap": 0.830189,
+            "matched": true
+          },
+          {
+            "clause": "[Non-Functional Constraints]",
+            "best_overlap": 0.352941,
+            "matched": false
+          },
+          {
+            "clause": "Explainability: All AI-generated decisions must provide human-readable explanations citing specific applicant attributes",
+            "best_overlap": 0.848485,
+            "matched": true
+          },
+          {
+            "clause": "The system must support counterfactual explanations ('what would need to change for approval')",
+            "best_overlap": 0.8125,
+            "matched": true
+          },
+          {
+            "clause": "Model documentation must meet EU AI Act Article 13 transparency requirements",
+            "best_overlap": 0.709677,
+            "matched": true
+          },
+          {
+            "clause": "Fairness & Bias: The system must monitor and report demographic parity and equalized odds metrics across protected cl...",
+            "best_overlap": 0.844444,
+            "matched": true
+          },
+          {
+            "clause": "Disparate impact ratio must remain above 0",
+            "best_overlap": 0.736842,
+            "matched": true
+          },
+          {
+            "clause": "8 for all protected groups",
+            "best_overlap": 0.526316,
+            "matched": true
+          },
+          {
+            "clause": "Privacy: Applicant PII must be processed under GDPR principles",
+            "best_overlap": 0.529412,
+            "matched": true
+          },
+          {
+            "clause": "Data retention policies must automatically purge declined application details after 24 months",
+            "best_overlap": 0.827586,
+            "matched": true
+          },
+          {
+            "clause": "Consent management must track data subject rights",
+            "best_overlap": 0.518519,
+            "matched": true
+          },
+          {
+            "clause": "Security: The system must implement end-to-end encryption for all applicant data",
+            "best_overlap": 0.615385,
+            "matched": true
+          },
+          {
+            "clause": "Access controls must enforce need-to-know principles with comprehensive audit trails",
+            "best_overlap": 0.55814,
+            "matched": true
+          },
+          {
+            "clause": "Reliability: The risk scoring service must maintain 99",
+            "best_overlap": 0.761905,
+            "matched": true
+          },
+          {
+            "clause": "9% availability during business hours",
+            "best_overlap": 0.526316,
+            "matched": true
+          },
+          {
+            "clause": "Model serving must support graceful degradation to rule-based fallback if ML services are unavailable",
+            "best_overlap": 0.769231,
+            "matched": true
+          },
+          {
+            "clause": "Performance: Batch processing of 10,000 applications must complete within 2 hours for portfolio re-scoring",
+            "best_overlap": 0.780488,
+            "matched": true
+          },
+          {
+            "clause": "Real-time scoring must complete within 5 seconds for walk-in applicants",
+            "best_overlap": 0.857143,
+            "matched": true
+          }
+        ]
+      },
+      "conflict_analysis": {
+        "detected_conflicts": []
+      },
+      "resolutions": {
+        "applied": []
+      },
+      "recommendations": [
+        "No contradiction detected"
+      ],
+      "session_log": {
+        "status": "passed"
+      }
+    },
+    "compliance_coverage": {
+      "satisfied_applicable_clauses": 27,
+      "total_applicable_clauses": 29,
+      "coverage_ratio": 0.931034,
+      "clauses": [
+        {
+          "clause": "Project: AI-Assisted Consumer Loan Approval Platform for Regional Bank",
+          "best_overlap": 0.689655,
+          "matched": true
+        },
+        {
+          "clause": "The system is a machine learning-powered loan origination platform for a regional bank processing 50,000+ loan applic...",
+          "best_overlap": 0.844444,
+          "matched": true
+        },
+        {
+          "clause": "It uses ML models to assess credit risk, detect fraud, and recommend approval decisions",
+          "best_overlap": 0.848485,
+          "matched": true
+        },
+        {
+          "clause": "Human loan officers review AI recommendations for final decisions",
+          "best_overlap": 0.666667,
+          "matched": true
+        },
+        {
+          "clause": "The system must comply with the Equal Credit Opportunity Act (ECOA), Fair Lending regulations, and the EU AI Act for...",
+          "best_overlap": 0.851064,
+          "matched": true
+        },
+        {
+          "clause": "[Core Functional Requirements]",
+          "best_overlap": 0.333333,
+          "matched": false
+        },
+        {
+          "clause": "Application Processing: The system shall accept loan applications through web portal, mobile app, and branch interfaces",
+          "best_overlap": 0.864865,
+          "matched": true
+        },
+        {
+          "clause": "Applications must be enriched with credit bureau data, employment verification, and property appraisal data",
+          "best_overlap": 0.684211,
+          "matched": true
+        },
+        {
+          "clause": "Risk Assessment: The ML pipeline shall produce a credit risk score, fraud probability score, and recommended decision...",
+          "best_overlap": 0.833333,
+          "matched": true
+        },
+        {
+          "clause": "Decision Support: Loan officers shall receive the AI recommendation with key risk factors highlighted",
+          "best_overlap": 0.848485,
+          "matched": true
+        },
+        {
+          "clause": "The system must present the top contributing features for each recommendation",
+          "best_overlap": 0.666667,
+          "matched": true
+        },
+        {
+          "clause": "Portfolio Management: The system shall continuously monitor approved loans for early default signals and update risk...",
+          "best_overlap": 0.830189,
+          "matched": true
+        },
+        {
+          "clause": "[Non-Functional Constraints]",
+          "best_overlap": 0.352941,
+          "matched": false
+        },
+        {
+          "clause": "Explainability: All AI-generated decisions must provide human-readable explanations citing specific applicant attributes",
+          "best_overlap": 0.848485,
+          "matched": true
+        },
+        {
+          "clause": "The system must support counterfactual explanations ('what would need to change for approval')",
+          "best_overlap": 0.8125,
+          "matched": true
+        },
+        {
+          "clause": "Model documentation must meet EU AI Act Article 13 transparency requirements",
+          "best_overlap": 0.709677,
+          "matched": true
+        },
+        {
+          "clause": "Fairness & Bias: The system must monitor and report demographic parity and equalized odds metrics across protected cl...",
+          "best_overlap": 0.844444,
+          "matched": true
+        },
+        {
+          "clause": "Disparate impact ratio must remain above 0",
+          "best_overlap": 0.736842,
+          "matched": true
+        },
+        {
+          "clause": "8 for all protected groups",
+          "best_overlap": 0.526316,
+          "matched": true
+        },
+        {
+          "clause": "Privacy: Applicant PII must be processed under GDPR principles",
+          "best_overlap": 0.529412,
+          "matched": true
+        },
+        {
+          "clause": "Data retention policies must automatically purge declined application details after 24 months",
+          "best_overlap": 0.827586,
+          "matched": true
+        },
+        {
+          "clause": "Consent management must track data subject rights",
+          "best_overlap": 0.518519,
+          "matched": true
+        },
+        {
+          "clause": "Security: The system must implement end-to-end encryption for all applicant data",
+          "best_overlap": 0.615385,
+          "matched": true
+        },
+        {
+          "clause": "Access controls must enforce need-to-know principles with comprehensive audit trails",
+          "best_overlap": 0.55814,
+          "matched": true
+        },
+        {
+          "clause": "Reliability: The risk scoring service must maintain 99",
+          "best_overlap": 0.761905,
+          "matched": true
+        },
+        {
+          "clause": "9% availability during business hours",
+          "best_overlap": 0.526316,
+          "matched": true
+        },
+        {
+          "clause": "Model serving must support graceful degradation to rule-based fallback if ML services are unavailable",
+          "best_overlap": 0.769231,
+          "matched": true
+        },
+        {
+          "clause": "Performance: Batch processing of 10,000 applications must complete within 2 hours for portfolio re-scoring",
+          "best_overlap": 0.780488,
+          "matched": true
+        },
+        {
+          "clause": "Real-time scoring must complete within 5 seconds for walk-in applicants",
+          "best_overlap": 0.857143,
+          "matched": true
+        }
+      ]
+    },
+    "terminology_consistency": {
+      "score": 3,
+      "consistency_ratio": 0.75,
+      "conflicts": [
+        {
+          "concept": "system",
+          "terms_used": [
+            "application",
+            "platform",
+            "service",
+            "system"
+          ],
+          "requirements": [
+            "EFF-L2-001-01",
+            "EFF-L2-001-02",
+            "EFF-L2-001-03",
+            "EFF-L2-001-04",
+            "EFF-L2-001-05",
+            "EFF-L2-001-06",
+            "EXP-L1-007",
+            "EXP-L2-007-01",
+            "EXP-L2-007-02",
+            "EXP-L2-007-03",
+            "EXP-L2-007-04",
+            "EXP-L2-007-05",
+            "EXP-L2-007-06",
+            "PER-L2-002-01",
+            "PER-L2-002-02",
+            "PER-L2-002-03",
+            "PER-L2-002-04",
+            "PER-L2-002-05",
+            "PER-L2-002-06",
+            "PRI-L2-006-01",
+            "PRI-L2-006-02",
+            "PRI-L2-006-03",
+            "PRI-L2-006-04",
+            "PRI-L2-006-05",
+            "PRI-L2-006-06",
+            "REL-L1-003",
+            "REL-L2-003-01",
+            "REL-L2-003-02",
+            "REL-L2-003-03",
+            "REL-L2-003-04",
+            "REL-L2-003-05",
+            "REL-L2-003-06",
+            "RES-L1-008",
+            "RES-L2-008-01",
+            "RES-L2-008-02",
+            "RES-L2-008-03",
+            "RES-L2-008-04",
+            "RES-L2-008-05",
+            "RES-L2-008-06",
+            "SEC-L2-004-01",
+            "SEC-L2-004-02",
+            "SEC-L2-004-03",
+            "SEC-L2-004-04",
+            "SEC-L2-004-05",
+            "SEC-L2-004-06",
+            "TRU-L2-005-01",
+            "TRU-L2-005-02",
+            "TRU-L2-005-03",
+            "TRU-L2-005-04",
+            "TRU-L2-005-05",
+            "TRU-L2-005-06"
+          ]
+        }
+      ],
+      "total_concepts": 4,
+      "consistent_concepts": 3
+    },
+    "s_logic": 1.0,
+    "s_term": 0.75
+  },
+  "fact_checking": {
+    "hallucination_reports": [],
+    "flagged_elements": [],
+    "total_checked": 56
+  },
+  "deterministic_validation": {
+    "is_valid": true,
+    "violations": [],
+    "passed_rules": [
+      "topology_validity",
+      "traceability",
+      "logical_consistency"
+    ]
+  },
+  "topology_status": {
+    "status": "Valid",
+    "is_valid": true,
+    "is_dag": true,
+    "orphan_count": 0,
+    "cycle_count": 0,
+    "invalid_leaf_count": 0,
+    "orphan_elements": [],
+    "cycles": [],
+    "invalid_leaves": []
+  },
+  "consistency_verification": {
+    "status": "passed",
+    "issues": [],
+    "logical_score": 5,
+    "logical_score_normalized": 1.0,
+    "terminology_score": 3,
+    "terminology_consistency_ratio": 0.75
+  },
+  "universal_verification": {
+    "verification_summary": {
+      "total_constraints": 29,
+      "total_conflicts": 0,
+      "critical_conflicts": 0,
+      "quality_score": 100.0,
+      "verification_passed": true
+    },
+    "constraint_analysis": {
+      "extracted_constraints": [
+        {
+          "clause": "Project: AI-Assisted Consumer Loan Approval Platform for Regional Bank",
+          "best_overlap": 0.689655,
+          "matched": true
+        },
+        {
+          "clause": "The system is a machine learning-powered loan origination platform for a regional bank processing 50,000+ loan applic...",
+          "best_overlap": 0.844444,
+          "matched": true
+        },
+        {
+          "clause": "It uses ML models to assess credit risk, detect fraud, and recommend approval decisions",
+          "best_overlap": 0.848485,
+          "matched": true
+        },
+        {
+          "clause": "Human loan officers review AI recommendations for final decisions",
+          "best_overlap": 0.666667,
+          "matched": true
+        },
+        {
+          "clause": "The system must comply with the Equal Credit Opportunity Act (ECOA), Fair Lending regulations, and the EU AI Act for...",
+          "best_overlap": 0.851064,
+          "matched": true
+        },
+        {
+          "clause": "[Core Functional Requirements]",
+          "best_overlap": 0.333333,
+          "matched": false
+        },
+        {
+          "clause": "Application Processing: The system shall accept loan applications through web portal, mobile app, and branch interfaces",
+          "best_overlap": 0.864865,
+          "matched": true
+        },
+        {
+          "clause": "Applications must be enriched with credit bureau data, employment verification, and property appraisal data",
+          "best_overlap": 0.684211,
+          "matched": true
+        },
+        {
+          "clause": "Risk Assessment: The ML pipeline shall produce a credit risk score, fraud probability score, and recommended decision...",
+          "best_overlap": 0.833333,
+          "matched": true
+        },
+        {
+          "clause": "Decision Support: Loan officers shall receive the AI recommendation with key risk factors highlighted",
+          "best_overlap": 0.848485,
+          "matched": true
+        },
+        {
+          "clause": "The system must present the top contributing features for each recommendation",
+          "best_overlap": 0.666667,
+          "matched": true
+        },
+        {
+          "clause": "Portfolio Management: The system shall continuously monitor approved loans for early default signals and update risk...",
+          "best_overlap": 0.830189,
+          "matched": true
+        },
+        {
+          "clause": "[Non-Functional Constraints]",
+          "best_overlap": 0.352941,
+          "matched": false
+        },
+        {
+          "clause": "Explainability: All AI-generated decisions must provide human-readable explanations citing specific applicant attributes",
+          "best_overlap": 0.848485,
+          "matched": true
+        },
+        {
+          "clause": "The system must support counterfactual explanations ('what would need to change for approval')",
+          "best_overlap": 0.8125,
+          "matched": true
+        },
+        {
+          "clause": "Model documentation must meet EU AI Act Article 13 transparency requirements",
+          "best_overlap": 0.709677,
+          "matched": true
+        },
+        {
+          "clause": "Fairness & Bias: The system must monitor and report demographic parity and equalized odds metrics across protected cl...",
+          "best_overlap": 0.844444,
+          "matched": true
+        },
+        {
+          "clause": "Disparate impact ratio must remain above 0",
+          "best_overlap": 0.736842,
+          "matched": true
+        },
+        {
+          "clause": "8 for all protected groups",
+          "best_overlap": 0.526316,
+          "matched": true
+        },
+        {
+          "clause": "Privacy: Applicant PII must be processed under GDPR principles",
+          "best_overlap": 0.529412,
+          "matched": true
+        },
+        {
+          "clause": "Data retention policies must automatically purge declined application details after 24 months",
+          "best_overlap": 0.827586,
+          "matched": true
+        },
+        {
+          "clause": "Consent management must track data subject rights",
+          "best_overlap": 0.518519,
+          "matched": true
+        },
+        {
+          "clause": "Security: The system must implement end-to-end encryption for all applicant data",
+          "best_overlap": 0.615385,
+          "matched": true
+        },
+        {
+          "clause": "Access controls must enforce need-to-know principles with comprehensive audit trails",
+          "best_overlap": 0.55814,
+          "matched": true
+        },
+        {
+          "clause": "Reliability: The risk scoring service must maintain 99",
+          "best_overlap": 0.761905,
+          "matched": true
+        },
+        {
+          "clause": "9% availability during business hours",
+          "best_overlap": 0.526316,
+          "matched": true
+        },
+        {
+          "clause": "Model serving must support graceful degradation to rule-based fallback if ML services are unavailable",
+          "best_overlap": 0.769231,
+          "matched": true
+        },
+        {
+          "clause": "Performance: Batch processing of 10,000 applications must complete within 2 hours for portfolio re-scoring",
+          "best_overlap": 0.780488,
+          "matched": true
+        },
+        {
+          "clause": "Real-time scoring must complete within 5 seconds for walk-in applicants",
+          "best_overlap": 0.857143,
+          "matched": true
+        }
+      ]
+    },
+    "conflict_analysis": {
+      "detected_conflicts": []
+    },
+    "resolutions": {
+      "applied": []
+    },
+    "recommendations": [
+      "No contradiction detected"
+    ],
+    "session_log": {
+      "status": "passed"
+    }
+  },
+  "correction_summary": {
+    "total_corrections": 0,
+    "corrections": []
+  }
+}

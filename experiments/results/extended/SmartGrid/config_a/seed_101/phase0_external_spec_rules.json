@@ -1,0 +1,85 @@
+{
+  "phase": "0_external_spec_processing",
+  "case_id": "SmartGrid",
+  "setting": "negotiation_integration_verification",
+  "generated_at": "2026-06-29T08:59:58Z",
+  "extracted_rules": [
+    {
+      "rule_id": "R001",
+      "rule_type": "constraint",
+      "statement": "Project: Smart Grid Energy Management Platform for Municipal Utility",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R002",
+      "rule_type": "constraint",
+      "statement": "The system is a distributed energy management platform for a municipal utility serving 200,000 households",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R003",
+      "rule_type": "constraint",
+      "statement": "It integrates smart meters, renewable energy sources (solar panels, wind turbines), battery storage systems, and demand-response controllers",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R004",
+      "rule_type": "constraint",
+      "statement": "The system operates as a cyber-physical system with real-time monitoring and automated load balancing",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R005",
+      "rule_type": "constraint",
+      "statement": "[Core Functional Requirements]",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R006",
+      "rule_type": "obligation",
+      "statement": "Real-Time Monitoring: The system shall collect meter readings from 200,000+ smart meters at 15-minute intervals and process the data stream in near real-time for grid stability analysis",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R007",
+      "rule_type": "obligation",
+      "statement": "Demand Response: The system shall automatically adjust load distribution based on real-time demand, renewable generation forecasts, and grid capacity constraints",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R008",
+      "rule_type": "obligation",
+      "statement": "Peak shaving algorithms must reduce peak demand by at least 15%",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R009",
+      "rule_type": "obligation",
+      "statement": "Renewable Integration: The system shall forecast solar and wind generation using weather data and historical patterns, and coordinate battery storage charge/discharge cycles to maximize renewable utilization",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R010",
+      "rule_type": "obligation",
+      "statement": "Billing & Analytics: The system shall support time-of-use pricing, net metering for prosumers, and provide consumption analytics dashboards for both utility operators and end consumers",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R011",
+      "rule_type": "constraint",
+      "statement": "[Non-Functional Constraints]",
+      "source": "requirement_text"
+    },
+    {
+      "rule_id": "R012",
+      "rule_type": "obligation",
+      "statement": "Real-Time Performance: Grid stability decisions must be computed within 500ms",
+      "source": "requirement_text"
+    }
+  ],
+  "extraction_metadata": {
+    "rule_count": 12,
+    "rag_enabled": true,
+    "rag_corpus_hash": "91b26f1997c0a902e0428783f8209735f20c243dfe60df6eb00f3b8c00fce5b7"
+  }
+}

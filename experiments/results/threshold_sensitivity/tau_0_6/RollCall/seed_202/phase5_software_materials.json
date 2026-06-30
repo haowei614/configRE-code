@@ -1,0 +1,281 @@
+{
+  "phase": "5_software_materials_generation",
+  "case_id": "RollCall",
+  "setting": "negotiation_integration_verification",
+  "generated_at": "2026-06-29T11:41:52Z",
+  "materials": {
+    "srs_outline": [
+      "System Scope and Stakeholders",
+      "Quality-Attribute Requirements (Flexibility/Privacy/Reliability/Security/Trustworthiness/Usability)",
+      "Negotiation and Conflict Resolution Decisions",
+      "Verification and Compliance Evidence"
+    ],
+    "implementation_checklist": [
+      "Preserve canonical phase artifact compatibility",
+      "Enforce strict provenance and taint controls",
+      "Trace each integrated requirement to a verification signal"
+    ],
+    "traceability_matrix": [
+      {
+        "element_id": "FLE-L1-005",
+        "quality_attribute": "Flexibility",
+        "statement": "Flexibility objective for RollCall: A roll call system must track student attendance for classes",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-005-01",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): A roll call system must track student attendance for classes",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-005-02",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): The system must allow teachers to mark students as present, absent, or late",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-005-03",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): Students must be able to view their own attendance records",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-005-04",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): The system must generate attendance reports for administrators and calculate attendance perce...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-005-05",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): The system must support multiple classes and semesters, and maintain historical attendance data",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "FLE-L2-005-06",
+        "quality_attribute": "Flexibility",
+        "statement": "The system shall ensure flexibility (adaptability, installability, replaceability): A roll call system must track student attendance for classes",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L1-006",
+        "quality_attribute": "Privacy",
+        "statement": "Privacy objective for RollCall: The system must allow teachers to mark students as present, absent, or late",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-006-01",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): The system must allow teachers to mark students as present,...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-006-02",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Students must be able to view their own attendance records",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-006-03",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): The system must generate attendance reports for administrato...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-006-04",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): The system must support multiple classes and semesters, and...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-006-05",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): A roll call system must track student attendance for classes",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "PRI-L2-006-06",
+        "quality_attribute": "Privacy",
+        "statement": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): The system must allow teachers to mark students as present,...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L1-001",
+        "quality_attribute": "Reliability",
+        "statement": "Reliability objective for RollCall: Students must be able to view their own attendance records",
+        "verification_anchor": "candidate_resolution"
+      },
+      {
+        "element_id": "REL-L2-001-01",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Students must be able to view their own attendance records",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-001-02",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The system must generate attendance reports for administrators and calculate atten...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-001-03",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The system must support multiple classes and semesters, and maintain historical at...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-001-04",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): A roll call system must track student attendance for classes",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-001-05",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The system must allow teachers to mark students as present, absent, or late",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-001-06",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Students must be able to view their own attendance records",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SEC-L1-003",
+        "quality_attribute": "Security",
+        "statement": "Security objective for RollCall: The system must generate attendance reports for administrators and calculate attendance percentages",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-003-01",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The system must generate attendance reports for administrators and calculate atte...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-003-02",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The system must support multiple classes and semesters, and maintain historical a...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-003-03",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): A roll call system must track student attendance for classes",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-003-04",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The system must allow teachers to mark students as present, absent, or late",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-003-05",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Students must be able to view their own attendance records",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-003-06",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The system must generate attendance reports for administrators and calculate atte...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L1-004",
+        "quality_attribute": "Trustworthiness",
+        "statement": "Trustworthiness objective for RollCall: The system must support multiple classes and semesters, and maintain historical attendance data",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-01",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (security assurance): The system must support multiple classes and semesters, and maintain historical attendance data",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-02",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (auditability): A roll call system must track student attendance for classes",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-03",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (integrity guarantees): The system must allow teachers to mark students as present, absent, or late",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-04",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (security assurance): Students must be able to view their own attendance records",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-05",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (auditability): The system must generate attendance reports for administrators and calculate attendance percentages",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-06",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (integrity guarantees): The system must support multiple classes and semesters, and maintain historical attendance data",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L1-002",
+        "quality_attribute": "Usability",
+        "statement": "Usability objective for RollCall: Students must be able to view their own attendance records",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L2-002-01",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Students must be able to view their own attendance records",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L2-002-02",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system must generate attendance reports for administrators and calculate...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L2-002-03",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system must support multiple classes and semesters, and maintain histori...",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L2-002-04",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): A roll call system must track student attendance for classes",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L2-002-05",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system must allow teachers to mark students as present, absent, or late",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L2-002-06",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Students must be able to view their own attendance records",
+        "verification_anchor": "pending"
+      }
+    ]
+  },
+  "quality_signals": {
+    "topology_is_valid": true,
+    "deterministic_is_valid": true,
+    "compliance_coverage": 1.0,
+    "s_logic": 1.0,
+    "detected_conflict_pairs": 1,
+    "resolved_conflict_pairs": 1
+  }
+}

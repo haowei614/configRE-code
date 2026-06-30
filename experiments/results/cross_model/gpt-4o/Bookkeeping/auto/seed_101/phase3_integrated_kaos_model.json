@@ -1,0 +1,1587 @@
+{
+  "gsn_elements": [
+    {
+      "id": "MAI-L1-004",
+      "name": "Maintainability Goal",
+      "description": "Maintainability objective for Bookkeeping: The system must ensure double-entry bookkeeping principles are followed and maintain an audit trail of all transactions",
+      "gsn_type": "Goal",
+      "quality_attribute": "Maintainability",
+      "priority": 1,
+      "stakeholder": "MaintainabilityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "MAI-L2-004-01",
+      "name": "Maintainability Requirement 1",
+      "description": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): The system must ensure double-entry bookkeeping principles are followed and maintain an audit trail of all transactions",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Maintainability",
+      "priority": 1,
+      "stakeholder": "MaintainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for modularity, reusability, analysability, modifiability, testability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "MAI-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "TrustworthinessAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "MAI-L2-004-02",
+      "name": "Maintainability Requirement 2",
+      "description": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): The system must support multiple currencies and handle currency conversion",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Maintainability",
+      "priority": 1,
+      "stakeholder": "MaintainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for modularity, reusability, analysability, modifiability, testability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "MAI-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "TrustworthinessAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "MAI-L2-004-03",
+      "name": "Maintainability Requirement 3",
+      "description": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): A bookkeeping system must record financial transactions including income and expenses",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Maintainability",
+      "priority": 1,
+      "stakeholder": "MaintainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for modularity, reusability, analysability, modifiability, testability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "MAI-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "TrustworthinessAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "MAI-L2-004-04",
+      "name": "Maintainability Requirement 4",
+      "description": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): The system must support multiple accounts and categories",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Maintainability",
+      "priority": 1,
+      "stakeholder": "MaintainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for modularity, reusability, analysability, modifiability, testability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "MAI-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "TrustworthinessAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "MAI-L2-004-05",
+      "name": "Maintainability Requirement 5",
+      "description": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): Users must be able to generate financial reports such as balance sheets, income statements, and cash flow statements",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Maintainability",
+      "priority": 1,
+      "stakeholder": "MaintainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for modularity, reusability, analysability, modifiability, testability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "MAI-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "TrustworthinessAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "MAI-L2-004-06",
+      "name": "Maintainability Requirement 6",
+      "description": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): The system must ensure double-entry bookkeeping principles are followed and maintain an audit trail of all transactions",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Maintainability",
+      "priority": 1,
+      "stakeholder": "MaintainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for modularity, reusability, analysability, modifiability, testability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "MAI-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "TrustworthinessAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L1-006",
+      "name": "Privacy Goal",
+      "description": "Privacy objective for Bookkeeping: A bookkeeping system must record financial transactions including income and expenses",
+      "gsn_type": "Goal",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-006-01",
+      "name": "Privacy Requirement 1",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): A bookkeeping system must record financial transactions including income and expenses",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-006",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-006-02",
+      "name": "Privacy Requirement 2",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): The system must support multiple accounts and categories",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-006",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-006-03",
+      "name": "Privacy Requirement 3",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Users must be able to generate financial reports such as balance sheets, income statements, and cash flow statements",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-006",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-006-04",
+      "name": "Privacy Requirement 4",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): The system must ensure double-entry bookkeeping principles are followed and maintain an audit trail of all transactions",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-006",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-006-05",
+      "name": "Privacy Requirement 5",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): The system must support multiple currencies and handle currency conversion",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-006",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-006-06",
+      "name": "Privacy Requirement 6",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): A bookkeeping system must record financial transactions including income and expenses",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-006",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L1-001",
+      "name": "Reliability Goal",
+      "description": "Reliability objective for Bookkeeping: The system must support multiple accounts and categories",
+      "gsn_type": "Goal",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-01",
+      "name": "Reliability Requirement 1",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The system must support multiple accounts and categories",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "UsabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-02",
+      "name": "Reliability Requirement 2",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Users must be able to generate financial reports such as balance sheets, income statements, and cash flow statements",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "UsabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-03",
+      "name": "Reliability Requirement 3",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The system must ensure double-entry bookkeeping principles are followed and maintain an audit trail of all transactions",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "UsabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-04",
+      "name": "Reliability Requirement 4",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The system must support multiple currencies and handle currency conversion",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "UsabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-05",
+      "name": "Reliability Requirement 5",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): A bookkeeping system must record financial transactions including income and expenses",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "UsabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-06",
+      "name": "Reliability Requirement 6",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The system must support multiple accounts and categories",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "UsabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L1-003",
+      "name": "Security Goal",
+      "description": "Security objective for Bookkeeping: Users must be able to generate financial reports such as balance sheets, income statements, and cash flow statements",
+      "gsn_type": "Goal",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-003-01",
+      "name": "Security Requirement 1",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Users must be able to generate financial reports such as balance sheets, income statements, and cash flow statements",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "MaintainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-003-02",
+      "name": "Security Requirement 2",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The system must ensure double-entry bookkeeping principles are followed and maintain an audit trail of all transactions",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "MaintainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-003-03",
+      "name": "Security Requirement 3",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The system must support multiple currencies and handle currency conversion",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "MaintainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-003-04",
+      "name": "Security Requirement 4",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): A bookkeeping system must record financial transactions including income and expenses",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "MaintainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-003-05",
+      "name": "Security Requirement 5",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The system must support multiple accounts and categories",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "MaintainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-003-06",
+      "name": "Security Requirement 6",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Users must be able to generate financial reports such as balance sheets, income statements, and cash flow statements",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "MaintainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L1-005",
+      "name": "Trustworthiness Goal",
+      "description": "Trustworthiness objective for Bookkeeping: The system must support multiple currencies and handle currency conversion",
+      "gsn_type": "Goal",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-005-01",
+      "name": "Trustworthiness Requirement 1",
+      "description": "The system shall ensure trustworthiness (security assurance): The system must support multiple currencies and handle currency conversion",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for security assurance",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "PrivacyAgent",
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-005-02",
+      "name": "Trustworthiness Requirement 2",
+      "description": "The system shall ensure trustworthiness (auditability): A bookkeeping system must record financial transactions including income and expenses",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for auditability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "PrivacyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-005-03",
+      "name": "Trustworthiness Requirement 3",
+      "description": "The system shall ensure trustworthiness (integrity guarantees): The system must support multiple accounts and categories",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for integrity guarantees",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "PrivacyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-005-04",
+      "name": "Trustworthiness Requirement 4",
+      "description": "The system shall ensure trustworthiness (security assurance): Users must be able to generate financial reports such as balance sheets, income statements, and cash flow statements",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for security assurance",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "PrivacyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-005-05",
+      "name": "Trustworthiness Requirement 5",
+      "description": "The system shall ensure trustworthiness (auditability): The system must ensure double-entry bookkeeping principles are followed and maintain an audit trail of all transactions",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for auditability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "PrivacyAgent",
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-005-06",
+      "name": "Trustworthiness Requirement 6",
+      "description": "The system shall ensure trustworthiness (integrity guarantees): The system must support multiple currencies and handle currency conversion",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for integrity guarantees",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "PrivacyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L1-002",
+      "name": "Usability Goal",
+      "description": "Usability objective for Bookkeeping: The system must support multiple accounts and categories",
+      "gsn_type": "Goal",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-01",
+      "name": "Usability Requirement 1",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system must support multiple accounts and categories",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "SecurityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-02",
+      "name": "Usability Requirement 2",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Users must be able to generate financial reports such as balance sheets, income statements, and cash flow statements",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "SecurityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-03",
+      "name": "Usability Requirement 3",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system must ensure double-entry bookkeeping principles are followed and maintain an audit trail of all transactions",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "SecurityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-04",
+      "name": "Usability Requirement 4",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system must support multiple currencies and handle currency conversion",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "SecurityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-05",
+      "name": "Usability Requirement 5",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): A bookkeeping system must record financial transactions including income and expenses",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "SecurityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-06",
+      "name": "Usability Requirement 6",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system must support multiple accounts and categories",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "SecurityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    }
+  ],
+  "gsn_connections": [
+    {
+      "id": "REL-001",
+      "source_id": "MAI-L1-004",
+      "target_id": "MAI-L2-004-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-002",
+      "source_id": "MAI-L1-004",
+      "target_id": "MAI-L2-004-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-003",
+      "source_id": "MAI-L1-004",
+      "target_id": "MAI-L2-004-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-004",
+      "source_id": "MAI-L1-004",
+      "target_id": "MAI-L2-004-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-005",
+      "source_id": "MAI-L1-004",
+      "target_id": "MAI-L2-004-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-006",
+      "source_id": "MAI-L1-004",
+      "target_id": "MAI-L2-004-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-007",
+      "source_id": "PRI-L1-006",
+      "target_id": "PRI-L2-006-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-008",
+      "source_id": "PRI-L1-006",
+      "target_id": "PRI-L2-006-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-009",
+      "source_id": "PRI-L1-006",
+      "target_id": "PRI-L2-006-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-010",
+      "source_id": "PRI-L1-006",
+      "target_id": "PRI-L2-006-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-011",
+      "source_id": "PRI-L1-006",
+      "target_id": "PRI-L2-006-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-012",
+      "source_id": "PRI-L1-006",
+      "target_id": "PRI-L2-006-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-013",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-014",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-015",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-016",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-017",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-018",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-019",
+      "source_id": "SEC-L1-003",
+      "target_id": "SEC-L2-003-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-020",
+      "source_id": "SEC-L1-003",
+      "target_id": "SEC-L2-003-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-021",
+      "source_id": "SEC-L1-003",
+      "target_id": "SEC-L2-003-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-022",
+      "source_id": "SEC-L1-003",
+      "target_id": "SEC-L2-003-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-023",
+      "source_id": "SEC-L1-003",
+      "target_id": "SEC-L2-003-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-024",
+      "source_id": "SEC-L1-003",
+      "target_id": "SEC-L2-003-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-025",
+      "source_id": "TRU-L1-005",
+      "target_id": "TRU-L2-005-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-026",
+      "source_id": "TRU-L1-005",
+      "target_id": "TRU-L2-005-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-027",
+      "source_id": "TRU-L1-005",
+      "target_id": "TRU-L2-005-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-028",
+      "source_id": "TRU-L1-005",
+      "target_id": "TRU-L2-005-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-029",
+      "source_id": "TRU-L1-005",
+      "target_id": "TRU-L2-005-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-030",
+      "source_id": "TRU-L1-005",
+      "target_id": "TRU-L2-005-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-031",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-032",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-033",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-034",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-035",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-036",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    }
+  ],
+  "model_metadata": {
+    "model_id": "model_bookkeeping-input-20260630T022920Z-s101",
+    "name": "OpenRE-Bench Integrated KAOS for Bookkeeping",
+    "description": "Deterministic protocol-aligned integrated GSN model.",
+    "created_timestamp": "2026-06-30T02:33:42Z",
+    "requirement_source": "A bookkeeping system must record financial transactions including income and expenses. The system must support multiple accounts and categories. Users must be able to generate financial reports such as balance sheets, income statements, and cash flow statements. The system must ensure double-entry bookkeeping principles are followed and maintain an audit trail of all transactions. The system must support multiple currencies and handle currency conversion.",
+    "model_type": "GSN",
+    "quality_attributes": [
+      "Maintainability",
+      "Privacy",
+      "Reliability",
+      "Security",
+      "Trustworthiness",
+      "Usability"
+    ],
+    "hierarchy_levels": [
+      1,
+      2
+    ],
+    "setting": "negotiation_integration_verification"
+  },
+  "hierarchy_structure": {
+    "level_1": [
+      {
+        "id": "MAI-L1-004",
+        "name": "Maintainability Goal",
+        "quality_attribute": "Maintainability",
+        "parent_goal_id": null
+      },
+      {
+        "id": "PRI-L1-006",
+        "name": "Privacy Goal",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": null
+      },
+      {
+        "id": "REL-L1-001",
+        "name": "Reliability Goal",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": null
+      },
+      {
+        "id": "SEC-L1-003",
+        "name": "Security Goal",
+        "quality_attribute": "Security",
+        "parent_goal_id": null
+      },
+      {
+        "id": "TRU-L1-005",
+        "name": "Trustworthiness Goal",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": null
+      },
+      {
+        "id": "USA-L1-002",
+        "name": "Usability Goal",
+        "quality_attribute": "Usability",
+        "parent_goal_id": null
+      }
+    ],
+    "level_2": [
+      {
+        "id": "MAI-L2-004-01",
+        "name": "Maintainability Requirement 1",
+        "quality_attribute": "Maintainability",
+        "parent_goal_id": "MAI-L1-004"
+      },
+      {
+        "id": "MAI-L2-004-02",
+        "name": "Maintainability Requirement 2",
+        "quality_attribute": "Maintainability",
+        "parent_goal_id": "MAI-L1-004"
+      },
+      {
+        "id": "MAI-L2-004-03",
+        "name": "Maintainability Requirement 3",
+        "quality_attribute": "Maintainability",
+        "parent_goal_id": "MAI-L1-004"
+      },
+      {
+        "id": "MAI-L2-004-04",
+        "name": "Maintainability Requirement 4",
+        "quality_attribute": "Maintainability",
+        "parent_goal_id": "MAI-L1-004"
+      },
+      {
+        "id": "MAI-L2-004-05",
+        "name": "Maintainability Requirement 5",
+        "quality_attribute": "Maintainability",
+        "parent_goal_id": "MAI-L1-004"
+      },
+      {
+        "id": "MAI-L2-004-06",
+        "name": "Maintainability Requirement 6",
+        "quality_attribute": "Maintainability",
+        "parent_goal_id": "MAI-L1-004"
+      },
+      {
+        "id": "PRI-L2-006-01",
+        "name": "Privacy Requirement 1",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-006"
+      },
+      {
+        "id": "PRI-L2-006-02",
+        "name": "Privacy Requirement 2",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-006"
+      },
+      {
+        "id": "PRI-L2-006-03",
+        "name": "Privacy Requirement 3",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-006"
+      },
+      {
+        "id": "PRI-L2-006-04",
+        "name": "Privacy Requirement 4",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-006"
+      },
+      {
+        "id": "PRI-L2-006-05",
+        "name": "Privacy Requirement 5",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-006"
+      },
+      {
+        "id": "PRI-L2-006-06",
+        "name": "Privacy Requirement 6",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-006"
+      },
+      {
+        "id": "REL-L2-001-01",
+        "name": "Reliability Requirement 1",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-02",
+        "name": "Reliability Requirement 2",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-03",
+        "name": "Reliability Requirement 3",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-04",
+        "name": "Reliability Requirement 4",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-05",
+        "name": "Reliability Requirement 5",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-06",
+        "name": "Reliability Requirement 6",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "SEC-L2-003-01",
+        "name": "Security Requirement 1",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-003"
+      },
+      {
+        "id": "SEC-L2-003-02",
+        "name": "Security Requirement 2",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-003"
+      },
+      {
+        "id": "SEC-L2-003-03",
+        "name": "Security Requirement 3",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-003"
+      },
+      {
+        "id": "SEC-L2-003-04",
+        "name": "Security Requirement 4",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-003"
+      },
+      {
+        "id": "SEC-L2-003-05",
+        "name": "Security Requirement 5",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-003"
+      },
+      {
+        "id": "SEC-L2-003-06",
+        "name": "Security Requirement 6",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-003"
+      },
+      {
+        "id": "TRU-L2-005-01",
+        "name": "Trustworthiness Requirement 1",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-005"
+      },
+      {
+        "id": "TRU-L2-005-02",
+        "name": "Trustworthiness Requirement 2",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-005"
+      },
+      {
+        "id": "TRU-L2-005-03",
+        "name": "Trustworthiness Requirement 3",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-005"
+      },
+      {
+        "id": "TRU-L2-005-04",
+        "name": "Trustworthiness Requirement 4",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-005"
+      },
+      {
+        "id": "TRU-L2-005-05",
+        "name": "Trustworthiness Requirement 5",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-005"
+      },
+      {
+        "id": "TRU-L2-005-06",
+        "name": "Trustworthiness Requirement 6",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-005"
+      },
+      {
+        "id": "USA-L2-002-01",
+        "name": "Usability Requirement 1",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      },
+      {
+        "id": "USA-L2-002-02",
+        "name": "Usability Requirement 2",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      },
+      {
+        "id": "USA-L2-002-03",
+        "name": "Usability Requirement 3",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      },
+      {
+        "id": "USA-L2-002-04",
+        "name": "Usability Requirement 4",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      },
+      {
+        "id": "USA-L2-002-05",
+        "name": "Usability Requirement 5",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      },
+      {
+        "id": "USA-L2-002-06",
+        "name": "Usability Requirement 6",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      }
+    ],
+    "level_3": [],
+    "parent_child_mappings": {
+      "MAI-L1-004": [
+        "MAI-L2-004-01",
+        "MAI-L2-004-02",
+        "MAI-L2-004-03",
+        "MAI-L2-004-04",
+        "MAI-L2-004-05",
+        "MAI-L2-004-06"
+      ],
+      "PRI-L1-006": [
+        "PRI-L2-006-01",
+        "PRI-L2-006-02",
+        "PRI-L2-006-03",
+        "PRI-L2-006-04",
+        "PRI-L2-006-05",
+        "PRI-L2-006-06"
+      ],
+      "REL-L1-001": [
+        "REL-L2-001-01",
+        "REL-L2-001-02",
+        "REL-L2-001-03",
+        "REL-L2-001-04",
+        "REL-L2-001-05",
+        "REL-L2-001-06"
+      ],
+      "SEC-L1-003": [
+        "SEC-L2-003-01",
+        "SEC-L2-003-02",
+        "SEC-L2-003-03",
+        "SEC-L2-003-04",
+        "SEC-L2-003-05",
+        "SEC-L2-003-06"
+      ],
+      "TRU-L1-005": [
+        "TRU-L2-005-01",
+        "TRU-L2-005-02",
+        "TRU-L2-005-03",
+        "TRU-L2-005-04",
+        "TRU-L2-005-05",
+        "TRU-L2-005-06"
+      ],
+      "USA-L1-002": [
+        "USA-L2-002-01",
+        "USA-L2-002-02",
+        "USA-L2-002-03",
+        "USA-L2-002-04",
+        "USA-L2-002-05",
+        "USA-L2-002-06"
+      ]
+    }
+  },
+  "topology_status": {
+    "status": "Valid",
+    "is_valid": true,
+    "is_dag": true,
+    "orphan_count": 0,
+    "cycle_count": 0,
+    "invalid_leaf_count": 0,
+    "orphan_elements": [],
+    "cycles": [],
+    "invalid_leaves": []
+  },
+  "model_id": "model_bookkeeping-input-20260630T022920Z-s101",
+  "created_timestamp": "2026-06-30T02:33:42Z",
+  "total_elements": 42,
+  "total_relations": 36
+}

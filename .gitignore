@@ -19,14 +19,12 @@ __pycache__/
 .matplotlib_cache/
 .cache/
 
-# Generated experiment artifacts
-# Keep final result summaries, but do not upload per-run phase artifacts.
+# Generated experiment artifacts (legacy paths)
 experiment_outputs/**/runs/
 experiment_outputs/**/comparison_runs.jsonl
 experiment_outputs/quare_backup_before_rebalanced/
 experiment_outputs/quare_rebalanced/
 
-experiments/results/**
-!experiments/results/
-!experiments/results/comparison_summary.csv
-!experiments/results/comparison_summary_paper_final.csv
+# Experiment results: included for server reproducibility checkpoint (Jun 2026).
+# Re-comment the line below if you want to exclude large per-run artifacts again.
+# experiments/results/**

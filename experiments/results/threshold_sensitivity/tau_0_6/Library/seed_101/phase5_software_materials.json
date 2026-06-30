@@ -1,0 +1,197 @@
+{
+  "phase": "5_software_materials_generation",
+  "case_id": "Library",
+  "setting": "negotiation_integration_verification",
+  "generated_at": "2026-06-29T11:35:55Z",
+  "materials": {
+    "srs_outline": [
+      "System Scope and Stakeholders",
+      "Quality-Attribute Requirements (Reliability/Security/Trustworthiness/Usability)",
+      "Negotiation and Conflict Resolution Decisions",
+      "Verification and Compliance Evidence"
+    ],
+    "implementation_checklist": [
+      "Preserve canonical phase artifact compatibility",
+      "Enforce strict provenance and taint controls",
+      "Trace each integrated requirement to a verification signal"
+    ],
+    "traceability_matrix": [
+      {
+        "element_id": "REL-L1-001",
+        "quality_attribute": "Reliability",
+        "statement": "Reliability objective for Library: Librarians must be able to add new books, remove books, and manage member accounts",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "REL-L2-001-01",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Librarians must be able to add new books, remove books, and manage member accounts",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-001-02",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): A library management system must allow library members to borrow and return books",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-001-03",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The system must track which books are available, which are borrowed, and by whom",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-001-04",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Members must be able to search for books by title, author, or ISBN",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-001-05",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The system must enforce borrowing limits (e",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "REL-L2-001-06",
+        "quality_attribute": "Reliability",
+        "statement": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): , maximum number of books per member) and track overdue books",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "SEC-L1-003",
+        "quality_attribute": "Security",
+        "statement": "Security objective for Library: Members must be able to search for books by title, author, or ISBN",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-003-01",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Members must be able to search for books by title, author, or ISBN",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-003-02",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The system must enforce borrowing limits (e",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-003-03",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): , maximum number of books per member) and track overdue books",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-003-04",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Librarians must be able to add new books, remove books, and manage member accounts",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-003-05",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): A library management system must allow library members to borrow and return books",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "SEC-L2-003-06",
+        "quality_attribute": "Security",
+        "statement": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The system must track which books are available, which are borrowed, and by whom",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L1-004",
+        "quality_attribute": "Trustworthiness",
+        "statement": "Trustworthiness objective for Library: The system must enforce borrowing limits (e",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-01",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (security assurance): The system must enforce borrowing limits (e",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-02",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (auditability): , maximum number of books per member) and track overdue books",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-03",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (integrity guarantees): Librarians must be able to add new books, remove books, and manage member accounts",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-04",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (security assurance): A library management system must allow library members to borrow and return books",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-05",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (auditability): The system must track which books are available, which are borrowed, and by whom",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "TRU-L2-004-06",
+        "quality_attribute": "Trustworthiness",
+        "statement": "The system shall ensure trustworthiness (integrity guarantees): Members must be able to search for books by title, author, or ISBN",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L1-002",
+        "quality_attribute": "Usability",
+        "statement": "Usability objective for Library: A library management system must allow library members to borrow and return books",
+        "verification_anchor": "pending"
+      },
+      {
+        "element_id": "USA-L2-002-01",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): A library management system must allow library members to borrow and return...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L2-002-02",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system must track which books are available, which are borrowed, and by...",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L2-002-03",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Members must be able to search for books by title, author, or ISBN",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L2-002-04",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system must enforce borrowing limits (e",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L2-002-05",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): , maximum number of books per member) and track overdue books",
+        "verification_anchor": "resolved"
+      },
+      {
+        "element_id": "USA-L2-002-06",
+        "quality_attribute": "Usability",
+        "statement": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Librarians must be able to add new books, remove books, and manage member ac...",
+        "verification_anchor": "resolved"
+      }
+    ]
+  },
+  "quality_signals": {
+    "topology_is_valid": true,
+    "deterministic_is_valid": true,
+    "compliance_coverage": 1.0,
+    "s_logic": 1.0,
+    "detected_conflict_pairs": 2,
+    "resolved_conflict_pairs": 2
+  }
+}

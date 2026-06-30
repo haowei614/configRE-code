@@ -1,0 +1,155 @@
+{
+  "phase": "2.5_conflict_resolution",
+  "case_id": "SmartGrid",
+  "setting": "negotiation_integration_verification",
+  "generated_at": "2026-06-29T09:18:19Z",
+  "round_cap": 3,
+  "conflict_map": {
+    "SafetyAgent_EfficiencyAgent": {
+      "detected_conflict": false,
+      "resolved_conflict": false,
+      "total_rounds": 1,
+      "max_round_observed": 1,
+      "requires_refinement_count": 0,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "EfficiencyAgent_GreenAgent": {
+      "detected_conflict": false,
+      "resolved_conflict": false,
+      "total_rounds": 1,
+      "max_round_observed": 1,
+      "requires_refinement_count": 0,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "GreenAgent_TrustworthinessAgent": {
+      "detected_conflict": false,
+      "resolved_conflict": false,
+      "total_rounds": 1,
+      "max_round_observed": 1,
+      "requires_refinement_count": 0,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "TrustworthinessAgent_ResponsibilityAgent": {
+      "detected_conflict": true,
+      "resolved_conflict": true,
+      "total_rounds": 3,
+      "max_round_observed": 3,
+      "requires_refinement_count": 2,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "ResponsibilityAgent_ReliabilityAgent": {
+      "detected_conflict": true,
+      "resolved_conflict": false,
+      "total_rounds": 3,
+      "max_round_observed": 3,
+      "requires_refinement_count": 2,
+      "latest_resolution_state": "unresolved",
+      "final_consensus": false
+    },
+    "ReliabilityAgent_UsabilityAgent": {
+      "detected_conflict": true,
+      "resolved_conflict": true,
+      "total_rounds": 3,
+      "max_round_observed": 3,
+      "requires_refinement_count": 2,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "UsabilityAgent_SecurityAgent": {
+      "detected_conflict": true,
+      "resolved_conflict": false,
+      "total_rounds": 3,
+      "max_round_observed": 3,
+      "requires_refinement_count": 2,
+      "latest_resolution_state": "unresolved",
+      "final_consensus": false
+    },
+    "SecurityAgent_MaintainabilityAgent": {
+      "detected_conflict": true,
+      "resolved_conflict": false,
+      "total_rounds": 3,
+      "max_round_observed": 3,
+      "requires_refinement_count": 2,
+      "latest_resolution_state": "unresolved",
+      "final_consensus": false
+    },
+    "MaintainabilityAgent_CompatibilityAgent": {
+      "detected_conflict": true,
+      "resolved_conflict": false,
+      "total_rounds": 3,
+      "max_round_observed": 3,
+      "requires_refinement_count": 2,
+      "latest_resolution_state": "unresolved",
+      "final_consensus": false
+    },
+    "CompatibilityAgent_FlexibilityAgent": {
+      "detected_conflict": false,
+      "resolved_conflict": false,
+      "total_rounds": 1,
+      "max_round_observed": 1,
+      "requires_refinement_count": 0,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "FlexibilityAgent_PerformanceAgent": {
+      "detected_conflict": true,
+      "resolved_conflict": false,
+      "total_rounds": 3,
+      "max_round_observed": 3,
+      "requires_refinement_count": 2,
+      "latest_resolution_state": "unresolved",
+      "final_consensus": false
+    },
+    "PerformanceAgent_FunctionalSafetyAgent": {
+      "detected_conflict": false,
+      "resolved_conflict": false,
+      "total_rounds": 1,
+      "max_round_observed": 1,
+      "requires_refinement_count": 0,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "FunctionalSafetyAgent_ExplainabilityAgent": {
+      "detected_conflict": true,
+      "resolved_conflict": true,
+      "total_rounds": 3,
+      "max_round_observed": 3,
+      "requires_refinement_count": 2,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "ExplainabilityAgent_PrivacyAgent": {
+      "detected_conflict": false,
+      "resolved_conflict": false,
+      "total_rounds": 1,
+      "max_round_observed": 1,
+      "requires_refinement_count": 0,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    },
+    "PrivacyAgent_SafetyAgent": {
+      "detected_conflict": false,
+      "resolved_conflict": false,
+      "total_rounds": 1,
+      "max_round_observed": 1,
+      "requires_refinement_count": 0,
+      "latest_resolution_state": "accepted",
+      "final_consensus": true
+    }
+  },
+  "summary": {
+    "total_pairs": 15,
+    "detected_conflict_pairs": 8,
+    "resolved_conflict_pairs": 3,
+    "unresolved_conflict_pairs": 5,
+    "max_round_observed": 3,
+    "round_cap_reached": true,
+    "phase2_detected_conflicts": 8,
+    "phase2_resolved_conflicts": 3,
+    "phase2_alignment_ok": true
+  }
+}

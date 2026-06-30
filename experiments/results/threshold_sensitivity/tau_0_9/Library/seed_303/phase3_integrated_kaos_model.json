@@ -1,0 +1,559 @@
+{
+  "gsn_elements": [
+    {
+      "id": "REL-L1-001",
+      "name": "Reliability Goal",
+      "description": "Reliability objective for Library: The system must enforce borrowing limits (e",
+      "gsn_type": "Goal",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-01",
+      "name": "Reliability Requirement 1",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The system must enforce borrowing limits (e",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-02",
+      "name": "Reliability Requirement 2",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): , maximum number of books per member) and track overdue books",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-03",
+      "name": "Reliability Requirement 3",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Librarians must be able to add new books, remove books, and manage member accounts",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-04",
+      "name": "Reliability Requirement 4",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): A library management system must allow library members to borrow and return books",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-05",
+      "name": "Reliability Requirement 5",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The system must track which books are available, which are borrowed, and by whom",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-001-06",
+      "name": "Reliability Requirement 6",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Members must be able to search for books by title, author, or ISBN",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L1-002",
+      "name": "Usability Goal",
+      "description": "Usability objective for Library: A library management system must allow library members to borrow and return books",
+      "gsn_type": "Goal",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-01",
+      "name": "Usability Requirement 1",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): A library management system must allow library members to borrow and return books",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-02",
+      "name": "Usability Requirement 2",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system must track which books are available, which are borrowed, and by whom",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-03",
+      "name": "Usability Requirement 3",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Members must be able to search for books by title, author, or ISBN",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-04",
+      "name": "Usability Requirement 4",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system must enforce borrowing limits (e",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-05",
+      "name": "Usability Requirement 5",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): , maximum number of books per member) and track overdue books",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-002-06",
+      "name": "Usability Requirement 6",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Librarians must be able to add new books, remove books, and manage member accounts",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    }
+  ],
+  "gsn_connections": [
+    {
+      "id": "REL-001",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-002",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-003",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-004",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-005",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-006",
+      "source_id": "REL-L1-001",
+      "target_id": "REL-L2-001-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-007",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-008",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-009",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-010",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-011",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-012",
+      "source_id": "USA-L1-002",
+      "target_id": "USA-L2-002-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    }
+  ],
+  "model_metadata": {
+    "model_id": "model_library-input-20260629T133146Z-s303",
+    "name": "OpenRE-Bench Integrated KAOS for Library",
+    "description": "Deterministic protocol-aligned integrated GSN model.",
+    "created_timestamp": "2026-06-29T13:32:23Z",
+    "requirement_source": "A library management system must allow library members to borrow and return books. The system must track which books are available, which are borrowed, and by whom. Members must be able to search for books by title, author, or ISBN. The system must enforce borrowing limits (e.g., maximum number of books per member) and track overdue books. Librarians must be able to add new books, remove books, and manage member accounts.",
+    "model_type": "GSN",
+    "quality_attributes": [
+      "Reliability",
+      "Usability"
+    ],
+    "hierarchy_levels": [
+      1,
+      2
+    ],
+    "setting": "negotiation_integration_verification"
+  },
+  "hierarchy_structure": {
+    "level_1": [
+      {
+        "id": "REL-L1-001",
+        "name": "Reliability Goal",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": null
+      },
+      {
+        "id": "USA-L1-002",
+        "name": "Usability Goal",
+        "quality_attribute": "Usability",
+        "parent_goal_id": null
+      }
+    ],
+    "level_2": [
+      {
+        "id": "REL-L2-001-01",
+        "name": "Reliability Requirement 1",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-02",
+        "name": "Reliability Requirement 2",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-03",
+        "name": "Reliability Requirement 3",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-04",
+        "name": "Reliability Requirement 4",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-05",
+        "name": "Reliability Requirement 5",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "REL-L2-001-06",
+        "name": "Reliability Requirement 6",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-001"
+      },
+      {
+        "id": "USA-L2-002-01",
+        "name": "Usability Requirement 1",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      },
+      {
+        "id": "USA-L2-002-02",
+        "name": "Usability Requirement 2",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      },
+      {
+        "id": "USA-L2-002-03",
+        "name": "Usability Requirement 3",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      },
+      {
+        "id": "USA-L2-002-04",
+        "name": "Usability Requirement 4",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      },
+      {
+        "id": "USA-L2-002-05",
+        "name": "Usability Requirement 5",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      },
+      {
+        "id": "USA-L2-002-06",
+        "name": "Usability Requirement 6",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-002"
+      }
+    ],
+    "level_3": [],
+    "parent_child_mappings": {
+      "REL-L1-001": [
+        "REL-L2-001-01",
+        "REL-L2-001-02",
+        "REL-L2-001-03",
+        "REL-L2-001-04",
+        "REL-L2-001-05",
+        "REL-L2-001-06"
+      ],
+      "USA-L1-002": [
+        "USA-L2-002-01",
+        "USA-L2-002-02",
+        "USA-L2-002-03",
+        "USA-L2-002-04",
+        "USA-L2-002-05",
+        "USA-L2-002-06"
+      ]
+    }
+  },
+  "topology_status": {
+    "status": "Valid",
+    "is_valid": true,
+    "is_dag": true,
+    "orphan_count": 0,
+    "cycle_count": 0,
+    "invalid_leaf_count": 0,
+    "orphan_elements": [],
+    "cycles": [],
+    "invalid_leaves": []
+  },
+  "model_id": "model_library-input-20260629T133146Z-s303",
+  "created_timestamp": "2026-06-29T13:32:23Z",
+  "total_elements": 14,
+  "total_relations": 12
+}

@@ -145,5 +145,95 @@
       "ExplainabilityAgent": "No AI decision-making",
       "PrivacyAgent": "Financial privacy covered by SecurityAgent and TrustworthinessAgent"
     }
+  },
+  "EHR": {
+    "case_name": "Electronic Health Record System",
+    "relevant_agents": [
+      "SecurityAgent",
+      "PrivacyAgent",
+      "ReliabilityAgent",
+      "UsabilityAgent",
+      "CompatibilityAgent",
+      "PerformanceAgent"
+    ],
+    "rationale": {
+      "SecurityAgent": "PHI requires HIPAA-mandated access controls, encryption, and audit logging",
+      "PrivacyAgent": "Patient health information subject to HIPAA privacy rules and consent management",
+      "ReliabilityAgent": "99.95% uptime requirement with automatic failover for critical clinical operations",
+      "UsabilityAgent": "Clinical staff with varying technical proficiency; mobile access for rounding physicians",
+      "CompatibilityAgent": "HL7 FHIR R4 and legacy HL7 v2 interoperability with external labs, pharmacies, insurers",
+      "PerformanceAgent": "2-second clinical note retrieval; 5000 concurrent users during peak hours"
+    },
+    "excluded_with_rationale": {
+      "SafetyAgent": "EHR is not a safety-critical control system; clinical decision support is advisory only",
+      "EfficiencyAgent": "Resource optimization not a primary concern for cloud-hosted web platform",
+      "GreenAgent": "Sustainability not mentioned in requirements",
+      "TrustworthinessAgent": "Trust concerns adequately covered by SecurityAgent and PrivacyAgent",
+      "MaintainabilityAgent": "Not a primary concern at specification stage",
+      "FlexibilityAgent": "Standard web deployment, not requiring runtime adaptability",
+      "ResponsibilityAgent": "Regulatory compliance covered by PrivacyAgent (HIPAA)",
+      "FunctionalSafetyAgent": "Not a medical device; no ISO 62304 applicability for EHR software",
+      "ExplainabilityAgent": "No AI decision-making in core EHR functionality"
+    }
+  },
+  "SmartGrid": {
+    "case_name": "Smart Grid Energy Management System",
+    "relevant_agents": [
+      "SafetyAgent",
+      "PerformanceAgent",
+      "ReliabilityAgent",
+      "SecurityAgent",
+      "GreenAgent",
+      "EfficiencyAgent"
+    ],
+    "rationale": {
+      "SafetyAgent": "Safety interlocks for load shedding; critical facility protection from disconnection",
+      "PerformanceAgent": "500ms grid stability decisions; 50,000 messages/second meter data ingestion",
+      "ReliabilityAgent": "30-second failover; 0.01% max data loss; partial network failure resilience",
+      "SecurityAgent": "NERC CIP standards for SCADA/ICS protection; multi-factor authentication",
+      "GreenAgent": "Explicit ISO 14001 environmental metrics; carbon footprint optimization as core objective",
+      "EfficiencyAgent": "Computational energy minimization; renewable utilization optimization"
+    },
+    "excluded_with_rationale": {
+      "UsabilityAgent": "Operator console is secondary; primary interactions are automated M2M",
+      "TrustworthinessAgent": "Security concerns covered by SecurityAgent with NERC CIP",
+      "MaintainabilityAgent": "Not a primary concern at specification stage",
+      "CompatibilityAgent": "Integration is important but not a primary quality dimension vs. standards compliance",
+      "FlexibilityAgent": "Scalability mentioned but standard distributed architecture",
+      "ResponsibilityAgent": "No specific ethical compliance requirements beyond safety",
+      "FunctionalSafetyAgent": "Not automotive/medical; safety covered by SafetyAgent",
+      "ExplainabilityAgent": "Forecasting models are operational tools, not high-risk AI decisions",
+      "PrivacyAgent": "Meter data privacy is secondary to grid safety and performance"
+    }
+  },
+  "LoanApproval": {
+    "case_name": "AI-Assisted Loan Approval System",
+    "relevant_agents": [
+      "ExplainabilityAgent",
+      "SecurityAgent",
+      "PrivacyAgent",
+      "ReliabilityAgent",
+      "ResponsibilityAgent",
+      "PerformanceAgent"
+    ],
+    "rationale": {
+      "ExplainabilityAgent": "EU AI Act Article 13 transparency; counterfactual explanations; model documentation",
+      "SecurityAgent": "End-to-end encryption for applicant data; need-to-know access controls; audit trails",
+      "PrivacyAgent": "GDPR principles; 24-month data retention; consent management; data subject rights",
+      "ReliabilityAgent": "99.9% availability; graceful degradation to rule-based fallback",
+      "ResponsibilityAgent": "ECOA/Fair Lending compliance; demographic parity monitoring; disparate impact ratio",
+      "PerformanceAgent": "5-second real-time scoring; 2-hour batch processing for 10,000 applications"
+    },
+    "excluded_with_rationale": {
+      "SafetyAgent": "Financial system, no physical harm risk",
+      "EfficiencyAgent": "Resource optimization not a primary concern",
+      "GreenAgent": "Sustainability not mentioned",
+      "TrustworthinessAgent": "Trust concerns covered by SecurityAgent, PrivacyAgent, and ExplainabilityAgent",
+      "UsabilityAgent": "Professional users (loan officers); standard enterprise UI",
+      "MaintainabilityAgent": "Not a primary concern at specification stage",
+      "CompatibilityAgent": "Limited external integration scope",
+      "FlexibilityAgent": "Standard deployment",
+      "FunctionalSafetyAgent": "Not safety-critical domain"
+    }
   }
 }

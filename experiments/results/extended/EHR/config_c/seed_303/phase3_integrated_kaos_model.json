@@ -1,0 +1,3900 @@
+{
+  "gsn_elements": [
+    {
+      "id": "COM-L1-010",
+      "name": "Compatibility Goal",
+      "description": "Compatibility objective for EHR: Project: Electronic Health Record (EHR) System for Regional Hospital Network",
+      "gsn_type": "Goal",
+      "quality_attribute": "Compatibility",
+      "priority": 1,
+      "stakeholder": "CompatibilityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "FlexibilityAgent",
+        "validation_status": "candidate_resolution",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "COM-L2-010-01",
+      "name": "Compatibility Requirement 1",
+      "description": "The system shall ensure compatibility (co-existence, interoperability): Project: Electronic Health Record (EHR) System for Regional Hospital Network",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Compatibility",
+      "priority": 1,
+      "stakeholder": "CompatibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for co-existence, interoperability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "COM-L1-010",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "FlexibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "COM-L2-010-02",
+      "name": "Compatibility Requirement 2",
+      "description": "The system shall ensure compatibility (co-existence, interoperability): The system is a web-based Electronic Health Record platform serving a network of 12 hospitals and 50+ clinics",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Compatibility",
+      "priority": 1,
+      "stakeholder": "CompatibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for co-existence, interoperability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "COM-L1-010",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "FlexibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "COM-L2-010-03",
+      "name": "Compatibility Requirement 3",
+      "description": "The system shall ensure compatibility (co-existence, interoperability): It manages patient demographics, medical histories, lab results, prescriptions, clinical notes, and imaging records",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Compatibility",
+      "priority": 1,
+      "stakeholder": "CompatibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for co-existence, interoperability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "COM-L1-010",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "FlexibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "COM-L2-010-04",
+      "name": "Compatibility Requirement 4",
+      "description": "The system shall ensure compatibility (co-existence, interoperability): The system must comply with HIPAA regulations and support HL7 FHIR interoperability standards",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Compatibility",
+      "priority": 1,
+      "stakeholder": "CompatibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for co-existence, interoperability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "COM-L1-010",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "FlexibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "COM-L2-010-05",
+      "name": "Compatibility Requirement 5",
+      "description": "The system shall ensure compatibility (co-existence, interoperability): [Core Functional Requirements]",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Compatibility",
+      "priority": 1,
+      "stakeholder": "CompatibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for co-existence, interoperability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "COM-L1-010",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "FlexibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "COM-L2-010-06",
+      "name": "Compatibility Requirement 6",
+      "description": "The system shall ensure compatibility (co-existence, interoperability): Patient Management: The system shall maintain comprehensive patient records including demographics, insurance information, allergies, and medical history across all facilities in the network",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Compatibility",
+      "priority": 1,
+      "stakeholder": "CompatibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for co-existence, interoperability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "COM-L1-010",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "FlexibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "EFF-L1-002",
+      "name": "Efficiency Goal",
+      "description": "Efficiency objective for EHR: Privacy & Compliance: All patient data must be encrypted at rest (AES-256) and in transit (TLS 1",
+      "gsn_type": "Goal",
+      "quality_attribute": "Efficiency",
+      "priority": 1,
+      "stakeholder": "EfficiencyAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "EFF-L2-002-01",
+      "name": "Efficiency Requirement 1",
+      "description": "The system shall ensure efficiency (latency optimization): Privacy & Compliance: All patient data must be encrypted at rest (AES-256) and in transit (TLS 1",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Efficiency",
+      "priority": 1,
+      "stakeholder": "EfficiencyAgent",
+      "measurable_criteria": "Clause-level quality requirement for latency optimization",
+      "hierarchy_level": 2,
+      "parent_goal_id": "EFF-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "GreenAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "EFF-L2-002-02",
+      "name": "Efficiency Requirement 2",
+      "description": "The system shall ensure efficiency (throughput stability): Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Efficiency",
+      "priority": 1,
+      "stakeholder": "EfficiencyAgent",
+      "measurable_criteria": "Clause-level quality requirement for throughput stability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "EFF-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "GreenAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "EFF-L2-002-03",
+      "name": "Efficiency Requirement 3",
+      "description": "The system shall ensure efficiency (resource utilization): Availability: The system must maintain 99",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Efficiency",
+      "priority": 1,
+      "stakeholder": "EfficiencyAgent",
+      "measurable_criteria": "Clause-level quality requirement for resource utilization",
+      "hierarchy_level": 2,
+      "parent_goal_id": "EFF-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "GreenAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "EFF-L2-002-04",
+      "name": "Efficiency Requirement 4",
+      "description": "The system shall ensure efficiency (latency optimization): 95% uptime with automatic failover",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Efficiency",
+      "priority": 1,
+      "stakeholder": "EfficiencyAgent",
+      "measurable_criteria": "Clause-level quality requirement for latency optimization",
+      "hierarchy_level": 2,
+      "parent_goal_id": "EFF-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "GreenAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "EFF-L2-002-05",
+      "name": "Efficiency Requirement 5",
+      "description": "The system shall ensure efficiency (throughput stability): Planned maintenance windows shall not exceed 4 hours per month",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Efficiency",
+      "priority": 1,
+      "stakeholder": "EfficiencyAgent",
+      "measurable_criteria": "Clause-level quality requirement for throughput stability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "EFF-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "GreenAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "EFF-L2-002-06",
+      "name": "Efficiency Requirement 6",
+      "description": "The system shall ensure efficiency (resource utilization): Interoperability: The system must support HL7 FHIR R4 APIs for data exchange with external laboratories, pharmacies, and insurance providers",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Efficiency",
+      "priority": 1,
+      "stakeholder": "EfficiencyAgent",
+      "measurable_criteria": "Clause-level quality requirement for resource utilization",
+      "hierarchy_level": 2,
+      "parent_goal_id": "EFF-L1-002",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "GreenAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "EXP-L1-014",
+      "name": "Explainability Goal",
+      "description": "Explainability objective for EHR: Clinical Documentation: Physicians shall be able to create, edit, and sign clinical notes with structured templates for different specialties (cardiology, oncology, pediatrics, etc",
+      "gsn_type": "Goal",
+      "quality_attribute": "Explainability",
+      "priority": 1,
+      "stakeholder": "ExplainabilityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "EXP-L2-014-01",
+      "name": "Explainability Requirement 1",
+      "description": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): Clinical Documentation: Physicians shall be able to create, edit, and sign clinical notes with structured templates for different specialties (cardiology, oncology, pediatrics, etc",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Explainability",
+      "priority": 1,
+      "stakeholder": "ExplainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for model transparency, decision interpretability, human reviewability per EU AI Act Article 13",
+      "hierarchy_level": 2,
+      "parent_goal_id": "EXP-L1-014",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "EXP-L2-014-02",
+      "name": "Explainability Requirement 2",
+      "description": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): Order Management: The system shall support electronic prescribing (e-prescribe), lab orders, and radiology orders with clinical decision support alerts for drug interactions and allergy conflicts",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Explainability",
+      "priority": 1,
+      "stakeholder": "ExplainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for model transparency, decision interpretability, human reviewability per EU AI Act Article 13",
+      "hierarchy_level": 2,
+      "parent_goal_id": "EXP-L1-014",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "EXP-L2-014-03",
+      "name": "Explainability Requirement 3",
+      "description": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): Results Management: Lab results and imaging reports shall be automatically routed to ordering physicians with abnormal result flagging and escalation protocols",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Explainability",
+      "priority": 1,
+      "stakeholder": "ExplainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for model transparency, decision interpretability, human reviewability per EU AI Act Article 13",
+      "hierarchy_level": 2,
+      "parent_goal_id": "EXP-L1-014",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "EXP-L2-014-04",
+      "name": "Explainability Requirement 4",
+      "description": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): [Non-Functional Constraints]",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Explainability",
+      "priority": 1,
+      "stakeholder": "ExplainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for model transparency, decision interpretability, human reviewability per EU AI Act Article 13",
+      "hierarchy_level": 2,
+      "parent_goal_id": "EXP-L1-014",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "EXP-L2-014-05",
+      "name": "Explainability Requirement 5",
+      "description": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): Privacy & Compliance: All patient data must be encrypted at rest (AES-256) and in transit (TLS 1",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Explainability",
+      "priority": 1,
+      "stakeholder": "ExplainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for model transparency, decision interpretability, human reviewability per EU AI Act Article 13",
+      "hierarchy_level": 2,
+      "parent_goal_id": "EXP-L1-014",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "EXP-L2-014-06",
+      "name": "Explainability Requirement 6",
+      "description": "The system shall ensure explainability (model transparency, decision interpretability, human reviewability per EU AI Act Article 13): Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Explainability",
+      "priority": 1,
+      "stakeholder": "ExplainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for model transparency, decision interpretability, human reviewability per EU AI Act Article 13",
+      "hierarchy_level": 2,
+      "parent_goal_id": "EXP-L1-014",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "FLE-L1-011",
+      "name": "Flexibility Goal",
+      "description": "Flexibility objective for EHR: It manages patient demographics, medical histories, lab results, prescriptions, clinical notes, and imaging records",
+      "gsn_type": "Goal",
+      "quality_attribute": "Flexibility",
+      "priority": 1,
+      "stakeholder": "FlexibilityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "FLE-L2-011-01",
+      "name": "Flexibility Requirement 1",
+      "description": "The system shall ensure flexibility (adaptability, installability, replaceability): It manages patient demographics, medical histories, lab results, prescriptions, clinical notes, and imaging records",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Flexibility",
+      "priority": 1,
+      "stakeholder": "FlexibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for adaptability, installability, replaceability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "FLE-L1-011",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "PerformanceAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "FLE-L2-011-02",
+      "name": "Flexibility Requirement 2",
+      "description": "The system shall ensure flexibility (adaptability, installability, replaceability): The system must comply with HIPAA regulations and support HL7 FHIR interoperability standards",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Flexibility",
+      "priority": 1,
+      "stakeholder": "FlexibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for adaptability, installability, replaceability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "FLE-L1-011",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "PerformanceAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "FLE-L2-011-03",
+      "name": "Flexibility Requirement 3",
+      "description": "The system shall ensure flexibility (adaptability, installability, replaceability): [Core Functional Requirements]",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Flexibility",
+      "priority": 1,
+      "stakeholder": "FlexibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for adaptability, installability, replaceability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "FLE-L1-011",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "PerformanceAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "FLE-L2-011-04",
+      "name": "Flexibility Requirement 4",
+      "description": "The system shall ensure flexibility (adaptability, installability, replaceability): Patient Management: The system shall maintain comprehensive patient records including demographics, insurance information, allergies, and medical history across all facilities in the network",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Flexibility",
+      "priority": 1,
+      "stakeholder": "FlexibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for adaptability, installability, replaceability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "FLE-L1-011",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "PerformanceAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "FLE-L2-011-05",
+      "name": "Flexibility Requirement 5",
+      "description": "The system shall ensure flexibility (adaptability, installability, replaceability): Clinical Documentation: Physicians shall be able to create, edit, and sign clinical notes with structured templates for different specialties (cardiology, oncology, pediatrics, etc",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Flexibility",
+      "priority": 1,
+      "stakeholder": "FlexibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for adaptability, installability, replaceability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "FLE-L1-011",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "PerformanceAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "FLE-L2-011-06",
+      "name": "Flexibility Requirement 6",
+      "description": "The system shall ensure flexibility (adaptability, installability, replaceability): Order Management: The system shall support electronic prescribing (e-prescribe), lab orders, and radiology orders with clinical decision support alerts for drug interactions and allergy conflicts",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Flexibility",
+      "priority": 1,
+      "stakeholder": "FlexibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for adaptability, installability, replaceability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "FLE-L1-011",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "PerformanceAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "FUN-L1-013",
+      "name": "Functional Safety Goal",
+      "description": "Functional Safety objective for EHR: [Core Functional Requirements]",
+      "gsn_type": "Goal",
+      "quality_attribute": "Functional Safety",
+      "priority": 1,
+      "stakeholder": "FunctionalSafetyAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "FUN-L2-013-01",
+      "name": "Functional Safety Requirement 1",
+      "description": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): [Core Functional Requirements]",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Functional Safety",
+      "priority": 1,
+      "stakeholder": "FunctionalSafetyAgent",
+      "measurable_criteria": "Clause-level quality requirement for hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262",
+      "hierarchy_level": 2,
+      "parent_goal_id": "FUN-L1-013",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "ExplainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "FUN-L2-013-02",
+      "name": "Functional Safety Requirement 2",
+      "description": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): Patient Management: The system shall maintain comprehensive patient records including demographics, insurance information, allergies, and medical history across all facilities in the network",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Functional Safety",
+      "priority": 1,
+      "stakeholder": "FunctionalSafetyAgent",
+      "measurable_criteria": "Clause-level quality requirement for hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262",
+      "hierarchy_level": 2,
+      "parent_goal_id": "FUN-L1-013",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "ExplainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "FUN-L2-013-03",
+      "name": "Functional Safety Requirement 3",
+      "description": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): Clinical Documentation: Physicians shall be able to create, edit, and sign clinical notes with structured templates for different specialties (cardiology, oncology, pediatrics, etc",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Functional Safety",
+      "priority": 1,
+      "stakeholder": "FunctionalSafetyAgent",
+      "measurable_criteria": "Clause-level quality requirement for hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262",
+      "hierarchy_level": 2,
+      "parent_goal_id": "FUN-L1-013",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "ExplainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "FUN-L2-013-04",
+      "name": "Functional Safety Requirement 4",
+      "description": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): Order Management: The system shall support electronic prescribing (e-prescribe), lab orders, and radiology orders with clinical decision support alerts for drug interactions and allergy conflicts",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Functional Safety",
+      "priority": 1,
+      "stakeholder": "FunctionalSafetyAgent",
+      "measurable_criteria": "Clause-level quality requirement for hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262",
+      "hierarchy_level": 2,
+      "parent_goal_id": "FUN-L1-013",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "ExplainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "FUN-L2-013-05",
+      "name": "Functional Safety Requirement 5",
+      "description": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): Results Management: Lab results and imaging reports shall be automatically routed to ordering physicians with abnormal result flagging and escalation protocols",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Functional Safety",
+      "priority": 1,
+      "stakeholder": "FunctionalSafetyAgent",
+      "measurable_criteria": "Clause-level quality requirement for hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262",
+      "hierarchy_level": 2,
+      "parent_goal_id": "FUN-L1-013",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "ExplainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "FUN-L2-013-06",
+      "name": "Functional Safety Requirement 6",
+      "description": "The system shall ensure functional safety (hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262): [Non-Functional Constraints]",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Functional Safety",
+      "priority": 1,
+      "stakeholder": "FunctionalSafetyAgent",
+      "measurable_criteria": "Clause-level quality requirement for hazard analysis, safety mechanisms, ASIL levels, fault tolerance per ISO 26262",
+      "hierarchy_level": 2,
+      "parent_goal_id": "FUN-L1-013",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "ExplainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "MAI-L1-009",
+      "name": "Maintainability Goal",
+      "description": "Maintainability objective for EHR: Mobile access must be available for rounding physicians",
+      "gsn_type": "Goal",
+      "quality_attribute": "Maintainability",
+      "priority": 1,
+      "stakeholder": "MaintainabilityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "MAI-L2-009-01",
+      "name": "Maintainability Requirement 1",
+      "description": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): Mobile access must be available for rounding physicians",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Maintainability",
+      "priority": 1,
+      "stakeholder": "MaintainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for modularity, reusability, analysability, modifiability, testability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "MAI-L1-009",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "CompatibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "MAI-L2-009-02",
+      "name": "Maintainability Requirement 2",
+      "description": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): Project: Electronic Health Record (EHR) System for Regional Hospital Network",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Maintainability",
+      "priority": 1,
+      "stakeholder": "MaintainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for modularity, reusability, analysability, modifiability, testability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "MAI-L1-009",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "CompatibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "MAI-L2-009-03",
+      "name": "Maintainability Requirement 3",
+      "description": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): The system is a web-based Electronic Health Record platform serving a network of 12 hospitals and 50+ clinics",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Maintainability",
+      "priority": 1,
+      "stakeholder": "MaintainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for modularity, reusability, analysability, modifiability, testability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "MAI-L1-009",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "CompatibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "MAI-L2-009-04",
+      "name": "Maintainability Requirement 4",
+      "description": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): It manages patient demographics, medical histories, lab results, prescriptions, clinical notes, and imaging records",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Maintainability",
+      "priority": 1,
+      "stakeholder": "MaintainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for modularity, reusability, analysability, modifiability, testability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "MAI-L1-009",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "CompatibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "MAI-L2-009-05",
+      "name": "Maintainability Requirement 5",
+      "description": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): The system must comply with HIPAA regulations and support HL7 FHIR interoperability standards",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Maintainability",
+      "priority": 1,
+      "stakeholder": "MaintainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for modularity, reusability, analysability, modifiability, testability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "MAI-L1-009",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "CompatibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "MAI-L2-009-06",
+      "name": "Maintainability Requirement 6",
+      "description": "The system shall ensure maintainability (modularity, reusability, analysability, modifiability, testability): [Core Functional Requirements]",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Maintainability",
+      "priority": 1,
+      "stakeholder": "MaintainabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for modularity, reusability, analysability, modifiability, testability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "MAI-L1-009",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "CompatibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PER-L1-012",
+      "name": "Performance Goal",
+      "description": "Performance objective for EHR: The system must comply with HIPAA regulations and support HL7 FHIR interoperability standards",
+      "gsn_type": "Goal",
+      "quality_attribute": "Performance",
+      "priority": 1,
+      "stakeholder": "PerformanceAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "FunctionalSafetyAgent",
+        "validation_status": "candidate_resolution",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PER-L2-012-01",
+      "name": "Performance Requirement 1",
+      "description": "The system shall ensure performance (time behaviour, resource utilisation, capacity): The system must comply with HIPAA regulations and support HL7 FHIR interoperability standards",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Performance",
+      "priority": 1,
+      "stakeholder": "PerformanceAgent",
+      "measurable_criteria": "Clause-level quality requirement for time behaviour, resource utilisation, capacity",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PER-L1-012",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "FunctionalSafetyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PER-L2-012-02",
+      "name": "Performance Requirement 2",
+      "description": "The system shall ensure performance (time behaviour, resource utilisation, capacity): [Core Functional Requirements]",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Performance",
+      "priority": 1,
+      "stakeholder": "PerformanceAgent",
+      "measurable_criteria": "Clause-level quality requirement for time behaviour, resource utilisation, capacity",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PER-L1-012",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "FunctionalSafetyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PER-L2-012-03",
+      "name": "Performance Requirement 3",
+      "description": "The system shall ensure performance (time behaviour, resource utilisation, capacity): Patient Management: The system shall maintain comprehensive patient records including demographics, insurance information, allergies, and medical history across all facilities in the network",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Performance",
+      "priority": 1,
+      "stakeholder": "PerformanceAgent",
+      "measurable_criteria": "Clause-level quality requirement for time behaviour, resource utilisation, capacity",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PER-L1-012",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "FunctionalSafetyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PER-L2-012-04",
+      "name": "Performance Requirement 4",
+      "description": "The system shall ensure performance (time behaviour, resource utilisation, capacity): Clinical Documentation: Physicians shall be able to create, edit, and sign clinical notes with structured templates for different specialties (cardiology, oncology, pediatrics, etc",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Performance",
+      "priority": 1,
+      "stakeholder": "PerformanceAgent",
+      "measurable_criteria": "Clause-level quality requirement for time behaviour, resource utilisation, capacity",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PER-L1-012",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "FunctionalSafetyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PER-L2-012-05",
+      "name": "Performance Requirement 5",
+      "description": "The system shall ensure performance (time behaviour, resource utilisation, capacity): Order Management: The system shall support electronic prescribing (e-prescribe), lab orders, and radiology orders with clinical decision support alerts for drug interactions and allergy conflicts",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Performance",
+      "priority": 1,
+      "stakeholder": "PerformanceAgent",
+      "measurable_criteria": "Clause-level quality requirement for time behaviour, resource utilisation, capacity",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PER-L1-012",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "FunctionalSafetyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PER-L2-012-06",
+      "name": "Performance Requirement 6",
+      "description": "The system shall ensure performance (time behaviour, resource utilisation, capacity): Results Management: Lab results and imaging reports shall be automatically routed to ordering physicians with abnormal result flagging and escalation protocols",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Performance",
+      "priority": 1,
+      "stakeholder": "PerformanceAgent",
+      "measurable_criteria": "Clause-level quality requirement for time behaviour, resource utilisation, capacity",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PER-L1-012",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "FunctionalSafetyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L1-015",
+      "name": "Privacy Goal",
+      "description": "Privacy objective for EHR: Order Management: The system shall support electronic prescribing (e-prescribe), lab orders, and radiology orders with clinical decision support alerts for drug interactions and allergy conflicts",
+      "gsn_type": "Goal",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-015-01",
+      "name": "Privacy Requirement 1",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Order Management: The system shall support electronic prescribing (e-prescribe), lab orders, and radiology orders with clinical decision support alerts for drug interactions and allergy conflicts",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-015",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "sample_knowledge.py",
+        "conflict_resolved_by": "SafetyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-015-02",
+      "name": "Privacy Requirement 2",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Results Management: Lab results and imaging reports shall be automatically routed to ordering physicians with abnormal result flagging and escalation protocols",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-015",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "SafetyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-015-03",
+      "name": "Privacy Requirement 3",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): [Non-Functional Constraints]",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-015",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "SafetyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-015-04",
+      "name": "Privacy Requirement 4",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Privacy & Compliance: All patient data must be encrypted at rest (AES-256) and in transit (TLS 1",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-015",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "SafetyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-015-05",
+      "name": "Privacy Requirement 5",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-015",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "SafetyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "PRI-L2-015-06",
+      "name": "Privacy Requirement 6",
+      "description": "The system shall ensure privacy (data minimisation, consent management, data subject rights per GDPR and ISO 27701): Availability: The system must maintain 99",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Privacy",
+      "priority": 1,
+      "stakeholder": "PrivacyAgent",
+      "measurable_criteria": "Clause-level quality requirement for data minimisation, consent management, data subject rights per GDPR and ISO 27701",
+      "hierarchy_level": 2,
+      "parent_goal_id": "PRI-L1-015",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "SafetyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L1-006",
+      "name": "Reliability Goal",
+      "description": "Reliability objective for EHR: Legacy HL7 v2 interfaces must be maintained for existing integrations",
+      "gsn_type": "Goal",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-006-01",
+      "name": "Reliability Requirement 1",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Legacy HL7 v2 interfaces must be maintained for existing integrations",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-006",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "UsabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-006-02",
+      "name": "Reliability Requirement 2",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Performance: Clinical note retrieval must complete within 2 seconds",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-006",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "UsabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-006-03",
+      "name": "Reliability Requirement 3",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): The system must support 5000 concurrent users across all facilities during peak hours",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-006",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "UsabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-006-04",
+      "name": "Reliability Requirement 4",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Usability: The interface must be accessible to clinical staff with varying technical proficiency",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-006",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "UsabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-006-05",
+      "name": "Reliability Requirement 5",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Mobile access must be available for rounding physicians",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-006",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "UsabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "REL-L2-006-06",
+      "name": "Reliability Requirement 6",
+      "description": "The system shall ensure reliability (maturity, availability, fault tolerance, recoverability): Project: Electronic Health Record (EHR) System for Regional Hospital Network",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Reliability",
+      "priority": 1,
+      "stakeholder": "ReliabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for maturity, availability, fault tolerance, recoverability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "REL-L1-006",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "UsabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "RES-L1-005",
+      "name": "Responsibility Goal",
+      "description": "Responsibility objective for EHR: Planned maintenance windows shall not exceed 4 hours per month",
+      "gsn_type": "Goal",
+      "quality_attribute": "Responsibility",
+      "priority": 1,
+      "stakeholder": "ResponsibilityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "RES-L2-005-01",
+      "name": "Responsibility Requirement 1",
+      "description": "The system shall ensure responsibility (regulatory accountability): Planned maintenance windows shall not exceed 4 hours per month",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Responsibility",
+      "priority": 1,
+      "stakeholder": "ResponsibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for regulatory accountability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "RES-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "RES-L2-005-02",
+      "name": "Responsibility Requirement 2",
+      "description": "The system shall ensure responsibility (stakeholder transparency): Interoperability: The system must support HL7 FHIR R4 APIs for data exchange with external laboratories, pharmacies, and insurance providers",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Responsibility",
+      "priority": 1,
+      "stakeholder": "ResponsibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for stakeholder transparency",
+      "hierarchy_level": 2,
+      "parent_goal_id": "RES-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "RES-L2-005-03",
+      "name": "Responsibility Requirement 3",
+      "description": "The system shall ensure responsibility (ethical compliance): Legacy HL7 v2 interfaces must be maintained for existing integrations",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Responsibility",
+      "priority": 1,
+      "stakeholder": "ResponsibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for ethical compliance",
+      "hierarchy_level": 2,
+      "parent_goal_id": "RES-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "RES-L2-005-04",
+      "name": "Responsibility Requirement 4",
+      "description": "The system shall ensure responsibility (regulatory accountability): Performance: Clinical note retrieval must complete within 2 seconds",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Responsibility",
+      "priority": 1,
+      "stakeholder": "ResponsibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for regulatory accountability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "RES-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "RES-L2-005-05",
+      "name": "Responsibility Requirement 5",
+      "description": "The system shall ensure responsibility (stakeholder transparency): The system must support 5000 concurrent users across all facilities during peak hours",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Responsibility",
+      "priority": 1,
+      "stakeholder": "ResponsibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for stakeholder transparency",
+      "hierarchy_level": 2,
+      "parent_goal_id": "RES-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "RES-L2-005-06",
+      "name": "Responsibility Requirement 6",
+      "description": "The system shall ensure responsibility (ethical compliance): Usability: The interface must be accessible to clinical staff with varying technical proficiency",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Responsibility",
+      "priority": 1,
+      "stakeholder": "ResponsibilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for ethical compliance",
+      "hierarchy_level": 2,
+      "parent_goal_id": "RES-L1-005",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "ReliabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SAF-L1-001",
+      "name": "Safety Goal",
+      "description": "Safety objective for EHR: [Non-Functional Constraints]",
+      "gsn_type": "Goal",
+      "quality_attribute": "Safety",
+      "priority": 1,
+      "stakeholder": "SafetyAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SAF-L2-001-01",
+      "name": "Safety Requirement 1",
+      "description": "The system shall ensure safety (hazard prevention): [Non-Functional Constraints]",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Safety",
+      "priority": 1,
+      "stakeholder": "SafetyAgent",
+      "measurable_criteria": "Clause-level quality requirement for hazard prevention",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SAF-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "EfficiencyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SAF-L2-001-02",
+      "name": "Safety Requirement 2",
+      "description": "The system shall ensure safety (fault tolerance): Privacy & Compliance: All patient data must be encrypted at rest (AES-256) and in transit (TLS 1",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Safety",
+      "priority": 1,
+      "stakeholder": "SafetyAgent",
+      "measurable_criteria": "Clause-level quality requirement for fault tolerance",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SAF-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "EfficiencyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SAF-L2-001-03",
+      "name": "Safety Requirement 3",
+      "description": "The system shall ensure safety (risk mitigation): Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Safety",
+      "priority": 1,
+      "stakeholder": "SafetyAgent",
+      "measurable_criteria": "Clause-level quality requirement for risk mitigation",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SAF-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "EfficiencyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SAF-L2-001-04",
+      "name": "Safety Requirement 4",
+      "description": "The system shall ensure safety (hazard prevention): Availability: The system must maintain 99",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Safety",
+      "priority": 1,
+      "stakeholder": "SafetyAgent",
+      "measurable_criteria": "Clause-level quality requirement for hazard prevention",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SAF-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "EfficiencyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SAF-L2-001-05",
+      "name": "Safety Requirement 5",
+      "description": "The system shall ensure safety (fault tolerance): 95% uptime with automatic failover",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Safety",
+      "priority": 1,
+      "stakeholder": "SafetyAgent",
+      "measurable_criteria": "Clause-level quality requirement for fault tolerance",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SAF-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "EfficiencyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SAF-L2-001-06",
+      "name": "Safety Requirement 6",
+      "description": "The system shall ensure safety (risk mitigation): Planned maintenance windows shall not exceed 4 hours per month",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Safety",
+      "priority": 1,
+      "stakeholder": "SafetyAgent",
+      "measurable_criteria": "Clause-level quality requirement for risk mitigation",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SAF-L1-001",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "EfficiencyAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L1-008",
+      "name": "Security Goal",
+      "description": "Security objective for EHR: The system must support 5000 concurrent users across all facilities during peak hours",
+      "gsn_type": "Goal",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-008-01",
+      "name": "Security Requirement 1",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The system must support 5000 concurrent users across all facilities during peak hours",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-008",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "MaintainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-008-02",
+      "name": "Security Requirement 2",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Usability: The interface must be accessible to clinical staff with varying technical proficiency",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-008",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "MaintainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-008-03",
+      "name": "Security Requirement 3",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Mobile access must be available for rounding physicians",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-008",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "MaintainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-008-04",
+      "name": "Security Requirement 4",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): Project: Electronic Health Record (EHR) System for Regional Hospital Network",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-008",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "MaintainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-008-05",
+      "name": "Security Requirement 5",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): The system is a web-based Electronic Health Record platform serving a network of 12 hospitals and 50+ clinics",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-008",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "MaintainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SEC-L2-008-06",
+      "name": "Security Requirement 6",
+      "description": "The system shall ensure security (confidentiality, integrity, non-repudiation, authentication): It manages patient demographics, medical histories, lab results, prescriptions, clinical notes, and imaging records",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Security",
+      "priority": 1,
+      "stakeholder": "SecurityAgent",
+      "measurable_criteria": "Clause-level quality requirement for confidentiality, integrity, non-repudiation, authentication",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SEC-L1-008",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "MaintainabilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SUS-L1-003",
+      "name": "Sustainability Goal",
+      "description": "Sustainability objective for EHR: Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements",
+      "gsn_type": "Goal",
+      "quality_attribute": "Sustainability",
+      "priority": 1,
+      "stakeholder": "GreenAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "candidate_resolution",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SUS-L2-003-01",
+      "name": "Sustainability Requirement 1",
+      "description": "The system shall ensure sustainability (energy footprint reduction): Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Sustainability",
+      "priority": 1,
+      "stakeholder": "GreenAgent",
+      "measurable_criteria": "Clause-level quality requirement for energy footprint reduction",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SUS-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "TrustworthinessAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SUS-L2-003-02",
+      "name": "Sustainability Requirement 2",
+      "description": "The system shall ensure sustainability (resource lifecycle control): Availability: The system must maintain 99",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Sustainability",
+      "priority": 1,
+      "stakeholder": "GreenAgent",
+      "measurable_criteria": "Clause-level quality requirement for resource lifecycle control",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SUS-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "TrustworthinessAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SUS-L2-003-03",
+      "name": "Sustainability Requirement 3",
+      "description": "The system shall ensure sustainability (environmental impact awareness): 95% uptime with automatic failover",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Sustainability",
+      "priority": 1,
+      "stakeholder": "GreenAgent",
+      "measurable_criteria": "Clause-level quality requirement for environmental impact awareness",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SUS-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "TrustworthinessAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SUS-L2-003-04",
+      "name": "Sustainability Requirement 4",
+      "description": "The system shall ensure sustainability (energy footprint reduction): Planned maintenance windows shall not exceed 4 hours per month",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Sustainability",
+      "priority": 1,
+      "stakeholder": "GreenAgent",
+      "measurable_criteria": "Clause-level quality requirement for energy footprint reduction",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SUS-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "TrustworthinessAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SUS-L2-003-05",
+      "name": "Sustainability Requirement 5",
+      "description": "The system shall ensure sustainability (resource lifecycle control): Interoperability: The system must support HL7 FHIR R4 APIs for data exchange with external laboratories, pharmacies, and insurance providers",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Sustainability",
+      "priority": 1,
+      "stakeholder": "GreenAgent",
+      "measurable_criteria": "Clause-level quality requirement for resource lifecycle control",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SUS-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "TrustworthinessAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "SUS-L2-003-06",
+      "name": "Sustainability Requirement 6",
+      "description": "The system shall ensure sustainability (environmental impact awareness): Legacy HL7 v2 interfaces must be maintained for existing integrations",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Sustainability",
+      "priority": 1,
+      "stakeholder": "GreenAgent",
+      "measurable_criteria": "Clause-level quality requirement for environmental impact awareness",
+      "hierarchy_level": 2,
+      "parent_goal_id": "SUS-L1-003",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "TrustworthinessAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L1-004",
+      "name": "Trustworthiness Goal",
+      "description": "Trustworthiness objective for EHR: 95% uptime with automatic failover",
+      "gsn_type": "Goal",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "pending",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-004-01",
+      "name": "Trustworthiness Requirement 1",
+      "description": "The system shall ensure trustworthiness (security assurance): 95% uptime with automatic failover",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for security assurance",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "ResponsibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-004-02",
+      "name": "Trustworthiness Requirement 2",
+      "description": "The system shall ensure trustworthiness (auditability): Planned maintenance windows shall not exceed 4 hours per month",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for auditability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "cases/real_world_studies.py",
+        "conflict_resolved_by": "ResponsibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-004-03",
+      "name": "Trustworthiness Requirement 3",
+      "description": "The system shall ensure trustworthiness (integrity guarantees): Interoperability: The system must support HL7 FHIR R4 APIs for data exchange with external laboratories, pharmacies, and insurance providers",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for integrity guarantees",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "ResponsibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-004-04",
+      "name": "Trustworthiness Requirement 4",
+      "description": "The system shall ensure trustworthiness (security assurance): Legacy HL7 v2 interfaces must be maintained for existing integrations",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for security assurance",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "ResponsibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-004-05",
+      "name": "Trustworthiness Requirement 5",
+      "description": "The system shall ensure trustworthiness (auditability): Performance: Clinical note retrieval must complete within 2 seconds",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for auditability",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "ResponsibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "TRU-L2-004-06",
+      "name": "Trustworthiness Requirement 6",
+      "description": "The system shall ensure trustworthiness (integrity guarantees): The system must support 5000 concurrent users across all facilities during peak hours",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Trustworthiness",
+      "priority": 1,
+      "stakeholder": "TrustworthinessAgent",
+      "measurable_criteria": "Clause-level quality requirement for integrity guarantees",
+      "hierarchy_level": 2,
+      "parent_goal_id": "TRU-L1-004",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "ResponsibilityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L1-007",
+      "name": "Usability Goal",
+      "description": "Usability objective for EHR: Performance: Clinical note retrieval must complete within 2 seconds",
+      "gsn_type": "Goal",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Quality-attribute specific requirement analysis",
+      "hierarchy_level": 1,
+      "parent_goal_id": null,
+      "properties": {
+        "original_kaos_type": "Goal",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": null,
+        "validation_status": "candidate_resolution",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-007-01",
+      "name": "Usability Requirement 1",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Performance: Clinical note retrieval must complete within 2 seconds",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-007",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "SecurityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-007-02",
+      "name": "Usability Requirement 2",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system must support 5000 concurrent users across all facilities during peak hours",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-007",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "automotive_safety.py",
+        "conflict_resolved_by": "SecurityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-007-03",
+      "name": "Usability Requirement 3",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Usability: The interface must be accessible to clinical staff with varying technical proficiency",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-007",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "SecurityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-007-04",
+      "name": "Usability Requirement 4",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Mobile access must be available for rounding physicians",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-007",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "SecurityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-007-05",
+      "name": "Usability Requirement 5",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): Project: Electronic Health Record (EHR) System for Regional Hospital Network",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-007",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "standards/latest_2024.py",
+        "conflict_resolved_by": "SecurityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    },
+    {
+      "id": "USA-L2-007-06",
+      "name": "Usability Requirement 6",
+      "description": "The system shall ensure usability (learnability, operability, user error protection, accessibility): The system is a web-based Electronic Health Record platform serving a network of 12 hospitals and 50+ clinics",
+      "gsn_type": "Strategy",
+      "quality_attribute": "Usability",
+      "priority": 1,
+      "stakeholder": "UsabilityAgent",
+      "measurable_criteria": "Clause-level quality requirement for learnability, operability, user error protection, accessibility",
+      "hierarchy_level": 2,
+      "parent_goal_id": "USA-L1-007",
+      "properties": {
+        "original_kaos_type": "Task",
+        "source": "openre_bench.phase1.rag",
+        "source_document": "knowledge_guide.py",
+        "conflict_resolved_by": "SecurityAgent",
+        "validation_status": "resolved",
+        "citation_required": true
+      }
+    }
+  ],
+  "gsn_connections": [
+    {
+      "id": "REL-001",
+      "source_id": "COM-L1-010",
+      "target_id": "COM-L2-010-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-002",
+      "source_id": "COM-L1-010",
+      "target_id": "COM-L2-010-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-003",
+      "source_id": "COM-L1-010",
+      "target_id": "COM-L2-010-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-004",
+      "source_id": "COM-L1-010",
+      "target_id": "COM-L2-010-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-005",
+      "source_id": "COM-L1-010",
+      "target_id": "COM-L2-010-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-006",
+      "source_id": "COM-L1-010",
+      "target_id": "COM-L2-010-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-007",
+      "source_id": "EFF-L1-002",
+      "target_id": "EFF-L2-002-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-008",
+      "source_id": "EFF-L1-002",
+      "target_id": "EFF-L2-002-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-009",
+      "source_id": "EFF-L1-002",
+      "target_id": "EFF-L2-002-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-010",
+      "source_id": "EFF-L1-002",
+      "target_id": "EFF-L2-002-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-011",
+      "source_id": "EFF-L1-002",
+      "target_id": "EFF-L2-002-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-012",
+      "source_id": "EFF-L1-002",
+      "target_id": "EFF-L2-002-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-013",
+      "source_id": "EXP-L1-014",
+      "target_id": "EXP-L2-014-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-014",
+      "source_id": "EXP-L1-014",
+      "target_id": "EXP-L2-014-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-015",
+      "source_id": "EXP-L1-014",
+      "target_id": "EXP-L2-014-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-016",
+      "source_id": "EXP-L1-014",
+      "target_id": "EXP-L2-014-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-017",
+      "source_id": "EXP-L1-014",
+      "target_id": "EXP-L2-014-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-018",
+      "source_id": "EXP-L1-014",
+      "target_id": "EXP-L2-014-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-019",
+      "source_id": "FLE-L1-011",
+      "target_id": "FLE-L2-011-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-020",
+      "source_id": "FLE-L1-011",
+      "target_id": "FLE-L2-011-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-021",
+      "source_id": "FLE-L1-011",
+      "target_id": "FLE-L2-011-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-022",
+      "source_id": "FLE-L1-011",
+      "target_id": "FLE-L2-011-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-023",
+      "source_id": "FLE-L1-011",
+      "target_id": "FLE-L2-011-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-024",
+      "source_id": "FLE-L1-011",
+      "target_id": "FLE-L2-011-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-025",
+      "source_id": "FUN-L1-013",
+      "target_id": "FUN-L2-013-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-026",
+      "source_id": "FUN-L1-013",
+      "target_id": "FUN-L2-013-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-027",
+      "source_id": "FUN-L1-013",
+      "target_id": "FUN-L2-013-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-028",
+      "source_id": "FUN-L1-013",
+      "target_id": "FUN-L2-013-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-029",
+      "source_id": "FUN-L1-013",
+      "target_id": "FUN-L2-013-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-030",
+      "source_id": "FUN-L1-013",
+      "target_id": "FUN-L2-013-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-031",
+      "source_id": "MAI-L1-009",
+      "target_id": "MAI-L2-009-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-032",
+      "source_id": "MAI-L1-009",
+      "target_id": "MAI-L2-009-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-033",
+      "source_id": "MAI-L1-009",
+      "target_id": "MAI-L2-009-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-034",
+      "source_id": "MAI-L1-009",
+      "target_id": "MAI-L2-009-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-035",
+      "source_id": "MAI-L1-009",
+      "target_id": "MAI-L2-009-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-036",
+      "source_id": "MAI-L1-009",
+      "target_id": "MAI-L2-009-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-037",
+      "source_id": "PER-L1-012",
+      "target_id": "PER-L2-012-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-038",
+      "source_id": "PER-L1-012",
+      "target_id": "PER-L2-012-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-039",
+      "source_id": "PER-L1-012",
+      "target_id": "PER-L2-012-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-040",
+      "source_id": "PER-L1-012",
+      "target_id": "PER-L2-012-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-041",
+      "source_id": "PER-L1-012",
+      "target_id": "PER-L2-012-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-042",
+      "source_id": "PER-L1-012",
+      "target_id": "PER-L2-012-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-043",
+      "source_id": "PRI-L1-015",
+      "target_id": "PRI-L2-015-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-044",
+      "source_id": "PRI-L1-015",
+      "target_id": "PRI-L2-015-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-045",
+      "source_id": "PRI-L1-015",
+      "target_id": "PRI-L2-015-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-046",
+      "source_id": "PRI-L1-015",
+      "target_id": "PRI-L2-015-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-047",
+      "source_id": "PRI-L1-015",
+      "target_id": "PRI-L2-015-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-048",
+      "source_id": "PRI-L1-015",
+      "target_id": "PRI-L2-015-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-049",
+      "source_id": "REL-L1-006",
+      "target_id": "REL-L2-006-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-050",
+      "source_id": "REL-L1-006",
+      "target_id": "REL-L2-006-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-051",
+      "source_id": "REL-L1-006",
+      "target_id": "REL-L2-006-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-052",
+      "source_id": "REL-L1-006",
+      "target_id": "REL-L2-006-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-053",
+      "source_id": "REL-L1-006",
+      "target_id": "REL-L2-006-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-054",
+      "source_id": "REL-L1-006",
+      "target_id": "REL-L2-006-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-055",
+      "source_id": "RES-L1-005",
+      "target_id": "RES-L2-005-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-056",
+      "source_id": "RES-L1-005",
+      "target_id": "RES-L2-005-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-057",
+      "source_id": "RES-L1-005",
+      "target_id": "RES-L2-005-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-058",
+      "source_id": "RES-L1-005",
+      "target_id": "RES-L2-005-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-059",
+      "source_id": "RES-L1-005",
+      "target_id": "RES-L2-005-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-060",
+      "source_id": "RES-L1-005",
+      "target_id": "RES-L2-005-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-061",
+      "source_id": "SAF-L1-001",
+      "target_id": "SAF-L2-001-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-062",
+      "source_id": "SAF-L1-001",
+      "target_id": "SAF-L2-001-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-063",
+      "source_id": "SAF-L1-001",
+      "target_id": "SAF-L2-001-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-064",
+      "source_id": "SAF-L1-001",
+      "target_id": "SAF-L2-001-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-065",
+      "source_id": "SAF-L1-001",
+      "target_id": "SAF-L2-001-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-066",
+      "source_id": "SAF-L1-001",
+      "target_id": "SAF-L2-001-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-067",
+      "source_id": "SEC-L1-008",
+      "target_id": "SEC-L2-008-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-068",
+      "source_id": "SEC-L1-008",
+      "target_id": "SEC-L2-008-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-069",
+      "source_id": "SEC-L1-008",
+      "target_id": "SEC-L2-008-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-070",
+      "source_id": "SEC-L1-008",
+      "target_id": "SEC-L2-008-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-071",
+      "source_id": "SEC-L1-008",
+      "target_id": "SEC-L2-008-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-072",
+      "source_id": "SEC-L1-008",
+      "target_id": "SEC-L2-008-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-073",
+      "source_id": "SUS-L1-003",
+      "target_id": "SUS-L2-003-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-074",
+      "source_id": "SUS-L1-003",
+      "target_id": "SUS-L2-003-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-075",
+      "source_id": "SUS-L1-003",
+      "target_id": "SUS-L2-003-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-076",
+      "source_id": "SUS-L1-003",
+      "target_id": "SUS-L2-003-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-077",
+      "source_id": "SUS-L1-003",
+      "target_id": "SUS-L2-003-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-078",
+      "source_id": "SUS-L1-003",
+      "target_id": "SUS-L2-003-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-079",
+      "source_id": "TRU-L1-004",
+      "target_id": "TRU-L2-004-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-080",
+      "source_id": "TRU-L1-004",
+      "target_id": "TRU-L2-004-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-081",
+      "source_id": "TRU-L1-004",
+      "target_id": "TRU-L2-004-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-082",
+      "source_id": "TRU-L1-004",
+      "target_id": "TRU-L2-004-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-083",
+      "source_id": "TRU-L1-004",
+      "target_id": "TRU-L2-004-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-084",
+      "source_id": "TRU-L1-004",
+      "target_id": "TRU-L2-004-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-085",
+      "source_id": "USA-L1-007",
+      "target_id": "USA-L2-007-01",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-086",
+      "source_id": "USA-L1-007",
+      "target_id": "USA-L2-007-02",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-087",
+      "source_id": "USA-L1-007",
+      "target_id": "USA-L2-007-03",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-088",
+      "source_id": "USA-L1-007",
+      "target_id": "USA-L2-007-04",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-089",
+      "source_id": "USA-L1-007",
+      "target_id": "USA-L2-007-05",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    },
+    {
+      "id": "REL-090",
+      "source_id": "USA-L1-007",
+      "target_id": "USA-L2-007-06",
+      "connection_type": "SupportedBy",
+      "description": "Derived from parent-child refinement",
+      "strength": null,
+      "properties": {
+        "original_kaos_relation": "AND-refinement"
+      }
+    }
+  ],
+  "model_metadata": {
+    "model_id": "model_ehr-input-20260629T085519Z-s303",
+    "name": "OpenRE-Bench Integrated KAOS for EHR",
+    "description": "Deterministic protocol-aligned integrated GSN model.",
+    "created_timestamp": "2026-06-29T08:57:06Z",
+    "requirement_source": "Project: Electronic Health Record (EHR) System for Regional Hospital Network\n\n[System Context]\nThe system is a web-based Electronic Health Record platform serving a network of 12 hospitals and 50+ clinics. It manages patient demographics, medical histories, lab results, prescriptions, clinical notes, and imaging records. The system must comply with HIPAA regulations and support HL7 FHIR interoperability standards.\n\n[Core Functional Requirements]\n1. Patient Management: The system shall maintain comprehensive patient records including demographics, insurance information, allergies, and medical history across all facilities in the network.\n2. Clinical Documentation: Physicians shall be able to create, edit, and sign clinical notes with structured templates for different specialties (cardiology, oncology, pediatrics, etc.).\n3. Order Management: The system shall support electronic prescribing (e-prescribe), lab orders, and radiology orders with clinical decision support alerts for drug interactions and allergy conflicts.\n4. Results Management: Lab results and imaging reports shall be automatically routed to ordering physicians with abnormal result flagging and escalation protocols.\n\n[Non-Functional Constraints]\n1. Privacy & Compliance: All patient data must be encrypted at rest (AES-256) and in transit (TLS 1.3). Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements.\n2. Availability: The system must maintain 99.95% uptime with automatic failover. Planned maintenance windows shall not exceed 4 hours per month.\n3. Interoperability: The system must support HL7 FHIR R4 APIs for data exchange with external laboratories, pharmacies, and insurance providers. Legacy HL7 v2 interfaces must be maintained for existing integrations.\n4. Performance: Clinical note retrieval must complete within 2 seconds. The system must support 5000 concurrent users across all facilities during peak hours.\n5. Usability: The interface must be accessible to clinical staff with varying technical proficiency. Mobile access must be available for rounding physicians.",
+    "model_type": "GSN",
+    "quality_attributes": [
+      "Compatibility",
+      "Efficiency",
+      "Explainability",
+      "Flexibility",
+      "Functional Safety",
+      "Maintainability",
+      "Performance",
+      "Privacy",
+      "Reliability",
+      "Responsibility",
+      "Safety",
+      "Security",
+      "Sustainability",
+      "Trustworthiness",
+      "Usability"
+    ],
+    "hierarchy_levels": [
+      1,
+      2
+    ],
+    "setting": "negotiation_integration_verification"
+  },
+  "hierarchy_structure": {
+    "level_1": [
+      {
+        "id": "COM-L1-010",
+        "name": "Compatibility Goal",
+        "quality_attribute": "Compatibility",
+        "parent_goal_id": null
+      },
+      {
+        "id": "EFF-L1-002",
+        "name": "Efficiency Goal",
+        "quality_attribute": "Efficiency",
+        "parent_goal_id": null
+      },
+      {
+        "id": "EXP-L1-014",
+        "name": "Explainability Goal",
+        "quality_attribute": "Explainability",
+        "parent_goal_id": null
+      },
+      {
+        "id": "FLE-L1-011",
+        "name": "Flexibility Goal",
+        "quality_attribute": "Flexibility",
+        "parent_goal_id": null
+      },
+      {
+        "id": "FUN-L1-013",
+        "name": "Functional Safety Goal",
+        "quality_attribute": "Functional Safety",
+        "parent_goal_id": null
+      },
+      {
+        "id": "MAI-L1-009",
+        "name": "Maintainability Goal",
+        "quality_attribute": "Maintainability",
+        "parent_goal_id": null
+      },
+      {
+        "id": "PER-L1-012",
+        "name": "Performance Goal",
+        "quality_attribute": "Performance",
+        "parent_goal_id": null
+      },
+      {
+        "id": "PRI-L1-015",
+        "name": "Privacy Goal",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": null
+      },
+      {
+        "id": "REL-L1-006",
+        "name": "Reliability Goal",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": null
+      },
+      {
+        "id": "RES-L1-005",
+        "name": "Responsibility Goal",
+        "quality_attribute": "Responsibility",
+        "parent_goal_id": null
+      },
+      {
+        "id": "SAF-L1-001",
+        "name": "Safety Goal",
+        "quality_attribute": "Safety",
+        "parent_goal_id": null
+      },
+      {
+        "id": "SEC-L1-008",
+        "name": "Security Goal",
+        "quality_attribute": "Security",
+        "parent_goal_id": null
+      },
+      {
+        "id": "SUS-L1-003",
+        "name": "Sustainability Goal",
+        "quality_attribute": "Sustainability",
+        "parent_goal_id": null
+      },
+      {
+        "id": "TRU-L1-004",
+        "name": "Trustworthiness Goal",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": null
+      },
+      {
+        "id": "USA-L1-007",
+        "name": "Usability Goal",
+        "quality_attribute": "Usability",
+        "parent_goal_id": null
+      }
+    ],
+    "level_2": [
+      {
+        "id": "COM-L2-010-01",
+        "name": "Compatibility Requirement 1",
+        "quality_attribute": "Compatibility",
+        "parent_goal_id": "COM-L1-010"
+      },
+      {
+        "id": "COM-L2-010-02",
+        "name": "Compatibility Requirement 2",
+        "quality_attribute": "Compatibility",
+        "parent_goal_id": "COM-L1-010"
+      },
+      {
+        "id": "COM-L2-010-03",
+        "name": "Compatibility Requirement 3",
+        "quality_attribute": "Compatibility",
+        "parent_goal_id": "COM-L1-010"
+      },
+      {
+        "id": "COM-L2-010-04",
+        "name": "Compatibility Requirement 4",
+        "quality_attribute": "Compatibility",
+        "parent_goal_id": "COM-L1-010"
+      },
+      {
+        "id": "COM-L2-010-05",
+        "name": "Compatibility Requirement 5",
+        "quality_attribute": "Compatibility",
+        "parent_goal_id": "COM-L1-010"
+      },
+      {
+        "id": "COM-L2-010-06",
+        "name": "Compatibility Requirement 6",
+        "quality_attribute": "Compatibility",
+        "parent_goal_id": "COM-L1-010"
+      },
+      {
+        "id": "EFF-L2-002-01",
+        "name": "Efficiency Requirement 1",
+        "quality_attribute": "Efficiency",
+        "parent_goal_id": "EFF-L1-002"
+      },
+      {
+        "id": "EFF-L2-002-02",
+        "name": "Efficiency Requirement 2",
+        "quality_attribute": "Efficiency",
+        "parent_goal_id": "EFF-L1-002"
+      },
+      {
+        "id": "EFF-L2-002-03",
+        "name": "Efficiency Requirement 3",
+        "quality_attribute": "Efficiency",
+        "parent_goal_id": "EFF-L1-002"
+      },
+      {
+        "id": "EFF-L2-002-04",
+        "name": "Efficiency Requirement 4",
+        "quality_attribute": "Efficiency",
+        "parent_goal_id": "EFF-L1-002"
+      },
+      {
+        "id": "EFF-L2-002-05",
+        "name": "Efficiency Requirement 5",
+        "quality_attribute": "Efficiency",
+        "parent_goal_id": "EFF-L1-002"
+      },
+      {
+        "id": "EFF-L2-002-06",
+        "name": "Efficiency Requirement 6",
+        "quality_attribute": "Efficiency",
+        "parent_goal_id": "EFF-L1-002"
+      },
+      {
+        "id": "EXP-L2-014-01",
+        "name": "Explainability Requirement 1",
+        "quality_attribute": "Explainability",
+        "parent_goal_id": "EXP-L1-014"
+      },
+      {
+        "id": "EXP-L2-014-02",
+        "name": "Explainability Requirement 2",
+        "quality_attribute": "Explainability",
+        "parent_goal_id": "EXP-L1-014"
+      },
+      {
+        "id": "EXP-L2-014-03",
+        "name": "Explainability Requirement 3",
+        "quality_attribute": "Explainability",
+        "parent_goal_id": "EXP-L1-014"
+      },
+      {
+        "id": "EXP-L2-014-04",
+        "name": "Explainability Requirement 4",
+        "quality_attribute": "Explainability",
+        "parent_goal_id": "EXP-L1-014"
+      },
+      {
+        "id": "EXP-L2-014-05",
+        "name": "Explainability Requirement 5",
+        "quality_attribute": "Explainability",
+        "parent_goal_id": "EXP-L1-014"
+      },
+      {
+        "id": "EXP-L2-014-06",
+        "name": "Explainability Requirement 6",
+        "quality_attribute": "Explainability",
+        "parent_goal_id": "EXP-L1-014"
+      },
+      {
+        "id": "FLE-L2-011-01",
+        "name": "Flexibility Requirement 1",
+        "quality_attribute": "Flexibility",
+        "parent_goal_id": "FLE-L1-011"
+      },
+      {
+        "id": "FLE-L2-011-02",
+        "name": "Flexibility Requirement 2",
+        "quality_attribute": "Flexibility",
+        "parent_goal_id": "FLE-L1-011"
+      },
+      {
+        "id": "FLE-L2-011-03",
+        "name": "Flexibility Requirement 3",
+        "quality_attribute": "Flexibility",
+        "parent_goal_id": "FLE-L1-011"
+      },
+      {
+        "id": "FLE-L2-011-04",
+        "name": "Flexibility Requirement 4",
+        "quality_attribute": "Flexibility",
+        "parent_goal_id": "FLE-L1-011"
+      },
+      {
+        "id": "FLE-L2-011-05",
+        "name": "Flexibility Requirement 5",
+        "quality_attribute": "Flexibility",
+        "parent_goal_id": "FLE-L1-011"
+      },
+      {
+        "id": "FLE-L2-011-06",
+        "name": "Flexibility Requirement 6",
+        "quality_attribute": "Flexibility",
+        "parent_goal_id": "FLE-L1-011"
+      },
+      {
+        "id": "FUN-L2-013-01",
+        "name": "Functional Safety Requirement 1",
+        "quality_attribute": "Functional Safety",
+        "parent_goal_id": "FUN-L1-013"
+      },
+      {
+        "id": "FUN-L2-013-02",
+        "name": "Functional Safety Requirement 2",
+        "quality_attribute": "Functional Safety",
+        "parent_goal_id": "FUN-L1-013"
+      },
+      {
+        "id": "FUN-L2-013-03",
+        "name": "Functional Safety Requirement 3",
+        "quality_attribute": "Functional Safety",
+        "parent_goal_id": "FUN-L1-013"
+      },
+      {
+        "id": "FUN-L2-013-04",
+        "name": "Functional Safety Requirement 4",
+        "quality_attribute": "Functional Safety",
+        "parent_goal_id": "FUN-L1-013"
+      },
+      {
+        "id": "FUN-L2-013-05",
+        "name": "Functional Safety Requirement 5",
+        "quality_attribute": "Functional Safety",
+        "parent_goal_id": "FUN-L1-013"
+      },
+      {
+        "id": "FUN-L2-013-06",
+        "name": "Functional Safety Requirement 6",
+        "quality_attribute": "Functional Safety",
+        "parent_goal_id": "FUN-L1-013"
+      },
+      {
+        "id": "MAI-L2-009-01",
+        "name": "Maintainability Requirement 1",
+        "quality_attribute": "Maintainability",
+        "parent_goal_id": "MAI-L1-009"
+      },
+      {
+        "id": "MAI-L2-009-02",
+        "name": "Maintainability Requirement 2",
+        "quality_attribute": "Maintainability",
+        "parent_goal_id": "MAI-L1-009"
+      },
+      {
+        "id": "MAI-L2-009-03",
+        "name": "Maintainability Requirement 3",
+        "quality_attribute": "Maintainability",
+        "parent_goal_id": "MAI-L1-009"
+      },
+      {
+        "id": "MAI-L2-009-04",
+        "name": "Maintainability Requirement 4",
+        "quality_attribute": "Maintainability",
+        "parent_goal_id": "MAI-L1-009"
+      },
+      {
+        "id": "MAI-L2-009-05",
+        "name": "Maintainability Requirement 5",
+        "quality_attribute": "Maintainability",
+        "parent_goal_id": "MAI-L1-009"
+      },
+      {
+        "id": "MAI-L2-009-06",
+        "name": "Maintainability Requirement 6",
+        "quality_attribute": "Maintainability",
+        "parent_goal_id": "MAI-L1-009"
+      },
+      {
+        "id": "PER-L2-012-01",
+        "name": "Performance Requirement 1",
+        "quality_attribute": "Performance",
+        "parent_goal_id": "PER-L1-012"
+      },
+      {
+        "id": "PER-L2-012-02",
+        "name": "Performance Requirement 2",
+        "quality_attribute": "Performance",
+        "parent_goal_id": "PER-L1-012"
+      },
+      {
+        "id": "PER-L2-012-03",
+        "name": "Performance Requirement 3",
+        "quality_attribute": "Performance",
+        "parent_goal_id": "PER-L1-012"
+      },
+      {
+        "id": "PER-L2-012-04",
+        "name": "Performance Requirement 4",
+        "quality_attribute": "Performance",
+        "parent_goal_id": "PER-L1-012"
+      },
+      {
+        "id": "PER-L2-012-05",
+        "name": "Performance Requirement 5",
+        "quality_attribute": "Performance",
+        "parent_goal_id": "PER-L1-012"
+      },
+      {
+        "id": "PER-L2-012-06",
+        "name": "Performance Requirement 6",
+        "quality_attribute": "Performance",
+        "parent_goal_id": "PER-L1-012"
+      },
+      {
+        "id": "PRI-L2-015-01",
+        "name": "Privacy Requirement 1",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-015"
+      },
+      {
+        "id": "PRI-L2-015-02",
+        "name": "Privacy Requirement 2",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-015"
+      },
+      {
+        "id": "PRI-L2-015-03",
+        "name": "Privacy Requirement 3",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-015"
+      },
+      {
+        "id": "PRI-L2-015-04",
+        "name": "Privacy Requirement 4",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-015"
+      },
+      {
+        "id": "PRI-L2-015-05",
+        "name": "Privacy Requirement 5",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-015"
+      },
+      {
+        "id": "PRI-L2-015-06",
+        "name": "Privacy Requirement 6",
+        "quality_attribute": "Privacy",
+        "parent_goal_id": "PRI-L1-015"
+      },
+      {
+        "id": "REL-L2-006-01",
+        "name": "Reliability Requirement 1",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-006"
+      },
+      {
+        "id": "REL-L2-006-02",
+        "name": "Reliability Requirement 2",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-006"
+      },
+      {
+        "id": "REL-L2-006-03",
+        "name": "Reliability Requirement 3",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-006"
+      },
+      {
+        "id": "REL-L2-006-04",
+        "name": "Reliability Requirement 4",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-006"
+      },
+      {
+        "id": "REL-L2-006-05",
+        "name": "Reliability Requirement 5",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-006"
+      },
+      {
+        "id": "REL-L2-006-06",
+        "name": "Reliability Requirement 6",
+        "quality_attribute": "Reliability",
+        "parent_goal_id": "REL-L1-006"
+      },
+      {
+        "id": "RES-L2-005-01",
+        "name": "Responsibility Requirement 1",
+        "quality_attribute": "Responsibility",
+        "parent_goal_id": "RES-L1-005"
+      },
+      {
+        "id": "RES-L2-005-02",
+        "name": "Responsibility Requirement 2",
+        "quality_attribute": "Responsibility",
+        "parent_goal_id": "RES-L1-005"
+      },
+      {
+        "id": "RES-L2-005-03",
+        "name": "Responsibility Requirement 3",
+        "quality_attribute": "Responsibility",
+        "parent_goal_id": "RES-L1-005"
+      },
+      {
+        "id": "RES-L2-005-04",
+        "name": "Responsibility Requirement 4",
+        "quality_attribute": "Responsibility",
+        "parent_goal_id": "RES-L1-005"
+      },
+      {
+        "id": "RES-L2-005-05",
+        "name": "Responsibility Requirement 5",
+        "quality_attribute": "Responsibility",
+        "parent_goal_id": "RES-L1-005"
+      },
+      {
+        "id": "RES-L2-005-06",
+        "name": "Responsibility Requirement 6",
+        "quality_attribute": "Responsibility",
+        "parent_goal_id": "RES-L1-005"
+      },
+      {
+        "id": "SAF-L2-001-01",
+        "name": "Safety Requirement 1",
+        "quality_attribute": "Safety",
+        "parent_goal_id": "SAF-L1-001"
+      },
+      {
+        "id": "SAF-L2-001-02",
+        "name": "Safety Requirement 2",
+        "quality_attribute": "Safety",
+        "parent_goal_id": "SAF-L1-001"
+      },
+      {
+        "id": "SAF-L2-001-03",
+        "name": "Safety Requirement 3",
+        "quality_attribute": "Safety",
+        "parent_goal_id": "SAF-L1-001"
+      },
+      {
+        "id": "SAF-L2-001-04",
+        "name": "Safety Requirement 4",
+        "quality_attribute": "Safety",
+        "parent_goal_id": "SAF-L1-001"
+      },
+      {
+        "id": "SAF-L2-001-05",
+        "name": "Safety Requirement 5",
+        "quality_attribute": "Safety",
+        "parent_goal_id": "SAF-L1-001"
+      },
+      {
+        "id": "SAF-L2-001-06",
+        "name": "Safety Requirement 6",
+        "quality_attribute": "Safety",
+        "parent_goal_id": "SAF-L1-001"
+      },
+      {
+        "id": "SEC-L2-008-01",
+        "name": "Security Requirement 1",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-008"
+      },
+      {
+        "id": "SEC-L2-008-02",
+        "name": "Security Requirement 2",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-008"
+      },
+      {
+        "id": "SEC-L2-008-03",
+        "name": "Security Requirement 3",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-008"
+      },
+      {
+        "id": "SEC-L2-008-04",
+        "name": "Security Requirement 4",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-008"
+      },
+      {
+        "id": "SEC-L2-008-05",
+        "name": "Security Requirement 5",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-008"
+      },
+      {
+        "id": "SEC-L2-008-06",
+        "name": "Security Requirement 6",
+        "quality_attribute": "Security",
+        "parent_goal_id": "SEC-L1-008"
+      },
+      {
+        "id": "SUS-L2-003-01",
+        "name": "Sustainability Requirement 1",
+        "quality_attribute": "Sustainability",
+        "parent_goal_id": "SUS-L1-003"
+      },
+      {
+        "id": "SUS-L2-003-02",
+        "name": "Sustainability Requirement 2",
+        "quality_attribute": "Sustainability",
+        "parent_goal_id": "SUS-L1-003"
+      },
+      {
+        "id": "SUS-L2-003-03",
+        "name": "Sustainability Requirement 3",
+        "quality_attribute": "Sustainability",
+        "parent_goal_id": "SUS-L1-003"
+      },
+      {
+        "id": "SUS-L2-003-04",
+        "name": "Sustainability Requirement 4",
+        "quality_attribute": "Sustainability",
+        "parent_goal_id": "SUS-L1-003"
+      },
+      {
+        "id": "SUS-L2-003-05",
+        "name": "Sustainability Requirement 5",
+        "quality_attribute": "Sustainability",
+        "parent_goal_id": "SUS-L1-003"
+      },
+      {
+        "id": "SUS-L2-003-06",
+        "name": "Sustainability Requirement 6",
+        "quality_attribute": "Sustainability",
+        "parent_goal_id": "SUS-L1-003"
+      },
+      {
+        "id": "TRU-L2-004-01",
+        "name": "Trustworthiness Requirement 1",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-004"
+      },
+      {
+        "id": "TRU-L2-004-02",
+        "name": "Trustworthiness Requirement 2",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-004"
+      },
+      {
+        "id": "TRU-L2-004-03",
+        "name": "Trustworthiness Requirement 3",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-004"
+      },
+      {
+        "id": "TRU-L2-004-04",
+        "name": "Trustworthiness Requirement 4",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-004"
+      },
+      {
+        "id": "TRU-L2-004-05",
+        "name": "Trustworthiness Requirement 5",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-004"
+      },
+      {
+        "id": "TRU-L2-004-06",
+        "name": "Trustworthiness Requirement 6",
+        "quality_attribute": "Trustworthiness",
+        "parent_goal_id": "TRU-L1-004"
+      },
+      {
+        "id": "USA-L2-007-01",
+        "name": "Usability Requirement 1",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-007"
+      },
+      {
+        "id": "USA-L2-007-02",
+        "name": "Usability Requirement 2",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-007"
+      },
+      {
+        "id": "USA-L2-007-03",
+        "name": "Usability Requirement 3",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-007"
+      },
+      {
+        "id": "USA-L2-007-04",
+        "name": "Usability Requirement 4",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-007"
+      },
+      {
+        "id": "USA-L2-007-05",
+        "name": "Usability Requirement 5",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-007"
+      },
+      {
+        "id": "USA-L2-007-06",
+        "name": "Usability Requirement 6",
+        "quality_attribute": "Usability",
+        "parent_goal_id": "USA-L1-007"
+      }
+    ],
+    "level_3": [],
+    "parent_child_mappings": {
+      "COM-L1-010": [
+        "COM-L2-010-01",
+        "COM-L2-010-02",
+        "COM-L2-010-03",
+        "COM-L2-010-04",
+        "COM-L2-010-05",
+        "COM-L2-010-06"
+      ],
+      "EFF-L1-002": [
+        "EFF-L2-002-01",
+        "EFF-L2-002-02",
+        "EFF-L2-002-03",
+        "EFF-L2-002-04",
+        "EFF-L2-002-05",
+        "EFF-L2-002-06"
+      ],
+      "EXP-L1-014": [
+        "EXP-L2-014-01",
+        "EXP-L2-014-02",
+        "EXP-L2-014-03",
+        "EXP-L2-014-04",
+        "EXP-L2-014-05",
+        "EXP-L2-014-06"
+      ],
+      "FLE-L1-011": [
+        "FLE-L2-011-01",
+        "FLE-L2-011-02",
+        "FLE-L2-011-03",
+        "FLE-L2-011-04",
+        "FLE-L2-011-05",
+        "FLE-L2-011-06"
+      ],
+      "FUN-L1-013": [
+        "FUN-L2-013-01",
+        "FUN-L2-013-02",
+        "FUN-L2-013-03",
+        "FUN-L2-013-04",
+        "FUN-L2-013-05",
+        "FUN-L2-013-06"
+      ],
+      "MAI-L1-009": [
+        "MAI-L2-009-01",
+        "MAI-L2-009-02",
+        "MAI-L2-009-03",
+        "MAI-L2-009-04",
+        "MAI-L2-009-05",
+        "MAI-L2-009-06"
+      ],
+      "PER-L1-012": [
+        "PER-L2-012-01",
+        "PER-L2-012-02",
+        "PER-L2-012-03",
+        "PER-L2-012-04",
+        "PER-L2-012-05",
+        "PER-L2-012-06"
+      ],
+      "PRI-L1-015": [
+        "PRI-L2-015-01",
+        "PRI-L2-015-02",
+        "PRI-L2-015-03",
+        "PRI-L2-015-04",
+        "PRI-L2-015-05",
+        "PRI-L2-015-06"
+      ],
+      "REL-L1-006": [
+        "REL-L2-006-01",
+        "REL-L2-006-02",
+        "REL-L2-006-03",
+        "REL-L2-006-04",
+        "REL-L2-006-05",
+        "REL-L2-006-06"
+      ],
+      "RES-L1-005": [
+        "RES-L2-005-01",
+        "RES-L2-005-02",
+        "RES-L2-005-03",
+        "RES-L2-005-04",
+        "RES-L2-005-05",
+        "RES-L2-005-06"
+      ],
+      "SAF-L1-001": [
+        "SAF-L2-001-01",
+        "SAF-L2-001-02",
+        "SAF-L2-001-03",
+        "SAF-L2-001-04",
+        "SAF-L2-001-05",
+        "SAF-L2-001-06"
+      ],
+      "SEC-L1-008": [
+        "SEC-L2-008-01",
+        "SEC-L2-008-02",
+        "SEC-L2-008-03",
+        "SEC-L2-008-04",
+        "SEC-L2-008-05",
+        "SEC-L2-008-06"
+      ],
+      "SUS-L1-003": [
+        "SUS-L2-003-01",
+        "SUS-L2-003-02",
+        "SUS-L2-003-03",
+        "SUS-L2-003-04",
+        "SUS-L2-003-05",
+        "SUS-L2-003-06"
+      ],
+      "TRU-L1-004": [
+        "TRU-L2-004-01",
+        "TRU-L2-004-02",
+        "TRU-L2-004-03",
+        "TRU-L2-004-04",
+        "TRU-L2-004-05",
+        "TRU-L2-004-06"
+      ],
+      "USA-L1-007": [
+        "USA-L2-007-01",
+        "USA-L2-007-02",
+        "USA-L2-007-03",
+        "USA-L2-007-04",
+        "USA-L2-007-05",
+        "USA-L2-007-06"
+      ]
+    }
+  },
+  "topology_status": {
+    "status": "Valid",
+    "is_valid": true,
+    "is_dag": true,
+    "orphan_count": 0,
+    "cycle_count": 0,
+    "invalid_leaf_count": 0,
+    "orphan_elements": [],
+    "cycles": [],
+    "invalid_leaves": []
+  },
+  "model_id": "model_ehr-input-20260629T085519Z-s303",
+  "created_timestamp": "2026-06-29T08:57:06Z",
+  "total_elements": 105,
+  "total_relations": 90
+}
