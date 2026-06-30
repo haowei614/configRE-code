@@ -1,0 +1,110 @@
+{
+  "selected_agents": [
+    "PerformanceAgent",
+    "SecurityAgent",
+    "PrivacyAgent",
+    "ExplainabilityAgent",
+    "ReliabilityAgent"
+  ],
+  "tier1_scores": {
+    "SafetyAgent": 0.3,
+    "EfficiencyAgent": 0.5,
+    "PerformanceAgent": 0.8,
+    "ReliabilityAgent": 0.5,
+    "UsabilityAgent": 0.3,
+    "SecurityAgent": 1.0,
+    "MaintainabilityAgent": 0.5,
+    "CompatibilityAgent": 0.3,
+    "FlexibilityAgent": 0.3,
+    "TrustworthinessAgent": 0.5
+  },
+  "tier1_selected": [
+    "PerformanceAgent",
+    "SecurityAgent"
+  ],
+  "tier2_domains": [
+    "financial"
+  ],
+  "tier2_selected": [
+    "PrivacyAgent"
+  ],
+  "tier3_constraints": [
+    {
+      "constraint_text": "Explainability: All AI-generated decisions must provide human-readable explanations citing specific applicant attributes.",
+      "agent_name": "ExplainabilityAgent",
+      "priority": "high",
+      "reasoning": "The description explicitly mentions the need for explainability, which aligns with the ExplainabilityAgent's concerns."
+    },
+    {
+      "constraint_text": "Fairness & Bias: The system must monitor and report demographic parity and equalized odds metrics across protected classes (race, gender, age). Disparate impact ratio must remain above 0.8 for all protected groups.",
+      "agent_name": "ExplainabilityAgent",
+      "priority": "high",
+      "reasoning": "Fairness and bias concerns are closely related to explainability, as they require understanding the decision-making process."
+    },
+    {
+      "constraint_text": "Privacy: Applicant PII must be processed under GDPR principles. Data retention policies must automatically purge declined application details after 24 months.",
+      "agent_name": "PrivacyAgent",
+      "priority": "high",
+      "reasoning": "The description explicitly mentions the need for data protection and privacy, which aligns with the PrivacyAgent's concerns."
+    },
+    {
+      "constraint_text": "Security: The system must implement end-to-end encryption for all applicant data.",
+      "agent_name": "SecurityAgent",
+      "priority": "high",
+      "reasoning": "The description explicitly mentions the need for security, which aligns with the SecurityAgent's concerns."
+    },
+    {
+      "constraint_text": "Reliability: The risk scoring service must maintain 99.9% availability during business hours.",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "The description explicitly mentions the need for reliability, which aligns with the ReliabilityAgent's concerns."
+    },
+    {
+      "constraint_text": "Performance: Batch processing of 10,000 applications must complete within 2 hours for portfolio re-scoring.",
+      "agent_name": "PerformanceAgent",
+      "priority": "high",
+      "reasoning": "The description explicitly mentions the need for performance, which aligns with the PerformanceAgent's concerns."
+    },
+    {
+      "constraint_text": "Explainability: Model documentation must meet EU AI Act Article 13 transparency requirements.",
+      "agent_name": "ExplainabilityAgent",
+      "priority": "high",
+      "reasoning": "The description explicitly mentions the need for model transparency, which aligns with the ExplainabilityAgent's concerns."
+    },
+    {
+      "constraint_text": "Fairness & Bias: The system must monitor and report demographic parity and equalized odds metrics across protected classes (race, gender, age).",
+      "agent_name": "ExplainabilityAgent",
+      "priority": "high",
+      "reasoning": "Fairness and bias concerns are closely related to explainability, as they require understanding the decision-making process."
+    },
+    {
+      "constraint_text": "Security: Access controls must enforce need-to-know principles with comprehensive audit trails.",
+      "agent_name": "SecurityAgent",
+      "priority": "high",
+      "reasoning": "The description explicitly mentions the need for security, which aligns with the SecurityAgent's concerns."
+    },
+    {
+      "constraint_text": "Reliability: Model serving must support graceful degradation to rule-based fallback if ML services are unavailable.",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "The description explicitly mentions the need for reliability, which aligns with the ReliabilityAgent's concerns."
+    },
+    {
+      "constraint_text": "Performance: Real-time scoring must complete within 5 seconds for walk-in applicants.",
+      "agent_name": "PerformanceAgent",
+      "priority": "high",
+      "reasoning": "The description explicitly mentions the need for performance, which aligns with the PerformanceAgent's concerns."
+    }
+  ],
+  "tier3_selected": [
+    "ExplainabilityAgent",
+    "ReliabilityAgent"
+  ],
+  "tier1_threshold": 0.6,
+  "total_agents": 5,
+  "token_usage": {
+    "input_tokens": 10190,
+    "output_tokens": 1498,
+    "total_tokens": 11688
+  }
+}

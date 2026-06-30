@@ -168,7 +168,7 @@ def main() -> None:
             "case_id": case_id,
             "runs": len(seed_metrics),
             "dfs_mean": mean(m["dfs"] for m in seed_metrics),
-            "dfs_std": pstdev(seed_metrics) if len(seed_metrics) > 1 else 0.0,
+            "dfs_std": pstdev(m["dfs"] for m in seed_metrics) if len(seed_metrics) > 1 else 0.0,
             "asp_mean": mean(m["asp"] for m in seed_metrics),
             "asr_mean": mean(m["asr"] for m in seed_metrics),
             "n_agents_mean": mean(m["n_agents"] for m in seed_metrics),

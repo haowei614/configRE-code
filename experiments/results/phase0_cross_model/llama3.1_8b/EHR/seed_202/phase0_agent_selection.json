@@ -1,0 +1,86 @@
+{
+  "selected_agents": [
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "CompatibilityAgent",
+    "TrustworthinessAgent",
+    "FunctionalSafetyAgent",
+    "PrivacyAgent",
+    "UsabilityAgent"
+  ],
+  "tier1_scores": {
+    "SafetyAgent": 0.5,
+    "EfficiencyAgent": 0.5,
+    "PerformanceAgent": 0.8,
+    "ReliabilityAgent": 0.8,
+    "UsabilityAgent": 0.5,
+    "SecurityAgent": 1.0,
+    "MaintainabilityAgent": 0.5,
+    "CompatibilityAgent": 0.8,
+    "FlexibilityAgent": 0.5,
+    "TrustworthinessAgent": 1.0
+  },
+  "tier1_selected": [
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "CompatibilityAgent",
+    "TrustworthinessAgent"
+  ],
+  "tier2_domains": [
+    "medical"
+  ],
+  "tier2_selected": [
+    "FunctionalSafetyAgent"
+  ],
+  "tier3_constraints": [
+    {
+      "constraint_text": "All patient data must be encrypted at rest (AES-256) and in transit (TLS 1.3).",
+      "agent_name": "SecurityAgent",
+      "priority": "high",
+      "reasoning": "Data confidentiality and integrity are key concerns for SecurityAgent."
+    },
+    {
+      "constraint_text": "Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements.",
+      "agent_name": "PrivacyAgent",
+      "priority": "high",
+      "reasoning": "Role-based access control and audit logging are essential for PrivacyAgent to ensure data protection."
+    },
+    {
+      "constraint_text": "The system must maintain 99.95% uptime with automatic failover.",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "High availability is a key concern for ReliabilityAgent, ensuring the system is always operational."
+    },
+    {
+      "constraint_text": "Clinical note retrieval must complete within 2 seconds.",
+      "agent_name": "PerformanceAgent",
+      "priority": "medium",
+      "reasoning": "Response time is an important aspect of PerformanceAgent, ensuring efficient user experience."
+    },
+    {
+      "constraint_text": "The system must support HL7 FHIR R4 APIs for data exchange with external laboratories, pharmacies, and insurance providers.",
+      "agent_name": "CompatibilityAgent",
+      "priority": "high",
+      "reasoning": "Interoperability is a key concern for CompatibilityAgent, ensuring seamless integration with external systems."
+    },
+    {
+      "constraint_text": "The interface must be accessible to clinical staff with varying technical proficiency.",
+      "agent_name": "UsabilityAgent",
+      "priority": "medium",
+      "reasoning": "Accessibility and usability are essential for UsabilityAgent, ensuring a user-friendly experience."
+    }
+  ],
+  "tier3_selected": [
+    "PrivacyAgent",
+    "UsabilityAgent"
+  ],
+  "tier1_threshold": 0.6,
+  "total_agents": 8,
+  "token_usage": {
+    "input_tokens": 9218,
+    "output_tokens": 1114,
+    "total_tokens": 10332
+  }
+}

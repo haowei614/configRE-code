@@ -1,0 +1,82 @@
+[
+  {
+    "model": "llama3.1:8b",
+    "case_id": "AD",
+    "runs": 3,
+    "dfs_mean": 0.7272727272727272,
+    "dfs_std": 0.0,
+    "asp_mean": 0.8,
+    "asr_mean": 0.6666666666666666,
+    "n_agents_mean": 5.0
+  },
+  {
+    "model": "llama3.1:8b",
+    "case_id": "ATM",
+    "runs": 3,
+    "dfs_mean": 0.7142857142857143,
+    "dfs_std": 0.0,
+    "asp_mean": 0.625,
+    "asr_mean": 0.8333333333333334,
+    "n_agents_mean": 8.0
+  },
+  {
+    "model": "llama3.1:8b",
+    "case_id": "Bookkeeping",
+    "runs": 3,
+    "dfs_mean": 0.6153846153846154,
+    "dfs_std": 0.0,
+    "asp_mean": 0.5,
+    "asr_mean": 0.8,
+    "n_agents_mean": 8.0
+  },
+  {
+    "model": "llama3.1:8b",
+    "case_id": "EHR",
+    "runs": 3,
+    "dfs_mean": 0.8571428571428571,
+    "dfs_std": 0.0,
+    "asp_mean": 0.75,
+    "asr_mean": 1.0,
+    "n_agents_mean": 8.0
+  },
+  {
+    "model": "llama3.1:8b",
+    "case_id": "Library",
+    "runs": 3,
+    "dfs_mean": 0.5151515151515151,
+    "dfs_std": 0.02142747821777415,
+    "asp_mean": 0.4523809523809524,
+    "asr_mean": 0.6,
+    "n_agents_mean": 6.666666666666667
+  },
+  {
+    "model": "llama3.1:8b",
+    "case_id": "LoanApproval",
+    "runs": 3,
+    "dfs_mean": 0.8282828282828283,
+    "dfs_std": 0.1142798838281289,
+    "asp_mean": 1.0,
+    "asr_mean": 0.7222222222222222,
+    "n_agents_mean": 4.333333333333333
+  },
+  {
+    "model": "llama3.1:8b",
+    "case_id": "RollCall",
+    "runs": 3,
+    "dfs_mean": 0.6666666666666666,
+    "dfs_std": 0.0,
+    "asp_mean": 0.5714285714285714,
+    "asr_mean": 0.8,
+    "n_agents_mean": 7.0
+  },
+  {
+    "model": "llama3.1:8b",
+    "case_id": "SmartGrid",
+    "runs": 3,
+    "dfs_mean": 0.7499999999999999,
+    "dfs_std": 0.0,
+    "asp_mean": 0.6,
+    "asr_mean": 1.0,
+    "n_agents_mean": 10.0
+  }
+]

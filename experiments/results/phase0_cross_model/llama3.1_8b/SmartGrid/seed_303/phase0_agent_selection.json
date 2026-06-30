@@ -1,0 +1,96 @@
+{
+  "selected_agents": [
+    "SafetyAgent",
+    "EfficiencyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "TrustworthinessAgent",
+    "PrivacyAgent",
+    "FunctionalSafetyAgent",
+    "GreenAgent",
+    "FlexibilityAgent"
+  ],
+  "tier1_scores": {
+    "SafetyAgent": 1.0,
+    "EfficiencyAgent": 0.8,
+    "PerformanceAgent": 1.0,
+    "ReliabilityAgent": 1.0,
+    "UsabilityAgent": 0.3,
+    "SecurityAgent": 1.0,
+    "MaintainabilityAgent": 0.5,
+    "CompatibilityAgent": 0.5,
+    "FlexibilityAgent": 0.5,
+    "TrustworthinessAgent": 1.0
+  },
+  "tier1_selected": [
+    "SafetyAgent",
+    "EfficiencyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "TrustworthinessAgent"
+  ],
+  "tier2_domains": [
+    "government"
+  ],
+  "tier2_selected": [
+    "PrivacyAgent"
+  ],
+  "tier3_constraints": [
+    {
+      "constraint_text": "Grid stability decisions must be computed within 500ms",
+      "agent_name": "PerformanceAgent",
+      "priority": "high",
+      "reasoning": "Real-time performance is critical for grid stability"
+    },
+    {
+      "constraint_text": "Meter data ingestion must sustain 50,000 messages/second during peak collection windows",
+      "agent_name": "PerformanceAgent",
+      "priority": "high",
+      "reasoning": "High throughput is required for meter data ingestion"
+    },
+    {
+      "constraint_text": "Data loss of meter readings must not exceed 0.01%",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "High reliability is required to prevent data loss"
+    },
+    {
+      "constraint_text": "Automated load shedding must include safety interlocks to prevent equipment damage and ensure critical facilities (hospitals, emergency services) are never disconnected",
+      "agent_name": "FunctionalSafetyAgent",
+      "priority": "high",
+      "reasoning": "Physical harm prevention is a key concern for functional safety"
+    },
+    {
+      "constraint_text": "The system must optimize for carbon footprint reduction. Reporting must include ISO 14001 environmental metrics.",
+      "agent_name": "GreenAgent",
+      "priority": "high",
+      "reasoning": "Sustainability is a critical concern for the project"
+    },
+    {
+      "constraint_text": "SCADA/ICS communication channels must be protected against cyber attacks per NERC CIP standards. All remote access must use multi-factor authentication.",
+      "agent_name": "SecurityAgent",
+      "priority": "high",
+      "reasoning": "High security is required to prevent cyber attacks"
+    },
+    {
+      "constraint_text": "The platform must scale to support up to 500,000 endpoints without architecture changes.",
+      "agent_name": "FlexibilityAgent",
+      "priority": "medium",
+      "reasoning": "Scalability is a key concern for the project"
+    }
+  ],
+  "tier3_selected": [
+    "FunctionalSafetyAgent",
+    "GreenAgent",
+    "FlexibilityAgent"
+  ],
+  "tier1_threshold": 0.6,
+  "total_agents": 10,
+  "token_usage": {
+    "input_tokens": 9614,
+    "output_tokens": 1099,
+    "total_tokens": 10713
+  }
+}
