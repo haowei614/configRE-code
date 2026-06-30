@@ -24,7 +24,9 @@ CONFIG_NAMES = {
     "config_d": "Phase0-Auto",
 }
 CONFIG_ORDER = ["config_a", "config_c", "config_b", "config_d"]
-CASE_ORDER = ["AD", "ATM", "Library", "RollCall", "Bookkeeping"]
+ORIGINAL_CASES = ["AD", "ATM", "Library", "RollCall", "Bookkeeping"]
+EXTENDED_CASES = ["EHR", "SmartGrid", "LoanApproval"]
+CASE_ORDER = ORIGINAL_CASES + EXTENDED_CASES
 METRICS = {
     "dfs": "DFS",
     "cnr": "CNR",
@@ -84,18 +86,21 @@ def main() -> None:
         type=Path,
         default=Path("experiments/ground_truth/domain_relevance.json"),
     )
+    parser.add_argument(
+        "--extended-dir",
+        type=Path,
+        default=Path("experiments/results/extended"),
+    )
     parser.add_argument("--output", type=Path, default=Path("significance_results.txt"))
     args = parser.parse_args()
 
     ground_truth = load_ground_truth(args.ground_truth)
-    rows = collect_raw_metrics(args.results_dir, ground_truth)
-    source = "raw per-seed phase artifacts"
-    has_seed_data = True
-
-    if not rows:
-        rows = collect_summary_metrics(args.summary_csv)
-        source = f"summary CSV fallback ({args.summary_csv})"
-        has_seed_data = False
+    rows, source, has_seed_data = collect_combined_metrics(
+        args.results_dir,
+        args.extended_dir,
+        args.summary_csv,
+        ground_truth,
+    )
 
     if not rows:
         rows = collect_table_iv_fallback()
@@ -123,6 +128,49 @@ def load_ground_truth(path: Path) -> dict[str, set[str]]:
     return result
 
 
+def collect_combined_metrics(
+    results_dir: Path,
+    extended_dir: Path,
+    summary_csv: Path,
+    ground_truth: dict[str, set[str]],
+) -> tuple[list[RunMetric], str, bool]:
+    rows = collect_raw_metrics(results_dir, ground_truth)
+    rows.extend(collect_extended_metrics(extended_dir, ground_truth))
+
+    covered = {(row.case_id, row.config_id) for row in rows}
+    for summary_row in collect_summary_metrics(summary_csv):
+        if (summary_row.case_id, summary_row.config_id) not in covered:
+            rows.append(summary_row)
+
+    sources: list[str] = []
+    if any(row.case_id in EXTENDED_CASES and row.seed != "mean" for row in rows):
+        sources.append("extended per-seed artifacts")
+    if any(row.case_id in ORIGINAL_CASES for row in rows):
+        sources.append(f"original 5 cases from {summary_csv.name}")
+    source = " + ".join(sources) if sources else "no data"
+
+    has_seed_data = any(row.seed != "mean" for row in rows)
+    return rows, source, has_seed_data
+
+
+def collect_extended_metrics(extended_dir: Path, ground_truth: dict[str, set[str]]) -> list[RunMetric]:
+    rows: list[RunMetric] = []
+    if not extended_dir.exists():
+        return rows
+
+    for case_dir in sorted(path for path in extended_dir.iterdir() if path.is_dir()):
+        case_id = case_dir.name
+        for config_dir in sorted(path for path in case_dir.iterdir() if path.is_dir()):
+            config_id = normalize_config_id(config_dir.name)
+            if config_id not in CONFIG_NAMES:
+                continue
+            for seed_dir in sorted(config_dir.glob("seed_*")):
+                metric = collect_seed_metric(seed_dir, case_id, config_id, ground_truth)
+                if metric is not None:
+                    rows.append(metric)
+    return rows
+
+
 def collect_raw_metrics(results_dir: Path, ground_truth: dict[str, set[str]]) -> list[RunMetric]:
     rows: list[RunMetric] = []
     if not results_dir.exists():
@@ -142,29 +190,38 @@ def collect_raw_metrics(results_dir: Path, ground_truth: dict[str, set[str]]) ->
             if not case_id:
                 continue
 
-            phase1 = read_json(seed_dir / "phase1_initial_models.json")
-            phase2 = read_json(seed_dir / "phase2_negotiation_trace.json")
-            phase0 = read_json(seed_dir / "phase0_agent_selection.json")
-            relevant_agents = ground_truth.get(case_id)
-            if not relevant_agents:
-                continue
-
-            activated_agents = activated_agents_for_run(phase0, phase1)
-            dfs = compute_dfs(activated_agents, relevant_agents)
-            cnr = compute_conflict_noise_rate(phase2, relevant_agents)
-            if dfs is None or cnr is None:
-                continue
-
-            rows.append(
-                RunMetric(
-                    case_id=case_id,
-                    config_id=config_id,
-                    seed=seed_dir.name.removeprefix("seed_"),
-                    dfs=dfs,
-                    cnr=cnr,
-                )
-            )
+            metric = collect_seed_metric(seed_dir, case_id, config_id, ground_truth)
+            if metric is not None:
+                rows.append(metric)
     return rows
+
+
+def collect_seed_metric(
+    seed_dir: Path,
+    case_id: str,
+    config_id: str,
+    ground_truth: dict[str, set[str]],
+) -> RunMetric | None:
+    relevant_agents = ground_truth.get(case_id)
+    if not relevant_agents:
+        return None
+
+    phase1 = read_json(seed_dir / "phase1_initial_models.json")
+    phase2 = read_json(seed_dir / "phase2_negotiation_trace.json")
+    phase0 = read_json(seed_dir / "phase0_agent_selection.json")
+    activated_agents = activated_agents_for_run(phase0, phase1)
+    dfs = compute_dfs(activated_agents, relevant_agents)
+    cnr = compute_conflict_noise_rate(phase2, relevant_agents)
+    if dfs is None or cnr is None:
+        return None
+
+    return RunMetric(
+        case_id=case_id,
+        config_id=config_id,
+        seed=seed_dir.name.removeprefix("seed_"),
+        dfs=dfs,
+        cnr=cnr,
+    )
 
 
 def normalize_config_id(config_dir_name: str) -> str:
@@ -269,18 +326,20 @@ def collect_table_iv_fallback() -> list[RunMetric]:
 
 def build_report(rows: list[RunMetric], source: str, has_seed_data: bool) -> str:
     case_means = build_case_means(rows)
+    active_cases = [case_id for case_id in CASE_ORDER if any(row.case_id == case_id for row in rows)]
     lines = [
         "ConfigRE Statistical Significance Test",
         "=" * 42,
         f"Data source: {source}",
-        "CNR is conflict_noise_rate. Wilcoxon tests are paired by case study (n=5).",
+        f"Active case studies: {', '.join(active_cases)} (n={len(active_cases)})",
+        "CNR is conflict_noise_rate. Wilcoxon tests are paired by case study.",
         "All SD values use sample standard deviation (ddof=1) when n > 1.",
         "",
         "Descriptive statistics",
         "----------------------",
     ]
 
-    descriptive_rows = descriptive_statistics(rows, case_means)
+    descriptive_rows = descriptive_statistics(rows, case_means, active_cases)
     lines.extend(
         format_table(
             ["Config", "Metric", "Mean", "Across-case SD", "Mean seed SD", "Max seed SD"],
@@ -288,27 +347,34 @@ def build_report(rows: list[RunMetric], source: str, has_seed_data: bool) -> str
         )
     )
 
-    lines.extend(["", "Paired Wilcoxon signed-rank tests", "---------------------------------"])
-    test_rows = wilcoxon_statistics(case_means)
-    lines.extend(
-        format_table(
-            [
-                "Comparison",
-                "Metric",
-                "Auto mean",
-                "Baseline mean",
-                "Mean diff",
-                "W",
-                "p",
-                "Cliff delta",
-            ],
-            test_rows,
+    for case_subset, label in [
+        (ORIGINAL_CASES, "Paired Wilcoxon signed-rank tests (n=5, original cases)"),
+        (active_cases, f"Paired Wilcoxon signed-rank tests (n={len(active_cases)}, all active cases)"),
+    ]:
+        subset_cases = [case_id for case_id in case_subset if case_id in active_cases]
+        if len(subset_cases) < 2:
+            continue
+        lines.extend(["", label, "-" * len(label)])
+        test_rows = wilcoxon_statistics(case_means, subset_cases)
+        lines.extend(
+            format_table(
+                [
+                    "Comparison",
+                    "Metric",
+                    "Auto mean",
+                    "Baseline mean",
+                    "Mean diff",
+                    "W",
+                    "p",
+                    "Cliff delta",
+                ],
+                test_rows,
+            )
         )
-    )
 
     if has_seed_data:
         lines.extend(["", "Across-seed DFS stability", "-------------------------"])
-        stability_rows = seed_stability_statistics(rows)
+        stability_rows = seed_stability_statistics(rows, active_cases)
         lines.extend(format_table(["Case", "Config", "Seed DFS values", "Seed DFS SD"], stability_rows))
     else:
         lines.extend(
@@ -334,13 +400,14 @@ def build_case_means(rows: list[RunMetric]) -> dict[tuple[str, str, str], float]
 def descriptive_statistics(
     rows: list[RunMetric],
     case_means: dict[tuple[str, str, str], float],
+    active_cases: list[str],
 ) -> list[list[str]]:
     table_rows: list[list[str]] = []
     for config_id in CONFIG_ORDER:
         for metric_key, metric_label in METRICS.items():
             values = [
                 case_means[(case_id, config_id, metric_key)]
-                for case_id in CASE_ORDER
+                for case_id in active_cases
                 if (case_id, config_id, metric_key) in case_means
             ]
             seed_sds = per_case_seed_sds(rows, config_id, metric_key)
@@ -366,7 +433,10 @@ def per_case_seed_sds(rows: list[RunMetric], config_id: str, metric_key: str) ->
     return [sample_sd(values) for values in grouped.values() if len(values) > 1]
 
 
-def wilcoxon_statistics(case_means: dict[tuple[str, str, str], float]) -> list[list[str]]:
+def wilcoxon_statistics(
+    case_means: dict[tuple[str, str, str], float],
+    active_cases: list[str],
+) -> list[list[str]]:
     table_rows: list[list[str]] = []
     for auto_config, baseline_config in COMPARISONS:
         for metric_key, metric_label in METRICS.items():
@@ -375,7 +445,7 @@ def wilcoxon_statistics(case_means: dict[tuple[str, str, str], float]) -> list[l
                     case_means[(case_id, auto_config, metric_key)],
                     case_means[(case_id, baseline_config, metric_key)],
                 )
-                for case_id in CASE_ORDER
+                for case_id in active_cases
                 if (case_id, auto_config, metric_key) in case_means
                 and (case_id, baseline_config, metric_key) in case_means
             ]
@@ -427,13 +497,15 @@ def cliffs_delta(left: list[float], right: list[float]) -> float:
     return (greater - less) / (len(left) * len(right))
 
 
-def seed_stability_statistics(rows: list[RunMetric]) -> list[list[str]]:
+def seed_stability_statistics(rows: list[RunMetric], active_cases: list[str]) -> list[list[str]]:
     grouped: dict[tuple[str, str], list[RunMetric]] = defaultdict(list)
     for row in rows:
+        if row.seed == "mean":
+            continue
         grouped[(row.case_id, row.config_id)].append(row)
 
     table_rows: list[list[str]] = []
-    for case_id in CASE_ORDER:
+    for case_id in active_cases:
         for config_id in CONFIG_ORDER:
             values = sorted(grouped.get((case_id, config_id), []), key=lambda item: item.seed)
             if not values:
