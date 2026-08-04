@@ -10,7 +10,6 @@ from statistics import mean, pstdev
 from typing import Any
 
 import matplotlib.pyplot as plt
-import numpy as np
 
 SENSITIVITY_DIR = Path("experiments/results/threshold_sensitivity")
 GROUND_TRUTH_FILE = Path("experiments/ground_truth/domain_relevance.json")
@@ -63,8 +62,6 @@ def collect_results(gt_map: dict[str, set[str]]) -> list[dict[str, Any]]:
                 cnr = compute_cnr(phase2_file, gt_map.get(case_id, set()))
                 metrics["cnr"] = cnr
 
-                phase1_file = seed_dir / "phase1_initial_models.json"
-                phase3_file = seed_dir / "phase3_integrated_kaos_model.json"
                 run_record_file = seed_dir / "run_record.json"
                 tokens = extract_total_tokens(run_record_file)
                 metrics["total_tokens"] = tokens

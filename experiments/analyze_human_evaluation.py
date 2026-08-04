@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import csv
 from pathlib import Path
-from statistics import mean, pstdev
+from statistics import mean
 from typing import Any
 
 INPUT_CSV = Path("experiments/results/human_evaluation_scores.csv")

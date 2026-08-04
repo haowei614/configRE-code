@@ -55,7 +55,6 @@ def collect_results(gt_map: dict[str, set[str]]) -> list[dict[str, Any]]:
                 seed_metrics: list[dict[str, float]] = []
                 for seed_dir in sorted(config_dir.glob("seed_*")):
                     phase0_file = seed_dir / "phase0_agent_selection.json"
-                    run_record = seed_dir / "run_record.json"
 
                     if config == "auto" and phase0_file.exists():
                         phase0 = json.loads(phase0_file.read_text())
