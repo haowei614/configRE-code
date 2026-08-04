@@ -235,5 +235,37 @@
       "FlexibilityAgent": "Standard deployment",
       "FunctionalSafetyAgent": "Not safety-critical domain"
     }
+  },
+  "W-Mobility": {
+    "case_name": "AI-Based Perception System for a Personal Mobility Platform",
+    "relevant_agents": [
+      "SafetyAgent",
+      "PerformanceAgent",
+      "EfficiencyAgent",
+      "ReliabilityAgent",
+      "UsabilityAgent",
+      "FunctionalSafetyAgent",
+      "PrivacyAgent"
+    ],
+    "rationale": {
+      "SafetyAgent": "Pedestrian collision and step-detection fail-safe are the core hazards",
+      "PerformanceAgent": "3-4 FPS (250-300 ms) perception latency directly bounds safe stopping",
+      "EfficiencyAgent": "Jetson Orin Nano 8 GB / ~34 W edge compute and power budget",
+      "ReliabilityAgent": "Perception robustness under night / backlight / motion blur (monocular only)",
+      "UsabilityAgent": "Safety-vs-usability trade-off from false braking",
+      "FunctionalSafetyAgent": "Japanese Road Transport Vehicle Act / specified small motorized bicycle safety standards",
+      "PrivacyAgent": "System processes its own collected data (data privacy)"
+    },
+    "excluded_with_rationale": {
+      "SecurityAgent": "Not a primary concern for the on-vehicle perception subsystem",
+      "TrustworthinessAgent": "Not a primary concern for the perception subsystem",
+      "MaintainabilityAgent": "Not mentioned in the project requirements",
+      "CompatibilityAgent": "Not mentioned in the project requirements",
+      "FlexibilityAgent": "Not mentioned in the project requirements",
+      "ExplainabilityAgent": "Not a regulated high-risk AI transparency requirement in this scope",
+      "GreenAgent": "Electric vehicle; no carbon/sustainability concern per Aisin",
+      "ResponsibilityAgent": "No explicit ethical-accountability requirement in this scope"
+    },
+    "annotation_source": "Aisin domain expert (industrial trial)"
   }
 }

@@ -7,7 +7,10 @@
     "dfs_std": 0.0,
     "asp_mean": 0.8,
     "asr_mean": 0.6666666666666666,
-    "n_agents_mean": 5.0
+    "n_agents_mean": 5.0,
+    "input_tokens_mean": 10718.0,
+    "output_tokens_mean": 1020.0,
+    "total_tokens_mean": 11738.0
   },
   {
     "model": "llama3.1:8b",
@@ -17,7 +20,10 @@
     "dfs_std": 0.0,
     "asp_mean": 0.625,
     "asr_mean": 0.8333333333333334,
-    "n_agents_mean": 8.0
+    "n_agents_mean": 8.0,
+    "input_tokens_mean": 6734.0,
+    "output_tokens_mean": 996.6666666666666,
+    "total_tokens_mean": 7730.666666666667
   },
   {
     "model": "llama3.1:8b",
@@ -27,7 +33,10 @@
     "dfs_std": 0.0,
     "asp_mean": 0.5,
     "asr_mean": 0.8,
-    "n_agents_mean": 8.0
+    "n_agents_mean": 8.0,
+    "input_tokens_mean": 5330.0,
+    "output_tokens_mean": 911.0,
+    "total_tokens_mean": 6241.0
   },
   {
     "model": "llama3.1:8b",
@@ -37,7 +46,10 @@
     "dfs_std": 0.0,
     "asp_mean": 0.75,
     "asr_mean": 1.0,
-    "n_agents_mean": 8.0
+    "n_agents_mean": 8.0,
+    "input_tokens_mean": 9218.0,
+    "output_tokens_mean": 1112.6666666666667,
+    "total_tokens_mean": 10330.666666666666
   },
   {
     "model": "llama3.1:8b",
@@ -47,7 +59,10 @@
     "dfs_std": 0.02142747821777415,
     "asp_mean": 0.4523809523809524,
     "asr_mean": 0.6,
-    "n_agents_mean": 6.666666666666667
+    "n_agents_mean": 6.666666666666667,
+    "input_tokens_mean": 5498.0,
+    "output_tokens_mean": 1070.0,
+    "total_tokens_mean": 6568.0
   },
   {
     "model": "llama3.1:8b",
@@ -57,7 +72,10 @@
     "dfs_std": 0.1142798838281289,
     "asp_mean": 1.0,
     "asr_mean": 0.7222222222222222,
-    "n_agents_mean": 4.333333333333333
+    "n_agents_mean": 4.333333333333333,
+    "input_tokens_mean": 10190.0,
+    "output_tokens_mean": 1514.6666666666667,
+    "total_tokens_mean": 11704.666666666666
   },
   {
     "model": "llama3.1:8b",
@@ -67,7 +85,10 @@
     "dfs_std": 0.0,
     "asp_mean": 0.5714285714285714,
     "asr_mean": 0.8,
-    "n_agents_mean": 7.0
+    "n_agents_mean": 7.0,
+    "input_tokens_mean": 5246.0,
+    "output_tokens_mean": 925.0,
+    "total_tokens_mean": 6171.0
   },
   {
     "model": "llama3.1:8b",
@@ -77,6 +98,22 @@
     "dfs_std": 0.0,
     "asp_mean": 0.6,
     "asr_mean": 1.0,
-    "n_agents_mean": 10.0
+    "n_agents_mean": 10.0,
+    "input_tokens_mean": 9614.0,
+    "output_tokens_mean": 1099.0,
+    "total_tokens_mean": 10713.0
+  },
+  {
+    "model": "llama3.1:8b",
+    "case_id": "W-Mobility",
+    "runs": 3,
+    "dfs_mean": 0.8333333333333333,
+    "dfs_std": 0.0,
+    "asp_mean": 1.0,
+    "asr_mean": 0.7142857142857143,
+    "n_agents_mean": 5.0,
+    "input_tokens_mean": 13322.0,
+    "output_tokens_mean": 1210.0,
+    "total_tokens_mean": 14532.0
   }
 ]

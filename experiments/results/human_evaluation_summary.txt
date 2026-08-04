@@ -1,0 +1,16 @@
+n_records=48
+n_evaluators=3
+n_cases=4
+krippendorff_alpha=0.3233334416745214
+kendalls_W=0.9111111111111111
+friedman=(10.894736842105258, 0.012308905748379504)
+
+Per-evaluator configuration ranking (overall mean):
+  SE_MS_01: Domain-opt=3.44, Phase0-Auto=3.06, Fixed-5=2.69, Full-15=2.50
+  SE_PhD_01: Domain-opt=3.00, Phase0-Auto=2.44, Fixed-5=1.88, Full-15=1.50
+  SE_UG_01: Domain-opt=3.88, Phase0-Auto=3.62, Full-15=3.50, Fixed-5=3.06
+
+Fixed-5: Compl=2.50 Relev=2.83 Action=2.17 Consist=2.67 Avg=2.54 (n=12)
+Full-15: Compl=4.00 Relev=2.00 Action=2.00 Consist=2.00 Avg=2.50 (n=12)
+Domain-opt: Compl=3.92 Relev=3.75 Action=2.83 Consist=3.25 Avg=3.44 (n=12)
+Phase0-Auto: Compl=3.50 Relev=3.17 Action=2.58 Consist=2.92 Avg=3.04 (n=12)

@@ -1,0 +1,86 @@
+{
+  "selected_agents": [
+    "SafetyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "FunctionalSafetyAgent",
+    "UsabilityAgent"
+  ],
+  "tier1_scores": {
+    "SafetyAgent": 1.0,
+    "EfficiencyAgent": 0.5,
+    "PerformanceAgent": 1.0,
+    "ReliabilityAgent": 1.0,
+    "UsabilityAgent": 0.3,
+    "SecurityAgent": 0.3,
+    "MaintainabilityAgent": 0.3,
+    "CompatibilityAgent": 0.3,
+    "FlexibilityAgent": 0.3,
+    "TrustworthinessAgent": 0.3
+  },
+  "tier1_selected": [
+    "SafetyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent"
+  ],
+  "tier2_domains": [
+    "automotive"
+  ],
+  "tier2_selected": [
+    "FunctionalSafetyAgent"
+  ],
+  "tier3_constraints": [
+    {
+      "constraint_text": "Perception latency: at 3-4 FPS the perception cycle is 250-300 ms, which directly bounds achievable detection range and safe stopping behavior.",
+      "agent_name": "PerformanceAgent",
+      "priority": "high",
+      "reasoning": "The constraint is related to time behaviour, which is a concern of the PerformanceAgent."
+    },
+    {
+      "constraint_text": "Computational and power constraints of the Jetson Orin Nano (8 GB, ~34 W) at the edge.",
+      "agent_name": "PerformanceAgent",
+      "priority": "high",
+      "reasoning": "The constraint is related to resource utilisation, which is a concern of the PerformanceAgent."
+    },
+    {
+      "constraint_text": "Fail-safe behavior for step/staircase detection: a missed detection is safety-critical and must trigger a safe stop.",
+      "agent_name": "SafetyAgent",
+      "priority": "high",
+      "reasoning": "The constraint is related to hazard prevention, which is a concern of the SafetyAgent."
+    },
+    {
+      "constraint_text": "Trade-off between safety and usability: overly conservative detection causes false braking, degrading ride usability, while under-detection risks collision or fall.",
+      "agent_name": "UsabilityAgent",
+      "priority": "high",
+      "reasoning": "The constraint is related to user error protection, which is a concern of the UsabilityAgent."
+    },
+    {
+      "constraint_text": "Reliability of perception under environmental degradation (night, backlight, motion blur) using only a monocular camera.",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "The constraint is related to maturity and availability, which are concerns of the ReliabilityAgent."
+    },
+    {
+      "constraint_text": "Pedestrian priority (legal) and correct enforcement of the 6 km/h pedestrian-zone mode.",
+      "agent_name": "SafetyAgent",
+      "priority": "high",
+      "reasoning": "The constraint is related to hazard prevention, which is a concern of the SafetyAgent."
+    },
+    {
+      "constraint_text": "Perception degradation under adverse conditions (night, backlight, motion blur).",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "The constraint is related to maturity and availability, which are concerns of the ReliabilityAgent."
+    }
+  ],
+  "tier3_selected": [
+    "UsabilityAgent"
+  ],
+  "tier1_threshold": 0.6,
+  "total_agents": 5,
+  "token_usage": {
+    "input_tokens": 13322,
+    "output_tokens": 1210,
+    "total_tokens": 14532
+  }
+}

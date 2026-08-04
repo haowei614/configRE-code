@@ -83,6 +83,8 @@ class OllamaLLMClient:
 def load_cases(case_filter: list[str] | None) -> list[tuple[str, Path]]:
     cases: list[tuple[str, Path]] = []
     for path in sorted(CASES_DIR.glob("*_input.json")):
+        if path.name.startswith("._"):
+            continue
         case_id = path.stem.replace("_input", "")
         if case_filter and case_id not in case_filter:
             continue
@@ -160,18 +162,28 @@ def main() -> None:
                 out_file.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n")
 
             metrics = compute_dfs(payload.get("selected_agents", []), gt_map[case_id])
+            usage = payload.get("token_usage") or {}
+            metrics["input_tokens"] = float(usage.get("input_tokens", 0) or 0)
+            metrics["output_tokens"] = float(usage.get("output_tokens", 0) or 0)
+            metrics["total_tokens"] = float(usage.get("total_tokens", 0) or 0)
             seed_metrics.append(metrics)
-            print(f"  -> DFS={metrics['dfs']:.2f} agents={int(metrics['n_agents'])}")
+            print(
+                f"  -> DFS={metrics['dfs']:.2f} agents={int(metrics['n_agents'])} "
+                f"tokens={int(metrics['total_tokens'])}"
+            )
 
         row = {
             "model": args.model,
             "case_id": case_id,
             "runs": len(seed_metrics),
             "dfs_mean": mean(m["dfs"] for m in seed_metrics),
-            "dfs_std": pstdev(m["dfs"] for m in seed_metrics) if len(seed_metrics) > 1 else 0.0,
+            "dfs_std": pstdev([m["dfs"] for m in seed_metrics]) if len(seed_metrics) > 1 else 0.0,
             "asp_mean": mean(m["asp"] for m in seed_metrics),
             "asr_mean": mean(m["asr"] for m in seed_metrics),
             "n_agents_mean": mean(m["n_agents"] for m in seed_metrics),
+            "input_tokens_mean": mean(m["input_tokens"] for m in seed_metrics),
+            "output_tokens_mean": mean(m["output_tokens"] for m in seed_metrics),
+            "total_tokens_mean": mean(m["total_tokens"] for m in seed_metrics),
         }
         summary_rows.append(row)
 
@@ -183,10 +195,13 @@ def main() -> None:
         print(
             f"{row['case_id']:12s} DFS={row['dfs_mean']:.2f} "
             f"ASP={row['asp_mean']:.2f} ASR={row['asr_mean']:.2f} "
-            f"|AG*|={row['n_agents_mean']:.1f}"
+            f"|AG*|={row['n_agents_mean']:.1f} "
+            f"tokens={row['total_tokens_mean']:.0f}"
         )
     avg_dfs = mean(r["dfs_mean"] for r in summary_rows)
+    avg_tok = mean(r["total_tokens_mean"] for r in summary_rows)
     print(f"\nAverage DFS: {avg_dfs:.2f}")
+    print(f"Average Phase0 tokens: {avg_tok:.0f}")
     print(f"Saved: {summary_path}")
 
 

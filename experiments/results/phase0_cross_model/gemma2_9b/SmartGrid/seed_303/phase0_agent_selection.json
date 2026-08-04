@@ -1,0 +1,98 @@
+{
+  "selected_agents": [
+    "SafetyAgent",
+    "EfficiencyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "MaintainabilityAgent",
+    "CompatibilityAgent",
+    "TrustworthinessAgent",
+    "PrivacyAgent",
+    "FunctionalSafetyAgent",
+    "GreenAgent"
+  ],
+  "tier1_scores": {
+    "SafetyAgent": 1.0,
+    "EfficiencyAgent": 0.8,
+    "PerformanceAgent": 0.8,
+    "ReliabilityAgent": 0.8,
+    "UsabilityAgent": 0.5,
+    "SecurityAgent": 0.8,
+    "MaintainabilityAgent": 0.8,
+    "CompatibilityAgent": 0.8,
+    "FlexibilityAgent": 0.5,
+    "TrustworthinessAgent": 0.8
+  },
+  "tier1_selected": [
+    "SafetyAgent",
+    "EfficiencyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "MaintainabilityAgent",
+    "CompatibilityAgent",
+    "TrustworthinessAgent"
+  ],
+  "tier2_domains": [
+    "government"
+  ],
+  "tier2_selected": [
+    "PrivacyAgent"
+  ],
+  "tier3_constraints": [
+    {
+      "constraint_text": "Grid stability decisions must be computed within 500ms.",
+      "agent_name": "PerformanceAgent",
+      "priority": "high",
+      "reasoning": "This constraint directly relates to the system's time behavior and responsiveness, a core concern of the PerformanceAgent."
+    },
+    {
+      "constraint_text": "Meter data ingestion must sustain 50,000 messages/second during peak collection windows.",
+      "agent_name": "PerformanceAgent",
+      "priority": "high",
+      "reasoning": "This constraint focuses on the system's ability to handle a high volume of data in real-time, falling under the PerformanceAgent's purview."
+    },
+    {
+      "constraint_text": "The control system must maintain operation during partial network failures. Failover to backup control centers must complete within 30 seconds.",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "This constraint emphasizes the system's resilience and fault tolerance in the face of network disruptions, key aspects managed by the ReliabilityAgent."
+    },
+    {
+      "constraint_text": "Data loss of meter readings must not exceed 0.01%.",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "This constraint specifies a strict limit on data loss, directly impacting the system's reliability and accuracy, which falls under the ReliabilityAgent's domain."
+    },
+    {
+      "constraint_text": "Automated load shedding must include safety interlocks to prevent equipment damage and ensure critical facilities (hospitals, emergency services) are never disconnected.",
+      "agent_name": "FunctionalSafetyAgent",
+      "priority": "high",
+      "reasoning": "This constraint explicitly mentions safety mechanisms to prevent harm to people and infrastructure, triggering the FunctionalSafetyAgent's activation."
+    },
+    {
+      "constraint_text": "The system must optimize for carbon footprint reduction. Reporting must include ISO 14001 environmental metrics. The platform itself must minimize computational energy consumption.",
+      "agent_name": "GreenAgent",
+      "priority": "high",
+      "reasoning": "This constraint directly addresses sustainability goals and environmental impact, aligning with the GreenAgent's focus."
+    },
+    {
+      "constraint_text": "The SCADA/ICS communication channels must be protected against cyber attacks per NERC CIP standards. All remote access must use multi-factor authentication.",
+      "agent_name": "SecurityAgent",
+      "priority": "high",
+      "reasoning": "This constraint explicitly mentions security measures to protect the system from cyber threats, falling under the SecurityAgent's domain."
+    }
+  ],
+  "tier3_selected": [
+    "FunctionalSafetyAgent",
+    "GreenAgent"
+  ],
+  "tier1_threshold": 0.6,
+  "total_agents": 11,
+  "token_usage": {
+    "input_tokens": 10154,
+    "output_tokens": 1015,
+    "total_tokens": 11169
+  }
+}

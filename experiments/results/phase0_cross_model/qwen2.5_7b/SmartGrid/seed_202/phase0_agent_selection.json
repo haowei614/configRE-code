@@ -1,0 +1,80 @@
+{
+  "selected_agents": [
+    "SafetyAgent",
+    "EfficiencyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "TrustworthinessAgent",
+    "PrivacyAgent",
+    "GreenAgent"
+  ],
+  "tier1_scores": {
+    "SafetyAgent": 1.0,
+    "EfficiencyAgent": 1.0,
+    "PerformanceAgent": 1.0,
+    "ReliabilityAgent": 1.0,
+    "UsabilityAgent": 0.5,
+    "SecurityAgent": 1.0,
+    "MaintainabilityAgent": 0.5,
+    "CompatibilityAgent": 0.5,
+    "FlexibilityAgent": 0.5,
+    "TrustworthinessAgent": 1.0
+  },
+  "tier1_selected": [
+    "SafetyAgent",
+    "EfficiencyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "TrustworthinessAgent"
+  ],
+  "tier2_domains": [
+    "government"
+  ],
+  "tier2_selected": [
+    "PrivacyAgent"
+  ],
+  "tier3_constraints": [
+    {
+      "constraint_text": "Grid stability decisions must be computed within 500ms.",
+      "agent_name": "PerformanceAgent",
+      "priority": "high",
+      "reasoning": "This constraint directly relates to the time behaviour and resource utilisation of the system."
+    },
+    {
+      "constraint_text": "Meter data ingestion must sustain 50,000 messages/second during peak collection windows.",
+      "agent_name": "PerformanceAgent",
+      "priority": "high",
+      "reasoning": "This constraint directly relates to the throughput stability and resource utilisation of the system."
+    },
+    {
+      "constraint_text": "The control system must maintain operation during partial network failures. Failover to backup control centers must complete within 30 seconds.",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "This constraint directly relates to the availability and fault tolerance of the system."
+    },
+    {
+      "constraint_text": "Automated load shedding must include safety interlocks to prevent equipment damage and ensure critical facilities (hospitals, emergency services) are never disconnected.",
+      "agent_name": "SafetyAgent",
+      "priority": "high",
+      "reasoning": "This constraint directly relates to the hazard prevention and fault tolerance of the system."
+    },
+    {
+      "constraint_text": "The platform itself must minimize computational energy consumption.",
+      "agent_name": "GreenAgent",
+      "priority": "high",
+      "reasoning": "This constraint directly relates to the energy footprint reduction and environmental impact awareness of the system."
+    }
+  ],
+  "tier3_selected": [
+    "GreenAgent"
+  ],
+  "tier1_threshold": 0.6,
+  "total_agents": 8,
+  "token_usage": {
+    "input_tokens": 9955,
+    "output_tokens": 757,
+    "total_tokens": 10712
+  }
+}

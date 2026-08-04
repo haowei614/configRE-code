@@ -1,0 +1,44 @@
+{
+  "selected_agents": [
+    "ReliabilityAgent",
+    "UsabilityAgent",
+    "SecurityAgent",
+    "MaintainabilityAgent",
+    "TrustworthinessAgent",
+    "PrivacyAgent"
+  ],
+  "tier1_scores": {
+    "SafetyAgent": 0.3,
+    "EfficiencyAgent": 0.5,
+    "PerformanceAgent": 0.5,
+    "ReliabilityAgent": 0.8,
+    "UsabilityAgent": 0.8,
+    "SecurityAgent": 0.8,
+    "MaintainabilityAgent": 0.8,
+    "CompatibilityAgent": 0.5,
+    "FlexibilityAgent": 0.5,
+    "TrustworthinessAgent": 0.8
+  },
+  "tier1_selected": [
+    "ReliabilityAgent",
+    "UsabilityAgent",
+    "SecurityAgent",
+    "MaintainabilityAgent",
+    "TrustworthinessAgent"
+  ],
+  "tier2_domains": [
+    "government"
+  ],
+  "tier2_selected": [
+    "PrivacyAgent"
+  ],
+  "tier3_constraints": [],
+  "tier3_selected": [],
+  "tier1_threshold": 0.6,
+  "total_agents": 6,
+  "token_usage": {
+    "input_tokens": 5270,
+    "output_tokens": 661,
+    "total_tokens": 5931
+  }
+}

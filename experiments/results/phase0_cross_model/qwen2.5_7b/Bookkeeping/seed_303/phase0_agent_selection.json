@@ -1,0 +1,55 @@
+{
+  "selected_agents": [
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "MaintainabilityAgent",
+    "TrustworthinessAgent",
+    "PrivacyAgent"
+  ],
+  "tier1_scores": {
+    "SafetyAgent": 0.3,
+    "EfficiencyAgent": 0.5,
+    "PerformanceAgent": 0.5,
+    "ReliabilityAgent": 0.8,
+    "UsabilityAgent": 0.5,
+    "SecurityAgent": 0.8,
+    "MaintainabilityAgent": 0.8,
+    "CompatibilityAgent": 0.5,
+    "FlexibilityAgent": 0.5,
+    "TrustworthinessAgent": 1.0
+  },
+  "tier1_selected": [
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "MaintainabilityAgent",
+    "TrustworthinessAgent"
+  ],
+  "tier2_domains": [
+    "financial"
+  ],
+  "tier2_selected": [
+    "PrivacyAgent"
+  ],
+  "tier3_constraints": [
+    {
+      "constraint_text": "The system must ensure double-entry bookkeeping principles are followed and maintain an audit trail of all transactions.",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "Ensuring accurate calculations and maintaining an audit trail aligns with reliability concerns."
+    },
+    {
+      "constraint_text": "The system must support multiple currencies and handle currency conversion.",
+      "agent_name": "MaintainabilityAgent",
+      "priority": "medium",
+      "reasoning": "Support for multiple currencies implies the need for adaptable and maintainable code to handle different financial contexts."
+    }
+  ],
+  "tier3_selected": [],
+  "tier1_threshold": 0.6,
+  "total_agents": 5,
+  "token_usage": {
+    "input_tokens": 5359,
+    "output_tokens": 543,
+    "total_tokens": 5902
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "selected_agents": [
+    "SafetyAgent",
+    "EfficiencyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "UsabilityAgent",
+    "SecurityAgent",
+    "MaintainabilityAgent",
+    "CompatibilityAgent",
+    "FlexibilityAgent",
+    "TrustworthinessAgent",
+    "FunctionalSafetyAgent",
+    "PrivacyAgent",
+    "ResponsibilityAgent"
+  ],
+  "tier1_scores": {
+    "SafetyAgent": 0.8,
+    "EfficiencyAgent": 0.8,
+    "PerformanceAgent": 1.0,
+    "ReliabilityAgent": 1.0,
+    "UsabilityAgent": 0.8,
+    "SecurityAgent": 1.0,
+    "MaintainabilityAgent": 0.8,
+    "CompatibilityAgent": 1.0,
+    "FlexibilityAgent": 0.8,
+    "TrustworthinessAgent": 1.0
+  },
+  "tier1_selected": [
+    "SafetyAgent",
+    "EfficiencyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "UsabilityAgent",
+    "SecurityAgent",
+    "MaintainabilityAgent",
+    "CompatibilityAgent",
+    "FlexibilityAgent",
+    "TrustworthinessAgent"
+  ],
+  "tier2_domains": [
+    "medical"
+  ],
+  "tier2_selected": [
+    "FunctionalSafetyAgent"
+  ],
+  "tier3_constraints": [
+    {
+      "constraint_text": "All patient data must be encrypted at rest (AES-256) and in transit (TLS 1.3). Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements.",
+      "agent_name": "SecurityAgent",
+      "priority": "high",
+      "reasoning": "Explicit requirements for encryption (confidentiality), access control (authentication), and audit logging (non-repudiation) are core security concerns per ISO 25010."
+    },
+    {
+      "constraint_text": "All patient data must be encrypted at rest (AES-256) and in transit (TLS 1.3). Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements.",
+      "agent_name": "PrivacyAgent",
+      "priority": "high",
+      "reasoning": "HIPAA compliance for Protected Health Information (PHI) requires data minimization, consent management, and data subject rights per privacy regulations."
+    },
+    {
+      "constraint_text": "The system must maintain 99.95% uptime with automatic failover. Planned maintenance windows shall not exceed 4 hours per month.",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "Explicit availability requirement (99.95% uptime), fault tolerance (automatic failover), and recoverability constraints are core reliability concerns per ISO 25010."
+    },
+    {
+      "constraint_text": "The system must support HL7 FHIR R4 APIs for data exchange with external laboratories, pharmacies, and insurance providers. Legacy HL7 v2 interfaces must be maintained for existing integrations.",
+      "agent_name": "CompatibilityAgent",
+      "priority": "high",
+      "reasoning": "Explicit interoperability requirements with external systems using HL7 FHIR R4 and HL7 v2 standards for data exchange qualify as compatibility concerns."
+    },
+    {
+      "constraint_text": "Clinical note retrieval must complete within 2 seconds. The system must support 5000 concurrent users across all facilities during peak hours.",
+      "agent_name": "PerformanceAgent",
+      "priority": "high",
+      "reasoning": "Explicit time behaviour constraint (2 seconds response time) and capacity requirement (5000 concurrent users) are core performance concerns per ISO 25010."
+    },
+    {
+      "constraint_text": "The interface must be accessible to clinical staff with varying technical proficiency. Mobile access must be available for rounding physicians.",
+      "agent_name": "UsabilityAgent",
+      "priority": "high",
+      "reasoning": "Requirements for accessibility to users with varying technical proficiency and mobile access address learnability, operability, and accessibility concerns per ISO 25010."
+    },
+    {
+      "constraint_text": "audit logging of all PHI access per HIPAA requirements",
+      "agent_name": "TrustworthinessAgent",
+      "priority": "high",
+      "reasoning": "Audit logging of all PHI access provides auditability and integrity guarantees necessary for trustworthiness in healthcare systems."
+    },
+    {
+      "constraint_text": "The system must comply with HIPAA regulations and support HL7 FHIR interoperability standards.",
+      "agent_name": "ResponsibilityAgent",
+      "priority": "high",
+      "reasoning": "HIPAA regulatory compliance represents ethical and legal compliance obligations that span multiple quality attributes in healthcare context."
+    }
+  ],
+  "tier3_selected": [
+    "PrivacyAgent",
+    "ResponsibilityAgent"
+  ],
+  "tier1_threshold": 0.6,
+  "total_agents": 13,
+  "token_usage": {
+    "input_tokens": 10325,
+    "output_tokens": 1800,
+    "total_tokens": 12125
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "selected_agents": [
+    "SafetyAgent",
+    "EfficiencyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "TrustworthinessAgent",
+    "FunctionalSafetyAgent"
+  ],
+  "tier1_scores": {
+    "SafetyAgent": 1.0,
+    "EfficiencyAgent": 0.8,
+    "PerformanceAgent": 1.0,
+    "ReliabilityAgent": 1.0,
+    "UsabilityAgent": 0.5,
+    "SecurityAgent": 1.0,
+    "MaintainabilityAgent": 0.5,
+    "CompatibilityAgent": 0.5,
+    "FlexibilityAgent": 0.5,
+    "TrustworthinessAgent": 1.0
+  },
+  "tier1_selected": [
+    "SafetyAgent",
+    "EfficiencyAgent",
+    "PerformanceAgent",
+    "ReliabilityAgent",
+    "SecurityAgent",
+    "TrustworthinessAgent"
+  ],
+  "tier2_domains": [
+    "automotive"
+  ],
+  "tier2_selected": [
+    "FunctionalSafetyAgent"
+  ],
+  "tier3_constraints": [
+    {
+      "constraint_text": "Pedestrian priority (legal) and correct enforcement of the 6 km/h pedestrian-zone mode.",
+      "agent_name": "SafetyAgent",
+      "priority": "high",
+      "reasoning": "This constraint directly relates to physical harm prevention, which is a core concern for the SafetyAgent."
+    },
+    {
+      "constraint_text": "Perception latency: at 3-4 FPS the perception cycle is 250-300 ms, which directly bounds achievable detection range and safe stopping behavior.",
+      "agent_name": "PerformanceAgent",
+      "priority": "high",
+      "reasoning": "The constraint involves real-time processing requirements that impact performance."
+    },
+    {
+      "constraint_text": "Fail-safe behavior for step/staircase detection: a missed detection is safety-critical and must trigger a safe stop.",
+      "agent_name": "SafetyAgent",
+      "priority": "high",
+      "reasoning": "This constraint involves critical safety mechanisms that prevent physical harm."
+    },
+    {
+      "constraint_text": "Trade-off between safety and usability: overly conservative detection causes false braking, degrading ride usability, while under-detection risks collision or fall.",
+      "agent_name": "SafetyAgent",
+      "priority": "high",
+      "reasoning": "This constraint involves balancing safety with user experience, a key concern for the SafetyAgent."
+    },
+    {
+      "constraint_text": "Reliability of perception under environmental degradation (night, backlight, motion blur) using only a monocular camera.",
+      "agent_name": "ReliabilityAgent",
+      "priority": "high",
+      "reasoning": "This constraint involves ensuring consistent performance in varying conditions, which is the core concern for the ReliabilityAgent."
+    }
+  ],
+  "tier3_selected": [],
+  "tier1_threshold": 0.6,
+  "total_agents": 7,
+  "token_usage": {
+    "input_tokens": 13579,
+    "output_tokens": 797,
+    "total_tokens": 14376
+  }
+}
