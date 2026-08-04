@@ -92,7 +92,7 @@ configRE-code/
 | Table 2 (Main results) | `experiments/results/comparison_summary_paper_final.csv` |
 | Table 3 (Industrial W-Mobility) | `run_w_mobility_matrix.py` → `experiment_outputs/w-mobility/` |
 | Table 4 (Human evaluation) | `experiments/results/human_evaluation_scores.csv` |
-| Figure 1 (Overview) | See [ConfigRE-paper](https://github.com/haowei614/ConfigRE-paper) |
+| Figure 1 (Overview) |
 | Figure 2 (DFS–Token–CNR scatter) | `experiments/results/dfs_token_cnr_scatter.pdf` |
 | Figure 3 (Threshold sensitivity) | `experiments/results/threshold_sensitivity_plot.pdf` |
 | Section 4.4 (Cross-model) | `experiments/results/phase0_cross_model/` |
