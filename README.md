@@ -72,6 +72,28 @@ configRE-code/
 │   ├── independent_annotation_protocol.md
 │   └── run_*.sh / run_*.py              # Experiment runner scripts
 │
+├── evaluation/                  # Reviewer-facing evaluation evidence
+│   ├── external_annotation/     #   Independent ground-truth annotation
+│   │   ├── 00_INSTRUCTIONS.md   #     Blinded annotation protocol
+│   │   ├── AGENT_POOL.md        #     15-agent pool definitions
+│   │   ├── compute_agreement.py #     Fleiss' κ computation script
+│   │   ├── cases/               #     Case descriptions (EHR, SmartGrid, LoanApproval)
+│   │   └── results/             #     3 annotators' sheets + agreement summary
+│   │       ├── Annotation_Sheet_Independent_01–03.xlsx
+│   │       ├── External_Annotation_Agreement_Summary.md
+│   │       ├── External_Annotation_Majority_Summary.xlsx
+│   │       └── Majority_Vote_Sensitivity.csv
+│   │
+│   ├── human_eval/              #   Blinded human evaluation (Section 4.6)
+│   │   ├── README.md            #     Evaluation workflow
+│   │   ├── RUBRIC.md            #     4-dimension Likert rubric
+│   │   ├── cases/               #     Blinded Phase 5 specs (4 cases × 4 configs)
+│   │   └── results/             #     Filled scoring workbooks (PhD / MS / UG)
+│   │
+│   └── industry_case/           #   Aisin / W-Mobility expert ground truth
+│       ├── GROUND_TRUTH_REQUEST.md
+│       └── w-mobility_ground_truth_TEMPLATE.json
+│
 ├── run_matrix.py                # Run full 5-case × 4-config matrix
 ├── run_w_mobility_matrix.py     # Run W-Mobility (industrial) matrix
 ├── significance_test.py         # Wilcoxon signed-rank tests
@@ -92,11 +114,13 @@ configRE-code/
 | Table 2 (Main results) | `experiments/results/comparison_summary_paper_final.csv` |
 | Table 3 (Industrial W-Mobility) | `run_w_mobility_matrix.py` → `experiment_outputs/w-mobility/` |
 | Table 4 (Human evaluation) | `experiments/results/human_evaluation_scores.csv` |
-| Figure 1 (Overview) |
 | Figure 2 (DFS–Token–CNR scatter) | `experiments/results/dfs_token_cnr_scatter.pdf` |
 | Figure 3 (Threshold sensitivity) | `experiments/results/threshold_sensitivity_plot.pdf` |
 | Section 4.4 (Cross-model) | `experiments/results/phase0_cross_model/` |
+| Section 4.5 (Industrial validation) | `evaluation/industry_case/` |
+| Section 4.6 (Human evaluation) | `evaluation/human_eval/` |
 | Ground truth | `experiments/ground_truth/domain_relevance.json` |
+| Ground truth validation (Fleiss' κ) | `evaluation/external_annotation/` |
 
 ## Installation
 

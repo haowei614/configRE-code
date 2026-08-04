@@ -1,0 +1,27 @@
+# Project Description — Electronic Health Records (Medical)
+
+**Case:** EHR
+
+Electronic Health Record System (based on PROMISE NFR dataset - Healthcare domain)
+
+## Requirement Brief
+
+```
+Project: Electronic Health Record (EHR) System for Regional Hospital Network
+
+[System Context]
+The system is a web-based Electronic Health Record platform serving a network of 12 hospitals and 50+ clinics. It manages patient demographics, medical histories, lab results, prescriptions, clinical notes, and imaging records. The system must comply with HIPAA regulations and support HL7 FHIR interoperability standards.
+
+[Core Functional Requirements]
+1. Patient Management: The system shall maintain comprehensive patient records including demographics, insurance information, allergies, and medical history across all facilities in the network.
+2. Clinical Documentation: Physicians shall be able to create, edit, and sign clinical notes with structured templates for different specialties (cardiology, oncology, pediatrics, etc.).
+3. Order Management: The system shall support electronic prescribing (e-prescribe), lab orders, and radiology orders with clinical decision support alerts for drug interactions and allergy conflicts.
+4. Results Management: Lab results and imaging reports shall be automatically routed to ordering physicians with abnormal result flagging and escalation protocols.
+
+[Non-Functional Constraints]
+1. Privacy & Compliance: All patient data must be encrypted at rest (AES-256) and in transit (TLS 1.3). Access must follow role-based access control with audit logging of all PHI access per HIPAA requirements.
+2. Availability: The system must maintain 99.95% uptime with automatic failover. Planned maintenance windows shall not exceed 4 hours per month.
+3. Interoperability: The system must support HL7 FHIR R4 APIs for data exchange with external laboratories, pharmacies, and insurance providers. Legacy HL7 v2 interfaces must be maintained for existing integrations.
+4. Performance: Clinical note retrieval must complete within 2 seconds. The system must support 5000 concurrent users across all facilities during peak hours.
+5. Usability: The interface must be accessible to clinical staff with varying technical proficiency. Mobile access must be available for rounding physicians.
+```

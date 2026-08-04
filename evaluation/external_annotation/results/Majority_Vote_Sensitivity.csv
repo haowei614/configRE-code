@@ -1,0 +1,21 @@
+scope,case,configuration,dfs,cnr
+external,EHR,Fixed-5,0.333,1.000
+external,EHR,Domain-opt,0.769,0.333
+external,EHR,Full-15,0.636,0.853
+external,EHR,Phase0-Auto,0.767,0.398
+external,SmartGrid,Fixed-5,0.429,0.722
+external,SmartGrid,Domain-opt,0.800,0.000
+external,SmartGrid,Full-15,0.750,0.756
+external,SmartGrid,Phase0-Auto,0.824,0.278
+external,LoanApproval,Fixed-5,0.286,0.000
+external,LoanApproval,Domain-opt,0.800,0.000
+external,LoanApproval,Full-15,0.750,0.333
+external,LoanApproval,Phase0-Auto,0.824,0.000
+external_mean,All external,Fixed-5,0.349,0.574
+external_mean,All external,Domain-opt,0.790,0.111
+external_mean,All external,Full-15,0.712,0.648
+external_mean,All external,Phase0-Auto,0.805,0.225
+pooled_mean,All eight,Fixed-5,0.295,
+pooled_mean,All eight,Domain-opt,0.777,
+pooled_mean,All eight,Full-15,0.597,
+pooled_mean,All eight,Phase0-Auto,0.766,

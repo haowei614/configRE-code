@@ -1,0 +1,32 @@
+{
+  "W-Mobility": {
+    "case_name": "AI-Based Perception System for a Personal Mobility Platform",
+    "relevant_agents": [
+      "SafetyAgent",
+      "FunctionalSafetyAgent",
+      "PerformanceAgent",
+      "EfficiencyAgent",
+      "ReliabilityAgent"
+    ],
+    "rationale": {
+      "SafetyAgent": "Pedestrian collision avoidance and step/staircase fall prevention are the core hazards",
+      "FunctionalSafetyAgent": "Japanese Road Transport Vehicle Act and specified small motorized bicycle safety standards; fail-safe for step detection",
+      "PerformanceAgent": "3-4 FPS (250-300 ms) perception latency directly bounds detection range and safe stopping",
+      "EfficiencyAgent": "Jetson Orin Nano 8 GB and ~34 W edge compute/power budget constrains model complexity",
+      "ReliabilityAgent": "Monocular-only perception must remain robust under night, backlight, and motion blur"
+    },
+    "excluded_with_rationale": {
+      "UsabilityAgent": "BORDERLINE - safety-vs-usability trade-off (false braking); Aisin to confirm include/exclude",
+      "SecurityAgent": "Not a primary concern for the on-vehicle perception subsystem",
+      "TrustworthinessAgent": "No personal-data processing central to perception",
+      "PrivacyAgent": "No GDPR-scope personal data processing described",
+      "ExplainabilityAgent": "Not a regulated high-risk AI transparency requirement in this scope",
+      "MaintainabilityAgent": "Not mentioned in the project requirements",
+      "CompatibilityAgent": "Not mentioned in the project requirements",
+      "FlexibilityAgent": "Not mentioned in the project requirements",
+      "GreenAgent": "Energy handled under Efficiency; no explicit sustainability requirement",
+      "ResponsibilityAgent": "No explicit ethical-accountability requirement in this scope"
+    },
+    "_note": "TENTATIVE template drafted by authors from the project description. To be REPLACED by Aisin expert annotation before running the experiment. Agent names must match the 15-agent pool exactly (…Agent suffix)."
+  }
+}
