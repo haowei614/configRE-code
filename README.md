@@ -8,7 +8,7 @@ Replication package for the paper:
 >
 > Haowei Cheng, Milhan Kim, Bowen Jiang, Weixing Zhang, Yuhong Fu, Truong Vinh Truong Duy, Phan Thi Huyen Thanh, Foutse Khomh, Nobukazu Yoshioka, Naoyasu Ubayashi, Hironori Washizaki
 
-ConfigRE extends the [OpenRE-Bench / QUARE](https://github.com/QUARE-benchmark) pipeline with a **Phase 0 (Domain-Adaptive Agent Configuration)** step that selects domain-relevant quality agents before requirements negotiation begins. The selection uses a three-tier mechanism: LLM relevance scoring (Tier 1), deterministic domain-regulatory mapping (Tier 2), and project-level constraint extraction (Tier 3).
+ConfigRE extends the [OpenRE-Bench / QUARE](https://zenodo.org/records/20795782) pipeline with a **Phase 0 (Domain-Adaptive Agent Configuration)** step that selects domain-relevant quality agents before requirements negotiation begins. The selection uses a three-tier mechanism: LLM relevance scoring (Tier 1), deterministic domain-regulatory mapping (Tier 2), and project-level constraint extraction (Tier 3).
 
 ---
 
