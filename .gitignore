@@ -3,6 +3,9 @@ artifacts/
 .api_key
 .env
 
+# Local working notes (not for public replication package)
+PROJECT_STATUS.md
+
 __pycache__/
 *.pyc
 .DS_Store
